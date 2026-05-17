@@ -1,0 +1,105 @@
+﻿<Window x:Class="Hoshiko.XAML.Auth"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Hoshiko.XAML"
+        mc:Ignorable="d"
+        Title="Hoshiko – Вход/регистрация" Height="342" Width="400">
+    <Grid Margin="20">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Row="0" 
+                   Text="Hoshiko Media" 
+                   FontSize="20" 
+                   FontWeight="Bold" 
+                   HorizontalAlignment="Center" 
+                   Margin="0,0,0,20"/>
+
+        <!-- Вкладки: Вход / Регистрация -->
+        <TabControl Grid.Row="1" Grid.RowSpan="4" Margin="0,0,0,10">
+            <TabItem Header="Войти">
+                <Grid Margin="10">
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+
+                    <!-- Логин -->
+                    <TextBlock Grid.Row="0" Text="Логин" FontWeight="Medium" Margin="0,0,0,2"/>
+                    <TextBox Grid.Row="1" 
+                             Name="LoginUsername" 
+                             TextWrapping="Wrap" 
+                             Margin="0,0,0,10"/>
+
+                    <!-- Пароль -->
+                    <TextBlock Grid.Row="2" Text="Пароль" FontWeight="Medium" Margin="0,0,0,2"/>
+                    <PasswordBox Grid.Row="3" 
+                                 Name="LoginPassword" 
+                                 Margin="0,0,0,10"/>
+
+                    <!-- Кнопка войти -->
+                    <Button Grid.Row="4" 
+                            Name="LoginButton" 
+                            Content="Войти" 
+                            Height="30"
+                            HorizontalAlignment="Center" Width="334"/>
+                </Grid>
+            </TabItem>
+
+
+            <TabItem Header="Регистрация">
+                <Grid Margin="10">
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+
+                    <!-- Логин -->
+                    <TextBlock Grid.Row="0" Text="Логин" FontWeight="Medium" Margin="0,0,0,2"/>
+                    <TextBox Grid.Row="1" 
+                             Name="RegisterUsername" 
+                             TextWrapping="Wrap" 
+                             Margin="0,0,0,10"/>
+
+                    <!-- Пароль -->
+                    <TextBlock Grid.Row="2" Text="Пароль" FontWeight="Medium" Margin="0,0,0,2"/>
+                    <PasswordBox Grid.Row="3" 
+                                 Name="RegisterPassword" 
+                                 Margin="0,0,0,10"/>
+
+                    <!-- Кнопка зарегистрироваться -->
+                    <Button Grid.Row="4" 
+                            Name="RegisterButton" 
+                            Content="Зарегистрироваться" 
+                            Height="30"
+                            HorizontalAlignment="Center" Width="334"/>
+                </Grid>
+            </TabItem>
+        </TabControl>
+
+        <!-- Сообщение об ошибке/подсказка -->
+        <TextBlock Grid.Row="5" 
+                   Name="StatusMessage" 
+                   TextWrapping="Wrap" 
+                   Text="Войдите или зарегистрируйтесь" 
+                   HorizontalAlignment="Center" 
+                   VerticalAlignment="Bottom"/>
+    </Grid>
+</Window>
