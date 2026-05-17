@@ -2,7 +2,7 @@
 
 ## Roadmap
 
---
+---
 
 ### List to do for initial release (список действий для базовой реализации)
 
