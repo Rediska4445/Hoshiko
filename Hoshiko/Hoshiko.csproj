@@ -78,7 +78,6 @@
     <Compile Include="Repository\Genre\GenreRepository.cs" />
     <Compile Include="Repository\Genre\IGenreRepository.cs" />
     <Compile Include="Repository\IRepository.cs" />
-    <Compile Include="Repository\Media\IMediaRepository.cs" />
     <Compile Include="Repository\Media\Implementaion\MovieRepository.cs" />
     <Compile Include="Repository\Media\Implementaion\MusicRepository.cs" />
     <Compile Include="Repository\Media\Implementaion\SeriesRepository.cs" />

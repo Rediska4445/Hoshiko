@@ -7,7 +7,7 @@ using System.Linq;
 
 namespace Hoshiko.Repository.Implementation
 {
-    public class MusicRepository : IMediaRepository
+    public class MusicRepository : IRepository<MusicEntity>
     {
         private Logger logger = new Logger();
 

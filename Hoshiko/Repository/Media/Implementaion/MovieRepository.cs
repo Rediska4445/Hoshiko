@@ -8,7 +8,7 @@ namespace Hoshiko.Repository.Implementaion
     using System.Data.Entity.Validation;
     using System.Linq;
 
-    public class MovieRepository : IMediaRepository<MovieEntity>
+    public class MovieRepository : IRepository<MovieEntity>
     {
         public int Add(MovieEntity item)
         {

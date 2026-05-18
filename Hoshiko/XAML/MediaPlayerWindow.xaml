@@ -64,13 +64,15 @@
             Grid.Column="1" />
         </Grid>
 
-        <ListView Grid.Row="0" Grid.RowSpan="3"
-                  Grid.Column="1"
-                  Name="Playlist"
-                  Margin="8"
-                  Background="Transparent"
-                  BorderBrush="LightGray"
-                  BorderThickness="1">
+        <ListView x:Name="Playlist"
+          Grid.Row="0"
+          Grid.RowSpan="3"
+          Grid.Column="1"
+          Margin="8"
+          Background="Transparent"
+          BorderBrush="LightGray"
+          BorderThickness="1"
+          SelectedItem="{Binding SelectedItem, RelativeSource={RelativeSource AncestorType={x:Type Window}}, Mode=TwoWay}">
 
             <ListView.ItemTemplate>
                 <DataTemplate>
@@ -81,17 +83,16 @@
                         </Grid.ColumnDefinitions>
 
                         <TextBlock Text="{Binding Title}"
-                                   TextTrimming="CharacterEllipsis"
-                                   VerticalAlignment="Center" />
+                           TextTrimming="CharacterEllipsis"
+                           VerticalAlignment="Center" />
 
                         <Button Grid.Column="1"
-                                Content="Play"
-                                Margin="8,0,0,0"
-                                Padding="4,1"
-                                Width="50"
-                                Command="{Binding Path=DataContext.PlayItemCommand, 
-                                                  RelativeSource={RelativeSource AncestorType={x:Type Window}}}"
-                                CommandParameter="{Binding}" />
+                        Content="Play"
+                        Margin="8,0,0,0"
+                        Padding="4,1"
+                        Width="50"
+                        Click="PlayItemButton_Click"
+                        CommandParameter="{Binding}" />
                     </Grid>
                 </DataTemplate>
             </ListView.ItemTemplate>

@@ -25,10 +25,10 @@ namespace Hoshiko.Controller
             };
         }
 
-        private IMediaRepository<T> GetRepository<T>() where T : MediaItem, new()
+        private IRepository<T> GetRepository<T>() where T : MediaItem, new()
         {
             if (_repositories.TryGetValue(typeof(T), out var repoObj)
-                && repoObj is IMediaRepository<T> repo)
+                && repoObj is IRepository<T> repo)
             {
                 return repo;
             }
@@ -55,9 +55,6 @@ namespace Hoshiko.Controller
         public bool DeleteMovie(int id) =>
             GetRepository<MovieEntity>().Delete(id);
 
-        public bool MovieExistsBySource(string sourcePath) =>
-            GetRepository<MovieEntity>().ExistsBySource(sourcePath);
-
 
         // ========= Музыка =========
         public MusicEntity GetMusic(int id) =>
@@ -78,9 +75,6 @@ namespace Hoshiko.Controller
         public bool DeleteMusic(int id) =>
             GetRepository<MusicEntity>().Delete(id);
 
-        public bool MusicExistsBySource(string path) =>
-            GetRepository<MusicEntity>().ExistsBySource(path);
-
 
         // ========= Сериалы =========
         public SeriesEntity GetSeries(int id) =>
@@ -100,18 +94,5 @@ namespace Hoshiko.Controller
 
         public bool DeleteSeries(int id) =>
             GetRepository<SeriesEntity>().Delete(id);
-
-        public bool SeriesExistsBySource(string path) =>
-            GetRepository<SeriesEntity>().ExistsBySource(path);
-
-        public SeriesEntity GetSeriesWithEpisodes(int seriesId)
-        {
-            using (var db = new HoshikoDbContext())
-            {
-                return db.Series
-                         .Include(s => s.Episodes)
-                         .First(s => s.Id == seriesId);
-            }
-        }
     }
 }

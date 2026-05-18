@@ -1,14 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Hoshiko.Models
 {
     public class MediaItem
     {
         public int Id { get; set; }
+        [Column("FilePath")]
         public string SourcePath { get; set; }
     }
 }

@@ -8,7 +8,7 @@ using System.Linq;
 
 namespace Hoshiko.Repository.Implementation
 {
-    public class SeriesRepository : IMediaRepository<SeriesEntity>
+    public class SeriesRepository : IRepository<SeriesEntity>
     {
         public int Add(SeriesEntity item)
         {
@@ -53,7 +53,9 @@ namespace Hoshiko.Repository.Implementation
         {
             using (var db = new HoshikoDbContext())
             {
-                return db.Series.FirstOrDefault(x => x.Id == id);
+                return db.Series
+                         .Include(s => s.Episodes)
+                         .FirstOrDefault(s => s.Id == id);
             }
         }
 
@@ -61,7 +63,9 @@ namespace Hoshiko.Repository.Implementation
         {
             using (var db = new HoshikoDbContext())
             {
-                return db.Series.ToList();
+                return db.Series
+                         .Include(s => s.Episodes)
+                         .ToList();
             }
         }
 
@@ -73,19 +77,9 @@ namespace Hoshiko.Repository.Implementation
             using (var db = new HoshikoDbContext())
             {
                 return db.Series
+                         .Include(s => s.Episodes)
                          .Where(x => x.Title.Contains(query) || x.SourcePath.Contains(query))
                          .ToList();
-            }
-        }
-
-        public bool ExistsBySource(string sourcePath)
-        {
-            if (string.IsNullOrWhiteSpace(sourcePath))
-                return false;
-
-            using (var db = new HoshikoDbContext())
-            {
-                return db.Series.Any(x => x.SourcePath == sourcePath);
             }
         }
     }

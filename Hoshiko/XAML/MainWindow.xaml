@@ -24,8 +24,8 @@
                     <TextBlock Grid.Row="0" Text="Список фильмов" FontWeight="Bold" Margin="0,0,0,5"/>
 
                     <ListView Grid.Row="1"
-          Name="MoviesList"
-          ItemsSource="{Binding Movies}">
+                          Name="MoviesList"
+                          ItemsSource="{Binding Movies}">
 
                         <ListView.ItemTemplate>
                             <DataTemplate>
@@ -102,10 +102,10 @@
                                         VerticalAlignment="Center" />
 
                                     <Button Grid.Column="1"
-                                        Content="Посмотреть эпизоды"
+                                        Content="Смотреть"
                                         Margin="10,0,0,0"
-                                        Command="{Binding Path=DataContext.PlaySeriesCommand, 
-                                                          RelativeSource={RelativeSource AncestorType={x:Type TabItem}}}"
+                                         Command="{Binding Path=DataContext.PlaySeriesCommand, 
+                                                          RelativeSource={RelativeSource AncestorType={x:Type local:MainWindow}}}"
                                         CommandParameter="{Binding}" />
                                 </Grid>
                             </DataTemplate>

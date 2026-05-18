@@ -3,6 +3,7 @@ using Hoshiko.Models.Entity;
 using Hoshiko.Models.View.Command;
 using System;
 using System.Collections.ObjectModel;
+using System.Linq;
 using System.Windows.Input;
 
 namespace Hoshiko.Models.View
@@ -122,9 +123,18 @@ namespace Hoshiko.Models.View
 
         private void PlaySeries(SeriesEntity series)
         {
-            if (series == null) return;
+            logger.Info($"shit = {series.SourcePath}");
 
-            var player = new Hoshiko.XAML.MediaPlayerWindow { Source = new Uri(series.SourcePath) };
+            if (series == null)
+                return;
+
+            var playlist = series.Episodes
+                                 .OrderBy(e => e.EpisodeNumber)
+                                 .Select(e => new Uri(e.SourcePath))
+                                 .ToList();
+
+            var player = new Hoshiko.XAML.MediaPlayerWindow();
+            player.SetPlaylist(playlist);
             player.Show();
         }
     }
