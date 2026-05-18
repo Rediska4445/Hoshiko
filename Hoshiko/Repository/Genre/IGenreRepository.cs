@@ -1,10 +1,5 @@
-﻿using Hoshiko.Models;
-using Hoshiko.Models.Entity;
-using System;
+﻿using Hoshiko.Models.Entity;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Hoshiko.Repository.Genre
 {
@@ -13,10 +8,10 @@ namespace Hoshiko.Repository.Genre
         bool AddFavoriteGenres(UserEntity user, List<GenreEntity> genres);
         bool RemoveFavoriteGenres(UserEntity user, List<GenreEntity> genres);
 
-        List<GenreEntity> GetAllGenres();
+        List<GenreEntity> GetAllFavoriteGenres(UserEntity user);
 
+        List <GenreEntity> GetAllGenres();
         GenreEntity GetGenreById(int id);
-
         List<GenreEntity> GetGenresByMediaType(string mediaTypeName);
     }
 }

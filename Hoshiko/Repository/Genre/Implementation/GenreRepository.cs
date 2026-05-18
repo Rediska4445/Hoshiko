@@ -146,5 +146,18 @@ namespace Hoshiko.Repository.Genre
         public List<GenreEntity> GetAllGenres() => GetAll();
 
         public GenreEntity GetGenreById(int id) => GetById(id);
+
+        public List<GenreEntity> GetAllFavoriteGenres(UserEntity user)
+        {
+            if (user == null) return new List<GenreEntity>();
+
+            using (var context = new HoshikoDbContext())
+            {
+                return context.Set<UserFavoriteGenreEntity>()
+                              .Where(ufg => ufg.UserId == user.Id)
+                              .Select(ufg => ufg.Genre)
+                              .ToList();
+            }
+        }
     }
 }

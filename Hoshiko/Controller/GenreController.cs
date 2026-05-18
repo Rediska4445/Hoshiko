@@ -37,5 +37,7 @@ namespace Hoshiko.Controller
 
         public bool RemoveFavoriteGenres(UserEntity user, List<GenreEntity> genres)
             => ((GenreRepository)_genreRepository).RemoveFavoriteGenres(user, genres);
+
+        public List<GenreEntity> GetAllFavoriteGenres(UserEntity currentUser) => _genreRepository.GetAllFavoriteGenres(currentUser);
     }
 }

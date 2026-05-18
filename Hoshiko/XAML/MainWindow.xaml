@@ -302,9 +302,8 @@
                     <StackPanel Grid.Row="3"
                     Margin="0,15,0,0"
                     Orientation="Horizontal">
-                        <Button Content="Добавить в любимые" Margin="0,0,10,0" Padding="10,5"/>
-                        <Button Content="Удалить выбранный" Margin="0,0,10,0" Padding="10,5"/>
-                        <Button Content="Сохранить" Padding="15,5" />
+                        <Button Content="Добавить в избранное" Margin="0,0,10,0" Padding="10,5"/>
+                        <Button Content="Удалить из избранного" Margin="0,0,10,0" Padding="10,5"/>
                     </StackPanel>
                 </Grid>
             </TabItem>

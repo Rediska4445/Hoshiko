@@ -27,7 +27,6 @@
 
             modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
 
-            // === Users ===
             modelBuilder.Entity<UserEntity>().ToTable("Users");
             modelBuilder.Entity<UserEntity>().HasKey(u => u.Id);
             modelBuilder.Entity<UserEntity>()
@@ -44,7 +43,6 @@
                         .IsRequired()
                         .HasMaxLength(256);
 
-            // === MediaContent ===
             modelBuilder.Entity<MediaContentEntity>().ToTable("MediaContent");
             modelBuilder.Entity<MediaContentEntity>().HasKey(mc => mc.Id);
             modelBuilder.Entity<MediaContentEntity>()
@@ -52,7 +50,6 @@
                         .IsRequired()
                         .HasMaxLength(20);
 
-            // === Genres ===
             modelBuilder.Entity<GenreEntity>().ToTable("Genres");
             modelBuilder.Entity<GenreEntity>().HasKey(g => g.Id);
             modelBuilder.Entity<GenreEntity>()
@@ -72,7 +69,6 @@
                         .HasIndex(g => new { g.Name, g.MediaContentId })
                         .IsUnique();
 
-            // === Movies ===
             modelBuilder.Entity<MovieEntity>().ToTable("Movies");
             modelBuilder.Entity<MovieEntity>().HasKey(m => m.Id);
             modelBuilder.Entity<MovieEntity>()
@@ -106,7 +102,6 @@
                         .HasForeignKey(m => m.GenreId)
                         .WillCascadeOnDelete(false);
 
-            // === Series ===
             modelBuilder.Entity<SeriesEntity>().ToTable("Series");
             modelBuilder.Entity<SeriesEntity>().HasKey(s => s.Id);
             modelBuilder.Entity<SeriesEntity>()
@@ -146,7 +141,6 @@
                         .HasForeignKey(e => e.SeriesId)
                         .WillCascadeOnDelete(false);
 
-            // === Episodes ===
             modelBuilder.Entity<EpisodeEntity>().ToTable("Episodes");
             modelBuilder.Entity<EpisodeEntity>().HasKey(e => e.Id);
             modelBuilder.Entity<EpisodeEntity>()
@@ -175,7 +169,6 @@
                         .HasForeignKey(e => e.UploadedByUserId)
                         .WillCascadeOnDelete(false);
 
-            // === Music ===
             modelBuilder.Entity<MusicEntity>().ToTable("Music");
             modelBuilder.Entity<MusicEntity>().HasKey(m => m.Id);
             modelBuilder.Entity<MusicEntity>()
@@ -209,7 +202,6 @@
                         .HasForeignKey(m => m.GenreId)
                         .WillCascadeOnDelete(false);
 
-            // === UserFavoriteGenres (User ↔ Genre) ===
             modelBuilder.Entity<UserFavoriteGenreEntity>().ToTable("UserFavoriteGenres");
             modelBuilder.Entity<UserFavoriteGenreEntity>()
                         .HasKey(ufg => new { ufg.UserId, ufg.GenreId });

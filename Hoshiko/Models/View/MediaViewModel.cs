@@ -3,6 +3,7 @@ using Hoshiko.Models.Entity;
 using Hoshiko.Models.View.Command;
 using Hoshiko.Repository.Genre;
 using System;
+using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
 using System.Windows.Input;
@@ -41,38 +42,25 @@ namespace Hoshiko.Models.View
         public ObservableCollection<GenreEntity> MovieGenres { get; set; }
         public ObservableCollection<GenreEntity> SeriesGenres { get; set; }
         public ObservableCollection<GenreEntity> MusicGenres { get; set; }
-
-        private SeriesEntity _selectedSeries;
-        public SeriesEntity SelectedSeries
-        {
-            get => _selectedSeries;
-            set
-            {
-                _selectedSeries = value;
-                LoadEpisodesForSeriesCommand.Execute(_selectedSeries);
-            }
-        }
+        public ObservableCollection<GenreEntity> FavoriteGenres { get; set; }
 
         public MediaViewModel()
         {
             _controller = new MediaController();
             _genreController = new GenreController();
 
-            // === Фильмы ===
             Movies = new ObservableCollection<MovieEntity>();
             LoadAllMovies();
 
             PlayMovieCommand = new RelayCommand<MovieEntity>(PlayMovie);
             LoadAllMoviesCommand = new RelayCommand(LoadAllMovies);
 
-            // === Музыка ===
             Musics = new ObservableCollection<MusicEntity>();
             LoadAllMusic();
 
             PlayMusicCommand = new RelayCommand<MusicEntity>(PlayMusic);
             LoadAllMusicCommand = new RelayCommand(LoadAllMusic);
 
-            // === Сериалы ===
             Series = new ObservableCollection<SeriesEntity>();
             LoadAllSeries();
 
@@ -85,11 +73,11 @@ namespace Hoshiko.Models.View
             MovieGenres = new ObservableCollection<GenreEntity>();
             SeriesGenres = new ObservableCollection<GenreEntity>();
             MusicGenres = new ObservableCollection<GenreEntity>();
+            FavoriteGenres = new ObservableCollection<GenreEntity>();
 
             LoadAllGenres();
         }
 
-        // ========= Фильмы =========
         private void LoadAllMovies()
         {
             var fromDb = _controller.GetAllMovies();
@@ -108,7 +96,6 @@ namespace Hoshiko.Models.View
             player.Show();
         }
 
-        // ========= Музыка =========
         private void LoadAllMusic()
         {
             var fromDb = _controller.GetAllMusic();
@@ -130,7 +117,6 @@ namespace Hoshiko.Models.View
             player.Show();
         }
 
-        // ========= Сериалы =========
         private void LoadAllSeries()
         {
             var fromDb = _controller.GetAllSeries();
@@ -162,27 +148,48 @@ namespace Hoshiko.Models.View
         {
             var movieGenres = _genreController.GetGenresByMediaType("Movie");
             MovieGenres.Clear();
+
             foreach (var g in movieGenres)
             {
                 MovieGenres.Add(g);
             }
+
             logger.Info($"MovieGenres: Count = {movieGenres.Count}");
 
             var seriesGenres = _genreController.GetGenresByMediaType("Series");
             SeriesGenres.Clear();
+
             foreach (var g in seriesGenres)
             {
                 SeriesGenres.Add(g);
             }
+
             logger.Info($"SeriesGenres: Count = {seriesGenres.Count}");
 
             var musicGenres = _genreController.GetGenresByMediaType("Music");
             MusicGenres.Clear();
+
             foreach (var g in musicGenres)
             {
                 MusicGenres.Add(g);
             }
+
             logger.Info($"MusicGenres: Count = {musicGenres.Count}");
+
+            if (UserController.CurrentUser != null)
+            {
+                var favoriteGenres = _genreController.GetAllFavoriteGenres(UserController.CurrentUser);
+                FavoriteGenres.Clear();
+                foreach (var g in favoriteGenres)
+                {
+                    FavoriteGenres.Add(g);
+                }
+                logger.Info($"FavoriteGenres: Count = {favoriteGenres.Count} для пользователя {UserController.CurrentUser.Username}");
+            }
+            else
+            {
+                logger.Info("FavoriteGenres не загружены: Текущий пользователь (CurrentUser) равен null.");
+            }
         }
     }
 }

@@ -137,3 +137,35 @@
 [2026-05-19 01:35:57] === Конец LoginExecute ===
 [2026-05-19 01:36:07] C:\\Users\\2022\\source\\repos\\Hoshiko\\test-resources\\BAKER - MINDSET.mp3
 [2026-05-19 01:36:13] C:\\Users\\2022\\source\\repos\\Hoshiko\\test-resources\\BAKER - MINDSET.mp3
+[2026-05-19 01:38:17] === Старт LoginExecute ===
+[2026-05-19 01:38:17] Введённый логин: 'admin'
+[2026-05-19 01:38:17] Пароль передан (символов): 18
+[2026-05-19 01:38:17] Отправка запроса в _userController.Authenticate...
+[2026-05-19 01:38:19] Успех! Найден пользователь: ID=1, Username='admin'
+[2026-05-19 01:38:19] MovieGenres: Count = 0
+[2026-05-19 01:38:19] SeriesGenres: Count = 0
+[2026-05-19 01:38:19] MusicGenres: Count = 6
+[2026-05-19 01:38:19] Конец LoginExecute. Текущий StatusText во ViewModel: 'Успешный вход! Добро пожаловать admin!'
+[2026-05-19 01:38:19] === Конец LoginExecute ===
+[2026-05-19 01:38:25] C:\\Users\\2022\\source\\repos\\Hoshiko\\test-resources\\LXST CXNTURY, Kingpin Skinny Pimp - ODIUM.mp3
+[2026-05-19 01:38:52] === Старт LoginExecute ===
+[2026-05-19 01:38:52] Введённый логин: 'admin'
+[2026-05-19 01:38:52] Пароль передан (символов): 18
+[2026-05-19 01:38:52] Отправка запроса в _userController.Authenticate...
+[2026-05-19 01:38:53] Успех! Найден пользователь: ID=1, Username='admin'
+[2026-05-19 01:38:53] MovieGenres: Count = 0
+[2026-05-19 01:38:53] SeriesGenres: Count = 0
+[2026-05-19 01:38:53] MusicGenres: Count = 6
+[2026-05-19 01:38:53] Конец LoginExecute. Текущий StatusText во ViewModel: 'Успешный вход! Добро пожаловать admin!'
+[2026-05-19 01:38:53] === Конец LoginExecute ===
+[2026-05-19 01:51:53] === Старт LoginExecute ===
+[2026-05-19 01:51:53] Введённый логин: 'хряк'
+[2026-05-19 01:51:53] Пароль передан (символов): 6
+[2026-05-19 01:51:53] Отправка запроса в _userController.Authenticate...
+[2026-05-19 01:51:54] Успех! Найден пользователь: ID=3, Username='хряк'
+[2026-05-19 01:51:54] MovieGenres: Count = 0
+[2026-05-19 01:51:54] SeriesGenres: Count = 0
+[2026-05-19 01:51:54] MusicGenres: Count = 6
+[2026-05-19 01:51:54] FavoriteGenres: Count = 1 для пользователя хряк
+[2026-05-19 01:51:54] Конец LoginExecute. Текущий StatusText во ViewModel: 'Успешный вход! Добро пожаловать хряк!'
+[2026-05-19 01:51:54] === Конец LoginExecute ===

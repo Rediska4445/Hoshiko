@@ -13,6 +13,8 @@ namespace Hoshiko.Controller
     {
         private readonly IUserRepository _userRepository;
 
+        public static UserEntity CurrentUser;
+
         public UserController()
         {
             _userRepository = new UserRepository();

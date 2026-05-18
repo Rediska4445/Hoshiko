@@ -119,6 +119,8 @@ namespace Hoshiko.Models.View
                 StatusText = "Успешный вход! Добро пожаловать " + userEntity.Username + "!";
                 logger.Info($"Успех! Найден пользователь: ID={userEntity.Id}, Username='{userEntity.Username}'");
 
+                UserController.CurrentUser = userEntity;
+
                 MainWindow mainWindow = new MainWindow();
                 mainWindow.Show();
 
