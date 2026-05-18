@@ -17,3 +17,9 @@ C:\Users\2022\source\repos\Hoshiko\Hoshiko\obj\Debug\XAML\AuthWindow.g.cs
 C:\Users\2022\source\repos\Hoshiko\Hoshiko\obj\Debug\XAML\AuthWindow.baml
 C:\Users\2022\source\repos\Hoshiko\Hoshiko\obj\Debug\XAML\MediaPlayerWindow.g.cs
 C:\Users\2022\source\repos\Hoshiko\Hoshiko\obj\Debug\XAML\MediaPlayerWindow.baml
+C:\Users\2022\source\repos\Hoshiko\Hoshiko\bin\Debug\EntityFramework.dll
+C:\Users\2022\source\repos\Hoshiko\Hoshiko\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\2022\source\repos\Hoshiko\Hoshiko\bin\Debug\EntityFramework.xml
+C:\Users\2022\source\repos\Hoshiko\Hoshiko\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\2022\source\repos\Hoshiko\Hoshiko\obj\Debug\Hoshiko.csproj.Up2Date
+C:\Users\2022\source\repos\Hoshiko\Hoshiko\obj\Debug\GeneratedInternalTypeHelper.g.cs

@@ -1,14 +1,12 @@
-﻿using Hoshiko.Models;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading;
 using System.Threading.Tasks;
 
 namespace Hoshiko.Repository
 {
-    public interface IMediaRepository<T> where T : MediaItem, new()
+    public interface IRepository<T>
     {
         int Add(T item);
         bool Update(T item);
@@ -18,7 +16,5 @@ namespace Hoshiko.Repository
         List<T> GetAll();
 
         List<T> Search(string query);
-
-        bool ExistsBySource(string sourcePath); 
     }
 }

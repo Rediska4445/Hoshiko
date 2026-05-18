@@ -23,13 +23,16 @@
 
                     <TextBlock Grid.Row="0" Text="Список фильмов" FontWeight="Bold" Margin="0,0,0,5"/>
 
-                    <ListView Grid.Row="1" Name="MoviesList">
+                    <ListView Grid.Row="1"
+          Name="MoviesList"
+          ItemsSource="{Binding Movies}">
+
                         <ListView.ItemTemplate>
                             <DataTemplate>
                                 <Grid>
                                     <Grid.ColumnDefinitions>
-                                        <ColumnDefinition Width="*"/>
-                                        <ColumnDefinition Width="Auto"/>
+                                        <ColumnDefinition Width="*" />
+                                        <ColumnDefinition Width="Auto" />
                                     </Grid.ColumnDefinitions>
 
                                     <TextBlock Text="{Binding Title}"
@@ -39,7 +42,9 @@
                                         Content="Воспроизвести"
                                         Margin="10,0,0,0"
                                         Padding="8,4"
-                                        Click="MoviePlayButton_Click" />
+                                        Command="{Binding Path=DataContext.PlayMovieCommand, 
+                                                          RelativeSource={RelativeSource AncestorType={x:Type local:MainWindow}}}"
+                                        CommandParameter="{Binding}" />
                                 </Grid>
                             </DataTemplate>
                         </ListView.ItemTemplate>
@@ -81,7 +86,10 @@
 
                     <TextBlock Grid.Row="0" Text="Список сериалов" FontWeight="Bold" Margin="0,0,0,5"/>
 
-                    <ListView Grid.Row="1" Name="SeriesList">
+                    <ListView Grid.Row="1"
+                          Name="SeriesList"
+                          ItemsSource="{Binding Series}">
+
                         <ListView.ItemTemplate>
                             <DataTemplate>
                                 <Grid>
@@ -89,8 +97,16 @@
                                         <ColumnDefinition Width="*"/>
                                         <ColumnDefinition Width="Auto"/>
                                     </Grid.ColumnDefinitions>
-                                    <TextBlock Text="{Binding Title}"/>
-                                    <Button Grid.Column="1" Content="Посмотреть эпизоды" Margin="10,0,0,0"/>
+
+                                    <TextBlock Text="{Binding Title}"
+                                        VerticalAlignment="Center" />
+
+                                    <Button Grid.Column="1"
+                                        Content="Посмотреть эпизоды"
+                                        Margin="10,0,0,0"
+                                        Command="{Binding Path=DataContext.PlaySeriesCommand, 
+                                                          RelativeSource={RelativeSource AncestorType={x:Type TabItem}}}"
+                                        CommandParameter="{Binding}" />
                                 </Grid>
                             </DataTemplate>
                         </ListView.ItemTemplate>
@@ -131,8 +147,10 @@
                     </Grid.RowDefinitions>
 
                     <TextBlock Grid.Row="0" Text="Список треков" FontWeight="Bold" Margin="0,0,0,5"/>
+                    <ListView Grid.Row="1"
+                          Name="MusicList"
+                          ItemsSource="{Binding Musics}">
 
-                    <ListView Grid.Row="1" Name="MusicList">
                         <ListView.ItemTemplate>
                             <DataTemplate>
                                 <Grid>
@@ -140,8 +158,16 @@
                                         <ColumnDefinition Width="*"/>
                                         <ColumnDefinition Width="Auto"/>
                                     </Grid.ColumnDefinitions>
-                                    <TextBlock Text="{Binding Title}"/>
-                                    <Button Grid.Column="1" Content="Воспроизвести" Margin="10,0,0,0"/>
+
+                                    <TextBlock Text="{Binding Title}"
+                                     VerticalAlignment="Center" />
+
+                                    <Button Grid.Column="1"
+                                    Content="Воспроизвести"
+                                    Margin="10,0,0,0"
+                                      Command="{Binding Path=DataContext.PlayMusicCommand, 
+                                                        RelativeSource={RelativeSource AncestorType={x:Type local:MainWindow}}}"
+                                      CommandParameter="{Binding}" />
                                 </Grid>
                             </DataTemplate>
                         </ListView.ItemTemplate>
@@ -175,42 +201,97 @@
             <TabItem Header="Жанры">
                 <Grid Margin="10">
                     <Grid.RowDefinitions>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="Auto"/>
                         <RowDefinition Height="*"/>
                         <RowDefinition Height="Auto"/>
                     </Grid.RowDefinitions>
 
-                    <TextBlock Grid.Row="0" Text="Все жанры" FontWeight="Bold" Margin="0,0,0,5"/>
+                    <!-- Вверху — три списка жанров -->
+                    <Grid Grid.Row="0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
 
-                    <ComboBox Grid.Row="1" 
-                              Name="GenresBox" 
-                              Margin="0,0,0,10"/>
+                        <!-- Жанры фильмов -->
+                        <Grid Grid.Column="0">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
 
-                    <TextBlock Grid.Row="2" Text="Ваши любимые жанры" FontWeight="Bold" Margin="0,10,0,5"/>
+                            <TextBlock Grid.Row="0"
+                           Text="Жанры фильмов"
+                           FontWeight="Bold"
+                           Margin="0,0,0,5"/>
 
-                    <ListView Grid.Row="3" Name="FavoriteGenresList">
-                        <ListView.ItemTemplate>
-                            <DataTemplate>
-                                <Grid>
-                                    <Grid.ColumnDefinitions>
-                                        <ColumnDefinition Width="*"/>
-                                        <ColumnDefinition Width="Auto"/>
-                                    </Grid.ColumnDefinitions>
-                                    <TextBlock Text="{Binding Name}"/>
-                                    <Button Grid.Column="1" Content="Удалить" Margin="10,0,0,0"/>
-                                </Grid>
-                            </DataTemplate>
-                        </ListView.ItemTemplate>
-                    </ListView>
+                            <ListView Grid.Row="1"
+                          Name="MovieGenresList"
+                          ItemsSource="{Binding MovieGenres}">
+                                <ListView.ItemTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding Name}"/>
+                                    </DataTemplate>
+                                </ListView.ItemTemplate>
+                            </ListView>
+                        </Grid>
 
-                    <StackPanel Grid.Row="4" 
-                                Margin="0,10,0,0" 
-                                Orientation="Horizontal">
-                        <Button Content="Добавить в любимые" 
-                                Margin="0,0,10,0"/>
-                        <Button Content="Удалить выбранный" 
-                                Margin="0,0,10,0"/>
+                        <!-- Жанры сериалов -->
+                        <Grid Grid.Column="1">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+
+                            <TextBlock Grid.Row="0"
+                           Text="Жанры сериалов"
+                           FontWeight="Bold"
+                           Margin="0,0,0,5"/>
+
+                            <ListView Grid.Row="1"
+                          Name="SeriesGenresList"
+                          ItemsSource="{Binding SeriesGenres}">
+                                <ListView.ItemTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding Name}"/>
+                                    </DataTemplate>
+                                </ListView.ItemTemplate>
+                            </ListView>
+                        </Grid>
+
+                        <!-- Жанры музыки -->
+                        <Grid Grid.Column="2">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+
+                            <TextBlock Grid.Row="0"
+                           Text="Жанры музыки"
+                           FontWeight="Bold"
+                           Margin="0,0,0,5"/>
+
+                            <ListView Grid.Row="1"
+                          Name="MusicGenresList"
+                          ItemsSource="{Binding MusicGenres}">
+                                <ListView.ItemTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding Name}"/>
+                                    </DataTemplate>
+                                </ListView.ItemTemplate>
+                            </ListView>
+                        </Grid>
+                    </Grid>
+
+                    <!-- Внизу — кнопки управления жанрами -->
+                    <StackPanel Grid.Row="1"
+                    Margin="0,10,0,0"
+                    Orientation="Horizontal">
+
+                        <Button Content="Добавить в любимые"
+                    Margin="0,0,10,0"/>
+                        <Button Content="Удалить выбранный"
+                    Margin="0,0,10,0"/>
                         <Button Content="Сохранить" />
                     </StackPanel>
                 </Grid>

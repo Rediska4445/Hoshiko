@@ -65,7 +65,6 @@ namespace Hoshiko.XAML
         {
             if (MediaElement.Source == null) return;
 
-            // Если прошли до конца — сбросить позицию
             if (MediaElement.NaturalDuration.HasTimeSpan &&
                 MediaElement.Position >= MediaElement.NaturalDuration.TimeSpan)
             {
@@ -90,10 +89,6 @@ namespace Hoshiko.XAML
 
         private void PositionSlider_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
         {
-            // Для WPF‑Slider нет IsDragInProgress, поэтому можно
-            // просто обновлять позицию без лишних проверок
-            if (_isPlaying) return;  // можно убрать, если хочешь обновлять при воспроизведении
-
             if (MediaElement.NaturalDuration.HasTimeSpan)
             {
                 MediaElement.Position = TimeSpan.FromSeconds(PositionSlider.Value);

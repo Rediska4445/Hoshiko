@@ -5,43 +5,97 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Hoshiko.XAML"
         mc:Ignorable="d"
-        Title="MediaPlayerWindow" Height="450" Width="800">
+        Title="MediaPlayerWindow" Height="450" Width="1000">
+
     <Grid Margin="0,10,0,0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="220" />
+        </Grid.ColumnDefinitions>
+
         <Grid.RowDefinitions>
             <RowDefinition Height="*" />
             <RowDefinition Height="Auto" />
             <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
 
+
         <MediaElement x:Name="MediaElement"
-              Grid.Row="0"
-              LoadedBehavior="Manual"
-              UnloadedBehavior="Stop"
-              ScrubbingEnabled="True"
-              Stretch="Uniform" />
+                      Grid.Row="0" Grid.Column="0"
+                      LoadedBehavior="Manual"
+                      UnloadedBehavior="Stop"
+                      ScrubbingEnabled="True"
+                      Stretch="Uniform" />
 
-        <StackPanel Grid.Row="1" Orientation="Horizontal" Margin="8,4">
+        <Slider x:Name="PositionSlider"
+        Grid.Row="1" Grid.Column="0"
+        Minimum="0"
+        Maximum="100"
+        Value="0"
+        SmallChange="0.1"
+        Margin="8,4"
+        IsMoveToPointEnabled="True"
+        ValueChanged="PositionSlider_ValueChanged"
+        HorizontalAlignment="Stretch" />
+
+        <Grid Grid.Row="2" Grid.Column="0"
+      Margin="8,4">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
             <Button x:Name="PlayPauseButton"
-                    Content="Play"
-                    Width="80" Height="24"
-                    Margin="0,0,8,0"
-                    Click="PlayPauseButton_Click" />
+            Content="Play"
+            Width="80" Height="24"
+            Margin="0,0,8,0"
+            Click="PlayPauseButton_Click"
+            Grid.Column="0" />
 
-            <Slider x:Name="PositionSlider"
-                    Margin="4,6,4,6"
-                    TickFrequency="1"
-                    IsMoveToPointEnabled="True"
-                    ValueChanged="PositionSlider_ValueChanged" Width="685" />
-        </StackPanel>
+            <Slider x:Name="VolumeSlider"
+            Margin="4,6,4,6"
+            Minimum="0"
+            Maximum="1"
+            Value="0.8"
+            SmallChange="0.05"
+            IsMoveToPointEnabled="True"
+            ValueChanged="VolumeSlider_ValueChanged"
+            HorizontalAlignment="Stretch"
+            Grid.Column="1" />
+        </Grid>
 
-        <Slider x:Name="VolumeSlider"
-                Grid.Row="2"
-                Minimum="0"
-                Maximum="1"
-                Value="0.8"
-                SmallChange="0.05"
-                Margin="8,4"
-                IsMoveToPointEnabled="True"
-                ValueChanged="VolumeSlider_ValueChanged" />
+        <ListView Grid.Row="0" Grid.RowSpan="3"
+                  Grid.Column="1"
+                  Name="Playlist"
+                  Margin="8"
+                  Background="Transparent"
+                  BorderBrush="LightGray"
+                  BorderThickness="1">
+
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <Grid Margin="0,2">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+
+                        <TextBlock Text="{Binding Title}"
+                                   TextTrimming="CharacterEllipsis"
+                                   VerticalAlignment="Center" />
+
+                        <Button Grid.Column="1"
+                                Content="Play"
+                                Margin="8,0,0,0"
+                                Padding="4,1"
+                                Width="50"
+                                Command="{Binding Path=DataContext.PlayItemCommand, 
+                                                  RelativeSource={RelativeSource AncestorType={x:Type Window}}}"
+                                CommandParameter="{Binding}" />
+                    </Grid>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
     </Grid>
 </Window>

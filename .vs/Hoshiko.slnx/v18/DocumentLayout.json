@@ -3,43 +3,106 @@
   "WorkspaceRootPath": "C:\\Users\\2022\\source\\repos\\Hoshiko\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{EBA38A35-31CE-47B3-9B93-AC567814DE79}|Hoshiko\\Hoshiko.csproj|c:\\users\\2022\\source\\repos\\hoshiko\\hoshiko\\repository\\imediarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EBA38A35-31CE-47B3-9B93-AC567814DE79}|Hoshiko\\Hoshiko.csproj|solutionrelative:hoshiko\\repository\\imediarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EBA38A35-31CE-47B3-9B93-AC567814DE79}|Hoshiko\\Hoshiko.csproj|C:\\Users\\2022\\source\\repos\\Hoshiko\\hoshiko\\repository\\media\\implementaion\\musicrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EBA38A35-31CE-47B3-9B93-AC567814DE79}|Hoshiko\\Hoshiko.csproj|solutionrelative:hoshiko\\repository\\media\\implementaion\\musicrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EBA38A35-31CE-47B3-9B93-AC567814DE79}|Hoshiko\\Hoshiko.csproj|c:\\users\\2022\\source\\repos\\hoshiko\\hoshiko\\models\\trackitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EBA38A35-31CE-47B3-9B93-AC567814DE79}|Hoshiko\\Hoshiko.csproj|solutionrelative:hoshiko\\models\\trackitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EBA38A35-31CE-47B3-9B93-AC567814DE79}|Hoshiko\\Hoshiko.csproj|C:\\Users\\2022\\source\\repos\\Hoshiko\\hoshiko\\repository\\media\\imediarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EBA38A35-31CE-47B3-9B93-AC567814DE79}|Hoshiko\\Hoshiko.csproj|solutionrelative:hoshiko\\repository\\media\\imediarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EBA38A35-31CE-47B3-9B93-AC567814DE79}|Hoshiko\\Hoshiko.csproj|c:\\users\\2022\\source\\repos\\hoshiko\\hoshiko\\models\\seriesitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EBA38A35-31CE-47B3-9B93-AC567814DE79}|Hoshiko\\Hoshiko.csproj|solutionrelative:hoshiko\\models\\seriesitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EBA38A35-31CE-47B3-9B93-AC567814DE79}|Hoshiko\\Hoshiko.csproj|c:\\users\\2022\\source\\repos\\hoshiko\\hoshiko\\models\\view\\mediaviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EBA38A35-31CE-47B3-9B93-AC567814DE79}|Hoshiko\\Hoshiko.csproj|solutionrelative:hoshiko\\models\\view\\mediaviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EBA38A35-31CE-47B3-9B93-AC567814DE79}|Hoshiko\\Hoshiko.csproj|c:\\users\\2022\\source\\repos\\hoshiko\\hoshiko\\models\\movieitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EBA38A35-31CE-47B3-9B93-AC567814DE79}|Hoshiko\\Hoshiko.csproj|solutionrelative:hoshiko\\models\\movieitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EBA38A35-31CE-47B3-9B93-AC567814DE79}|Hoshiko\\Hoshiko.csproj|c:\\users\\2022\\source\\repos\\hoshiko\\hoshiko\\models\\mediaitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EBA38A35-31CE-47B3-9B93-AC567814DE79}|Hoshiko\\Hoshiko.csproj|solutionrelative:hoshiko\\models\\mediaitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EBA38A35-31CE-47B3-9B93-AC567814DE79}|Hoshiko\\Hoshiko.csproj|c:\\users\\2022\\source\\repos\\hoshiko\\hoshiko\\xaml\\mediaplayerwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{EBA38A35-31CE-47B3-9B93-AC567814DE79}|Hoshiko\\Hoshiko.csproj|solutionrelative:hoshiko\\xaml\\mediaplayerwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EBA38A35-31CE-47B3-9B93-AC567814DE79}|Hoshiko\\Hoshiko.csproj|c:\\users\\2022\\source\\repos\\hoshiko\\hoshiko\\xaml\\mainwindow.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
-      "RelativeMoniker": "D:0:0:{EBA38A35-31CE-47B3-9B93-AC567814DE79}|Hoshiko\\Hoshiko.csproj|solutionrelative:hoshiko\\xaml\\mainwindow.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EBA38A35-31CE-47B3-9B93-AC567814DE79}|Hoshiko\\Hoshiko.csproj|c:\\users\\2022\\source\\repos\\hoshiko\\hoshiko\\xaml\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{EBA38A35-31CE-47B3-9B93-AC567814DE79}|Hoshiko\\Hoshiko.csproj|C:\\Users\\2022\\source\\repos\\Hoshiko\\hoshiko\\xaml\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{EBA38A35-31CE-47B3-9B93-AC567814DE79}|Hoshiko\\Hoshiko.csproj|solutionrelative:hoshiko\\xaml\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EBA38A35-31CE-47B3-9B93-AC567814DE79}|Hoshiko\\Hoshiko.csproj|c:\\users\\2022\\source\\repos\\hoshiko\\hoshiko\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{EBA38A35-31CE-47B3-9B93-AC567814DE79}|Hoshiko\\Hoshiko.csproj|C:\\Users\\2022\\source\\repos\\Hoshiko\\hoshiko\\xaml\\mainwindow.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
+      "RelativeMoniker": "D:0:0:{EBA38A35-31CE-47B3-9B93-AC567814DE79}|Hoshiko\\Hoshiko.csproj|solutionrelative:hoshiko\\xaml\\mainwindow.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBA38A35-31CE-47B3-9B93-AC567814DE79}|Hoshiko\\Hoshiko.csproj|C:\\Users\\2022\\source\\repos\\Hoshiko\\hoshiko\\models\\view\\command\\relaycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EBA38A35-31CE-47B3-9B93-AC567814DE79}|Hoshiko\\Hoshiko.csproj|solutionrelative:hoshiko\\models\\view\\command\\relaycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBA38A35-31CE-47B3-9B93-AC567814DE79}|Hoshiko\\Hoshiko.csproj|C:\\Users\\2022\\source\\repos\\Hoshiko\\hoshiko\\xaml\\mediaplayerwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{EBA38A35-31CE-47B3-9B93-AC567814DE79}|Hoshiko\\Hoshiko.csproj|solutionrelative:hoshiko\\xaml\\mediaplayerwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBA38A35-31CE-47B3-9B93-AC567814DE79}|Hoshiko\\Hoshiko.csproj|C:\\Users\\2022\\source\\repos\\Hoshiko\\hoshiko\\controller\\mediacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EBA38A35-31CE-47B3-9B93-AC567814DE79}|Hoshiko\\Hoshiko.csproj|solutionrelative:hoshiko\\controller\\mediacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBA38A35-31CE-47B3-9B93-AC567814DE79}|Hoshiko\\Hoshiko.csproj|C:\\Users\\2022\\source\\repos\\Hoshiko\\hoshiko\\context\\hoshikodbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EBA38A35-31CE-47B3-9B93-AC567814DE79}|Hoshiko\\Hoshiko.csproj|solutionrelative:hoshiko\\context\\hoshikodbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBA38A35-31CE-47B3-9B93-AC567814DE79}|Hoshiko\\Hoshiko.csproj|C:\\Users\\2022\\source\\repos\\Hoshiko\\hoshiko\\models\\entity\\episodeentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EBA38A35-31CE-47B3-9B93-AC567814DE79}|Hoshiko\\Hoshiko.csproj|solutionrelative:hoshiko\\models\\entity\\episodeentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBA38A35-31CE-47B3-9B93-AC567814DE79}|Hoshiko\\Hoshiko.csproj|C:\\Users\\2022\\source\\repos\\Hoshiko\\hoshiko\\models\\entity\\seriesentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EBA38A35-31CE-47B3-9B93-AC567814DE79}|Hoshiko\\Hoshiko.csproj|solutionrelative:hoshiko\\models\\entity\\seriesentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBA38A35-31CE-47B3-9B93-AC567814DE79}|Hoshiko\\Hoshiko.csproj|C:\\Users\\2022\\source\\repos\\Hoshiko\\hoshiko\\repository\\media\\implementaion\\seriesrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EBA38A35-31CE-47B3-9B93-AC567814DE79}|Hoshiko\\Hoshiko.csproj|solutionrelative:hoshiko\\repository\\media\\implementaion\\seriesrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBA38A35-31CE-47B3-9B93-AC567814DE79}|Hoshiko\\Hoshiko.csproj|C:\\Users\\2022\\source\\repos\\Hoshiko\\hoshiko\\xaml\\mediaplayerwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EBA38A35-31CE-47B3-9B93-AC567814DE79}|Hoshiko\\Hoshiko.csproj|solutionrelative:hoshiko\\xaml\\mediaplayerwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBA38A35-31CE-47B3-9B93-AC567814DE79}|Hoshiko\\Hoshiko.csproj|C:\\Users\\2022\\source\\repos\\Hoshiko\\hoshiko\\repository\\genre\\genrerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EBA38A35-31CE-47B3-9B93-AC567814DE79}|Hoshiko\\Hoshiko.csproj|solutionrelative:hoshiko\\repository\\genre\\genrerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBA38A35-31CE-47B3-9B93-AC567814DE79}|Hoshiko\\Hoshiko.csproj|C:\\Users\\2022\\source\\repos\\Hoshiko\\hoshiko\\repository\\genre\\igenrerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EBA38A35-31CE-47B3-9B93-AC567814DE79}|Hoshiko\\Hoshiko.csproj|solutionrelative:hoshiko\\repository\\genre\\igenrerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBA38A35-31CE-47B3-9B93-AC567814DE79}|Hoshiko\\Hoshiko.csproj|C:\\Users\\2022\\source\\repos\\Hoshiko\\hoshiko\\models\\entity\\genreentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EBA38A35-31CE-47B3-9B93-AC567814DE79}|Hoshiko\\Hoshiko.csproj|solutionrelative:hoshiko\\models\\entity\\genreentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBA38A35-31CE-47B3-9B93-AC567814DE79}|Hoshiko\\Hoshiko.csproj|C:\\Users\\2022\\source\\repos\\Hoshiko\\hoshiko\\models\\entity\\movieentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EBA38A35-31CE-47B3-9B93-AC567814DE79}|Hoshiko\\Hoshiko.csproj|solutionrelative:hoshiko\\models\\entity\\movieentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBA38A35-31CE-47B3-9B93-AC567814DE79}|Hoshiko\\Hoshiko.csproj|C:\\Users\\2022\\source\\repos\\Hoshiko\\hoshiko\\logger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EBA38A35-31CE-47B3-9B93-AC567814DE79}|Hoshiko\\Hoshiko.csproj|solutionrelative:hoshiko\\logger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBA38A35-31CE-47B3-9B93-AC567814DE79}|Hoshiko\\Hoshiko.csproj|C:\\Users\\2022\\source\\repos\\Hoshiko\\hoshiko\\repository\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EBA38A35-31CE-47B3-9B93-AC567814DE79}|Hoshiko\\Hoshiko.csproj|solutionrelative:hoshiko\\repository\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBA38A35-31CE-47B3-9B93-AC567814DE79}|Hoshiko\\Hoshiko.csproj|C:\\Users\\2022\\source\\repos\\Hoshiko\\hoshiko\\repository\\media\\implementaion\\movierepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EBA38A35-31CE-47B3-9B93-AC567814DE79}|Hoshiko\\Hoshiko.csproj|solutionrelative:hoshiko\\repository\\media\\implementaion\\movierepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBA38A35-31CE-47B3-9B93-AC567814DE79}|Hoshiko\\Hoshiko.csproj|C:\\Users\\2022\\source\\repos\\Hoshiko\\hoshiko\\models\\entity\\musicentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EBA38A35-31CE-47B3-9B93-AC567814DE79}|Hoshiko\\Hoshiko.csproj|solutionrelative:hoshiko\\models\\entity\\musicentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBA38A35-31CE-47B3-9B93-AC567814DE79}|Hoshiko\\Hoshiko.csproj|C:\\Users\\2022\\source\\repos\\Hoshiko\\hoshiko\\models\\mediaitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EBA38A35-31CE-47B3-9B93-AC567814DE79}|Hoshiko\\Hoshiko.csproj|solutionrelative:hoshiko\\models\\mediaitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBA38A35-31CE-47B3-9B93-AC567814DE79}|Hoshiko\\Hoshiko.csproj|C:\\Users\\2022\\source\\repos\\Hoshiko\\hoshiko\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{EBA38A35-31CE-47B3-9B93-AC567814DE79}|Hoshiko\\Hoshiko.csproj|solutionrelative:hoshiko\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\2022\\AppData\\Local\\Temp\\.vsdbgsrc\\251080feb977417efbac1f5f7ffcfb8f344f717cd8c8d538f1ff34765e05c9ec\\Application.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBA38A35-31CE-47B3-9B93-AC567814DE79}|Hoshiko\\Hoshiko.csproj|C:\\Users\\2022\\source\\repos\\Hoshiko\\hoshiko\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{EBA38A35-31CE-47B3-9B93-AC567814DE79}|Hoshiko\\Hoshiko.csproj|solutionrelative:hoshiko\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EBA38A35-31CE-47B3-9B93-AC567814DE79}|Hoshiko\\Hoshiko.csproj|c:\\users\\2022\\source\\repos\\hoshiko\\hoshiko\\xaml\\authwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{EBA38A35-31CE-47B3-9B93-AC567814DE79}|Hoshiko\\Hoshiko.csproj|C:\\Users\\2022\\source\\repos\\Hoshiko\\hoshiko\\xaml\\authwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{EBA38A35-31CE-47B3-9B93-AC567814DE79}|Hoshiko\\Hoshiko.csproj|solutionrelative:hoshiko\\xaml\\authwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
@@ -77,134 +140,315 @@
               "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "TrackItem.cs",
-              "DocumentMoniker": "C:\\Users\\2022\\source\\repos\\Hoshiko\\Hoshiko\\Models\\TrackItem.cs",
-              "RelativeDocumentMoniker": "Hoshiko\\Models\\TrackItem.cs",
-              "ToolTip": "C:\\Users\\2022\\source\\repos\\Hoshiko\\Hoshiko\\Models\\TrackItem.cs*",
-              "RelativeToolTip": "Hoshiko\\Models\\TrackItem.cs*",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-17T22:54:41.024Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "SeriesItem.cs",
-              "DocumentMoniker": "C:\\Users\\2022\\source\\repos\\Hoshiko\\Hoshiko\\Models\\SeriesItem.cs",
-              "RelativeDocumentMoniker": "Hoshiko\\Models\\SeriesItem.cs",
-              "ToolTip": "C:\\Users\\2022\\source\\repos\\Hoshiko\\Hoshiko\\Models\\SeriesItem.cs*",
-              "RelativeToolTip": "Hoshiko\\Models\\SeriesItem.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-17T22:54:28.148Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "MovieItem.cs",
-              "DocumentMoniker": "C:\\Users\\2022\\source\\repos\\Hoshiko\\Hoshiko\\Models\\MovieItem.cs",
-              "RelativeDocumentMoniker": "Hoshiko\\Models\\MovieItem.cs",
-              "ToolTip": "C:\\Users\\2022\\source\\repos\\Hoshiko\\Hoshiko\\Models\\MovieItem.cs*",
-              "RelativeToolTip": "Hoshiko\\Models\\MovieItem.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-17T22:54:15.976Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "IMediaRepository.cs",
-              "DocumentMoniker": "C:\\Users\\2022\\source\\repos\\Hoshiko\\Hoshiko\\Repository\\IMediaRepository.cs",
-              "RelativeDocumentMoniker": "Hoshiko\\Repository\\IMediaRepository.cs",
-              "ToolTip": "C:\\Users\\2022\\source\\repos\\Hoshiko\\Hoshiko\\Repository\\IMediaRepository.cs*",
-              "RelativeToolTip": "Hoshiko\\Repository\\IMediaRepository.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-17T22:44:12.173Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "MediaItem.cs",
-              "DocumentMoniker": "C:\\Users\\2022\\source\\repos\\Hoshiko\\Hoshiko\\Models\\MediaItem.cs",
-              "RelativeDocumentMoniker": "Hoshiko\\Models\\MediaItem.cs",
-              "ToolTip": "C:\\Users\\2022\\source\\repos\\Hoshiko\\Hoshiko\\Models\\MediaItem.cs*",
-              "RelativeToolTip": "Hoshiko\\Models\\MediaItem.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-17T22:14:11.869Z",
-              "EditorCaption": ""
-            },
-            {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\2022\\source\\repos\\Hoshiko\\Hoshiko\\XAML\\MainWindow.xaml.cs",
-              "RelativeDocumentMoniker": "Hoshiko\\XAML\\MainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\2022\\source\\repos\\Hoshiko\\Hoshiko\\XAML\\MainWindow.xaml.cs",
-              "RelativeToolTip": "Hoshiko\\XAML\\MainWindow.xaml.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAcwCMAAABmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-17T22:13:52.636Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
               "Title": "MediaPlayerWindow.xaml",
               "DocumentMoniker": "C:\\Users\\2022\\source\\repos\\Hoshiko\\Hoshiko\\XAML\\MediaPlayerWindow.xaml",
               "RelativeDocumentMoniker": "Hoshiko\\XAML\\MediaPlayerWindow.xaml",
               "ToolTip": "C:\\Users\\2022\\source\\repos\\Hoshiko\\Hoshiko\\XAML\\MediaPlayerWindow.xaml",
               "RelativeToolTip": "Hoshiko\\XAML\\MediaPlayerWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-05-17T22:10:15.746Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-17T22:10:15.746Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "AuthWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\2022\\source\\repos\\Hoshiko\\Hoshiko\\XAML\\AuthWindow.xaml",
-              "RelativeDocumentMoniker": "Hoshiko\\XAML\\AuthWindow.xaml",
-              "ToolTip": "C:\\Users\\2022\\source\\repos\\Hoshiko\\Hoshiko\\XAML\\AuthWindow.xaml",
-              "RelativeToolTip": "Hoshiko\\XAML\\AuthWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-05-17T21:52:02.508Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 3,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\2022\\source\\repos\\Hoshiko\\Hoshiko\\XAML\\MainWindow.xaml",
               "RelativeDocumentMoniker": "Hoshiko\\XAML\\MainWindow.xaml",
               "ToolTip": "C:\\Users\\2022\\source\\repos\\Hoshiko\\Hoshiko\\XAML\\MainWindow.xaml",
               "RelativeToolTip": "Hoshiko\\XAML\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-05-17T21:51:36.868Z",
+              "WhenOpened": "2026-05-17T21:51:36.868Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "RelayCommand.cs",
+              "DocumentMoniker": "C:\\Users\\2022\\source\\repos\\Hoshiko\\Hoshiko\\Models\\View\\Command\\RelayCommand.cs",
+              "RelativeDocumentMoniker": "Hoshiko\\Models\\View\\Command\\RelayCommand.cs",
+              "ToolTip": "C:\\Users\\2022\\source\\repos\\Hoshiko\\Hoshiko\\Models\\View\\Command\\RelayCommand.cs",
+              "RelativeToolTip": "Hoshiko\\Models\\View\\Command\\RelayCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-17T23:46:40.584Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\2022\\source\\repos\\Hoshiko\\Hoshiko\\XAML\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "Hoshiko\\XAML\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\2022\\source\\repos\\Hoshiko\\Hoshiko\\XAML\\MainWindow.xaml.cs",
+              "RelativeToolTip": "Hoshiko\\XAML\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-17T22:13:52.636Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MusicRepository.cs",
+              "DocumentMoniker": "C:\\Users\\2022\\source\\repos\\Hoshiko\\Hoshiko\\Repository\\Media\\Implementaion\\MusicRepository.cs",
+              "RelativeDocumentMoniker": "Hoshiko\\Repository\\Media\\Implementaion\\MusicRepository.cs",
+              "ToolTip": "C:\\Users\\2022\\source\\repos\\Hoshiko\\Hoshiko\\Repository\\Media\\Implementaion\\MusicRepository.cs",
+              "RelativeToolTip": "Hoshiko\\Repository\\Media\\Implementaion\\MusicRepository.cs",
+              "ViewState": "AgIAADkAAAAAAAAAAAAmwEUAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-18T00:00:29.597Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MediaController.cs",
+              "DocumentMoniker": "C:\\Users\\2022\\source\\repos\\Hoshiko\\Hoshiko\\Controller\\MediaController.cs",
+              "RelativeDocumentMoniker": "Hoshiko\\Controller\\MediaController.cs",
+              "ToolTip": "C:\\Users\\2022\\source\\repos\\Hoshiko\\Hoshiko\\Controller\\MediaController.cs",
+              "RelativeToolTip": "Hoshiko\\Controller\\MediaController.cs",
+              "ViewState": "AgIAAFsAAAAAAAAAAAAkwGMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-17T22:57:09.95Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MediaViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\2022\\source\\repos\\Hoshiko\\Hoshiko\\Models\\View\\MediaViewModel.cs",
+              "RelativeDocumentMoniker": "Hoshiko\\Models\\View\\MediaViewModel.cs",
+              "ToolTip": "C:\\Users\\2022\\source\\repos\\Hoshiko\\Hoshiko\\Models\\View\\MediaViewModel.cs",
+              "RelativeToolTip": "Hoshiko\\Models\\View\\MediaViewModel.cs",
+              "ViewState": "AgIAAFMAAAAAAAAAAAAqwGUAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-17T23:45:21.633Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
+              "Title": "HoshikoDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\2022\\source\\repos\\Hoshiko\\Hoshiko\\Context\\HoshikoDbContext.cs",
+              "RelativeDocumentMoniker": "Hoshiko\\Context\\HoshikoDbContext.cs",
+              "ToolTip": "C:\\Users\\2022\\source\\repos\\Hoshiko\\Hoshiko\\Context\\HoshikoDbContext.cs",
+              "RelativeToolTip": "Hoshiko\\Context\\HoshikoDbContext.cs",
+              "ViewState": "AgIAAEYAAAAAAAAAAAAcwFYAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-17T23:16:13.934Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "SeriesEntity.cs",
+              "DocumentMoniker": "C:\\Users\\2022\\source\\repos\\Hoshiko\\Hoshiko\\Models\\Entity\\SeriesEntity.cs",
+              "RelativeDocumentMoniker": "Hoshiko\\Models\\Entity\\SeriesEntity.cs",
+              "ToolTip": "C:\\Users\\2022\\source\\repos\\Hoshiko\\Hoshiko\\Models\\Entity\\SeriesEntity.cs",
+              "RelativeToolTip": "Hoshiko\\Models\\Entity\\SeriesEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAABWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-17T23:59:21.387Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "EpisodeEntity.cs",
+              "DocumentMoniker": "C:\\Users\\2022\\source\\repos\\Hoshiko\\Hoshiko\\Models\\Entity\\EpisodeEntity.cs",
+              "RelativeDocumentMoniker": "Hoshiko\\Models\\Entity\\EpisodeEntity.cs",
+              "ToolTip": "C:\\Users\\2022\\source\\repos\\Hoshiko\\Hoshiko\\Models\\Entity\\EpisodeEntity.cs",
+              "RelativeToolTip": "Hoshiko\\Models\\Entity\\EpisodeEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-18T01:15:18.711Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "SeriesRepository.cs",
+              "DocumentMoniker": "C:\\Users\\2022\\source\\repos\\Hoshiko\\Hoshiko\\Repository\\Media\\Implementaion\\SeriesRepository.cs",
+              "RelativeDocumentMoniker": "Hoshiko\\Repository\\Media\\Implementaion\\SeriesRepository.cs",
+              "ToolTip": "C:\\Users\\2022\\source\\repos\\Hoshiko\\Hoshiko\\Repository\\Media\\Implementaion\\SeriesRepository.cs",
+              "RelativeToolTip": "Hoshiko\\Repository\\Media\\Implementaion\\SeriesRepository.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAhwEcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-18T00:08:08.596Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "GenreRepository.cs",
+              "DocumentMoniker": "C:\\Users\\2022\\source\\repos\\Hoshiko\\Hoshiko\\Repository\\Genre\\GenreRepository.cs",
+              "RelativeDocumentMoniker": "Hoshiko\\Repository\\Genre\\GenreRepository.cs",
+              "ToolTip": "C:\\Users\\2022\\source\\repos\\Hoshiko\\Hoshiko\\Repository\\Genre\\GenreRepository.cs",
+              "RelativeToolTip": "Hoshiko\\Repository\\Genre\\GenreRepository.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAAAwwD8AAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-18T00:46:59.413Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "IGenreRepository.cs",
+              "DocumentMoniker": "C:\\Users\\2022\\source\\repos\\Hoshiko\\Hoshiko\\Repository\\Genre\\IGenreRepository.cs",
+              "RelativeDocumentMoniker": "Hoshiko\\Repository\\Genre\\IGenreRepository.cs",
+              "ToolTip": "C:\\Users\\2022\\source\\repos\\Hoshiko\\Hoshiko\\Repository\\Genre\\IGenreRepository.cs",
+              "RelativeToolTip": "Hoshiko\\Repository\\Genre\\IGenreRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-18T00:50:31.831Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "GenreEntity.cs",
+              "DocumentMoniker": "C:\\Users\\2022\\source\\repos\\Hoshiko\\Hoshiko\\Models\\Entity\\GenreEntity.cs",
+              "RelativeDocumentMoniker": "Hoshiko\\Models\\Entity\\GenreEntity.cs",
+              "ToolTip": "C:\\Users\\2022\\source\\repos\\Hoshiko\\Hoshiko\\Models\\Entity\\GenreEntity.cs",
+              "RelativeToolTip": "Hoshiko\\Models\\Entity\\GenreEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-18T00:33:41.981Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "MediaPlayerWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\2022\\source\\repos\\Hoshiko\\Hoshiko\\XAML\\MediaPlayerWindow.xaml.cs",
+              "RelativeDocumentMoniker": "Hoshiko\\XAML\\MediaPlayerWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\2022\\source\\repos\\Hoshiko\\Hoshiko\\XAML\\MediaPlayerWindow.xaml.cs",
+              "RelativeToolTip": "Hoshiko\\XAML\\MediaPlayerWindow.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-18T00:17:12.745Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "MovieEntity.cs",
+              "DocumentMoniker": "C:\\Users\\2022\\source\\repos\\Hoshiko\\Hoshiko\\Models\\Entity\\MovieEntity.cs",
+              "RelativeDocumentMoniker": "Hoshiko\\Models\\Entity\\MovieEntity.cs",
+              "ToolTip": "C:\\Users\\2022\\source\\repos\\Hoshiko\\Hoshiko\\Models\\Entity\\MovieEntity.cs",
+              "RelativeToolTip": "Hoshiko\\Models\\Entity\\MovieEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-17T23:13:33.574Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Logger.cs",
+              "DocumentMoniker": "C:\\Users\\2022\\source\\repos\\Hoshiko\\Hoshiko\\Logger.cs",
+              "RelativeDocumentMoniker": "Hoshiko\\Logger.cs",
+              "ToolTip": "C:\\Users\\2022\\source\\repos\\Hoshiko\\Hoshiko\\Logger.cs",
+              "RelativeToolTip": "Hoshiko\\Logger.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBwAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-18T00:20:52.476Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "IRepository.cs",
+              "DocumentMoniker": "C:\\Users\\2022\\source\\repos\\Hoshiko\\Hoshiko\\Repository\\IRepository.cs",
+              "RelativeDocumentMoniker": "Hoshiko\\Repository\\IRepository.cs",
+              "ToolTip": "C:\\Users\\2022\\source\\repos\\Hoshiko\\Hoshiko\\Repository\\IRepository.cs",
+              "RelativeToolTip": "Hoshiko\\Repository\\IRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAgAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-18T00:45:53.256Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IMediaRepository.cs",
+              "DocumentMoniker": "C:\\Users\\2022\\source\\repos\\Hoshiko\\Hoshiko\\Repository\\Media\\IMediaRepository.cs",
+              "RelativeDocumentMoniker": "Hoshiko\\Repository\\Media\\IMediaRepository.cs",
+              "ToolTip": "C:\\Users\\2022\\source\\repos\\Hoshiko\\Hoshiko\\Repository\\Media\\IMediaRepository.cs",
+              "RelativeToolTip": "Hoshiko\\Repository\\Media\\IMediaRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAoAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-17T22:44:12.173Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "MovieRepository.cs",
+              "DocumentMoniker": "C:\\Users\\2022\\source\\repos\\Hoshiko\\Hoshiko\\Repository\\Media\\Implementaion\\MovieRepository.cs",
+              "RelativeDocumentMoniker": "Hoshiko\\Repository\\Media\\Implementaion\\MovieRepository.cs",
+              "ToolTip": "C:\\Users\\2022\\source\\repos\\Hoshiko\\Hoshiko\\Repository\\Media\\Implementaion\\MovieRepository.cs",
+              "RelativeToolTip": "Hoshiko\\Repository\\Media\\Implementaion\\MovieRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-17T23:09:58.894Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "MusicEntity.cs",
+              "DocumentMoniker": "C:\\Users\\2022\\source\\repos\\Hoshiko\\Hoshiko\\Models\\Entity\\MusicEntity.cs",
+              "RelativeDocumentMoniker": "Hoshiko\\Models\\Entity\\MusicEntity.cs",
+              "ToolTip": "C:\\Users\\2022\\source\\repos\\Hoshiko\\Hoshiko\\Models\\Entity\\MusicEntity.cs",
+              "RelativeToolTip": "Hoshiko\\Models\\Entity\\MusicEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-17T23:59:32.07Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "MediaItem.cs",
+              "DocumentMoniker": "C:\\Users\\2022\\source\\repos\\Hoshiko\\Hoshiko\\Models\\MediaItem.cs",
+              "RelativeDocumentMoniker": "Hoshiko\\Models\\MediaItem.cs",
+              "ToolTip": "C:\\Users\\2022\\source\\repos\\Hoshiko\\Hoshiko\\Models\\MediaItem.cs",
+              "RelativeToolTip": "Hoshiko\\Models\\MediaItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-17T22:14:11.869Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "App.config",
+              "DocumentMoniker": "C:\\Users\\2022\\source\\repos\\Hoshiko\\Hoshiko\\App.config",
+              "RelativeDocumentMoniker": "Hoshiko\\App.config",
+              "ToolTip": "C:\\Users\\2022\\source\\repos\\Hoshiko\\Hoshiko\\App.config",
+              "RelativeToolTip": "Hoshiko\\App.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2026-05-17T23:17:24.917Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Application.cs",
+              "DocumentMoniker": "C:\\Users\\2022\\AppData\\Local\\Temp\\.vsdbgsrc\\251080feb977417efbac1f5f7ffcfb8f344f717cd8c8d538f1ff34765e05c9ec\\Application.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\251080feb977417efbac1f5f7ffcfb8f344f717cd8c8d538f1ff34765e05c9ec\\Application.cs",
+              "ToolTip": "C:\\Users\\2022\\AppData\\Local\\Temp\\.vsdbgsrc\\251080feb977417efbac1f5f7ffcfb8f344f717cd8c8d538f1ff34765e05c9ec\\Application.cs [\u0422\u043E\u043B\u044C\u043A\u043E \u0447\u0442\u0435\u043D\u0438\u0435]",
+              "RelativeToolTip": "..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\251080feb977417efbac1f5f7ffcfb8f344f717cd8c8d538f1ff34765e05c9ec\\Application.cs [\u0422\u043E\u043B\u044C\u043A\u043E \u0447\u0442\u0435\u043D\u0438\u0435]",
+              "ViewState": "AgIAAJ4CAAAAAAAAAAAnwMACAAAQAAAAAQAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-17T23:49:10.909Z",
+              "EditorCaption": " [\u0422\u043E\u043B\u044C\u043A\u043E \u0447\u0442\u0435\u043D\u0438\u0435]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "AuthWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\2022\\source\\repos\\Hoshiko\\Hoshiko\\XAML\\AuthWindow.xaml",
+              "RelativeDocumentMoniker": "Hoshiko\\XAML\\AuthWindow.xaml",
+              "ToolTip": "C:\\Users\\2022\\source\\repos\\Hoshiko\\Hoshiko\\XAML\\AuthWindow.xaml",
+              "RelativeToolTip": "Hoshiko\\XAML\\AuthWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-17T21:52:02.508Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
               "Title": "App.xaml",
               "DocumentMoniker": "C:\\Users\\2022\\source\\repos\\Hoshiko\\Hoshiko\\App.xaml",
               "RelativeDocumentMoniker": "Hoshiko\\App.xaml",
               "ToolTip": "C:\\Users\\2022\\source\\repos\\Hoshiko\\Hoshiko\\App.xaml",
               "RelativeToolTip": "Hoshiko\\App.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-05-17T21:51:24.876Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-17T21:51:24.876Z"
             }
           ]
         }
