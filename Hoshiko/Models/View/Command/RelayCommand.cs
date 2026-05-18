@@ -16,7 +16,11 @@ namespace Hoshiko.Models.View.Command
 
         public bool CanExecute(object parameter) => _canExecute?.Invoke((T)parameter) ?? true;
         public void Execute(object parameter) => _execute((T)parameter);
-        public event EventHandler CanExecuteChanged;
+        public event EventHandler CanExecuteChanged
+        {
+            add => CommandManager.RequerySuggested += value;
+            remove => CommandManager.RequerySuggested -= value;
+        }
     }
 
     public class RelayCommand : ICommand
@@ -36,6 +40,10 @@ namespace Hoshiko.Models.View.Command
         public void Execute(object parameter) =>
             _execute();
 
-        public event EventHandler CanExecuteChanged;
+        public event EventHandler CanExecuteChanged
+        {
+            add => CommandManager.RequerySuggested += value;
+            remove => CommandManager.RequerySuggested -= value;
+        }
     }
 }

@@ -1,13 +1,9 @@
-﻿using Hoshiko.Context;
-using Hoshiko.Models;
-using Hoshiko.Models.Entity;
+﻿using Hoshiko.Models.Entity;
 using Hoshiko.Repository;
 using Hoshiko.Repository.Implementaion;
 using Hoshiko.Repository.Implementation;
 using System;
 using System.Collections.Generic;
-using System.Data.Entity;
-using System.Linq;
 
 namespace Hoshiko.Controller
 {

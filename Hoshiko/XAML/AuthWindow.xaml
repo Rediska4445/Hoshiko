@@ -4,102 +4,105 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Hoshiko.XAML"
+        xmlns:vm="clr-namespace:Hoshiko.Models.View"
         mc:Ignorable="d"
-        Title="Hoshiko – Вход/регистрация" Height="342" Width="400">
-    <Grid Margin="20">
+        Title="Hoshiko – Вход/регистрация" 
+        Height="360" Width="400"
+        MinHeight="340" MinWidth="350">
 
+    <Grid Margin="20">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
 
         <TextBlock Grid.Row="0" 
                    Text="Hoshiko Media" 
-                   FontSize="20" 
+                   FontSize="22" 
                    FontWeight="Bold" 
                    HorizontalAlignment="Center" 
-                   Margin="0,0,0,20"/>
+                   Margin="0,0,0,15"/>
 
-        <!-- Вкладки: Вход / Регистрация -->
-        <TabControl Grid.Row="1" Grid.RowSpan="4" Margin="0,0,0,10">
+        <TabControl Grid.Row="1" Margin="0,0,0,15">
+
             <TabItem Header="Войти">
-                <Grid Margin="10">
-
+                <Grid Margin="15,10">
                     <Grid.RowDefinitions>
                         <RowDefinition Height="Auto"/>
                         <RowDefinition Height="Auto"/>
                         <RowDefinition Height="Auto"/>
                         <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
                     </Grid.RowDefinitions>
 
-                    <!-- Логин -->
-                    <TextBlock Grid.Row="0" Text="Логин" FontWeight="Medium" Margin="0,0,0,2"/>
+                    <TextBlock Grid.Row="0" Text="Логин" FontWeight="Medium" Margin="0,0,0,4"/>
                     <TextBox Grid.Row="1" 
+                             Text="{Binding LoginUsername, UpdateSourceTrigger=PropertyChanged}"
                              Name="LoginUsername" 
+                             Padding="4"
                              TextWrapping="Wrap" 
-                             Margin="0,0,0,10"/>
+                             Margin="0,0,0,12"/>
 
-                    <!-- Пароль -->
-                    <TextBlock Grid.Row="2" Text="Пароль" FontWeight="Medium" Margin="0,0,0,2"/>
+                    <TextBlock Grid.Row="2" Text="Пароль" FontWeight="Medium" Margin="0,0,0,4"/>
                     <PasswordBox Grid.Row="3" 
-                                 Name="LoginPassword" 
-                                 Margin="0,0,0,10"/>
+                                 x:Name="LoginPasswordBox"
+                                 Padding="4"
+                                 Margin="0,0,0,15"/>
 
-                    <!-- Кнопка войти -->
                     <Button Grid.Row="4" 
                             Name="LoginButton" 
                             Content="Войти" 
-                            Height="30"
-                            HorizontalAlignment="Center" Width="334"/>
+                            Height="32"
+                            VerticalAlignment="Top"
+                            HorizontalAlignment="Stretch"
+                            Command="{Binding LoginCommand}"
+                            CommandParameter="{Binding ElementName=LoginPasswordBox}"/>
                 </Grid>
             </TabItem>
 
-
             <TabItem Header="Регистрация">
-                <Grid Margin="10">
-
+                <Grid Margin="15,10">
                     <Grid.RowDefinitions>
                         <RowDefinition Height="Auto"/>
                         <RowDefinition Height="Auto"/>
                         <RowDefinition Height="Auto"/>
                         <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
                     </Grid.RowDefinitions>
 
-                    <!-- Логин -->
-                    <TextBlock Grid.Row="0" Text="Логин" FontWeight="Medium" Margin="0,0,0,2"/>
-                    <TextBox Grid.Row="1" 
-                             Name="RegisterUsername" 
-                             TextWrapping="Wrap" 
-                             Margin="0,0,0,10"/>
+                    <TextBlock Grid.Row="0" Text="Логин" FontWeight="Medium" Margin="0,0,0,4"/>
+                    <TextBox Grid.Row="1"
+                             Text="{Binding RegisterUsername, UpdateSourceTrigger=PropertyChanged}"
+                             Padding="4"
+                             TextWrapping="Wrap"
+                             Margin="0,0,0,12"/>
 
-                    <!-- Пароль -->
-                    <TextBlock Grid.Row="2" Text="Пароль" FontWeight="Medium" Margin="0,0,0,2"/>
-                    <PasswordBox Grid.Row="3" 
-                                 Name="RegisterPassword" 
-                                 Margin="0,0,0,10"/>
+                    <TextBlock Grid.Row="2" Text="Пароль" FontWeight="Medium" Margin="0,0,0,4"/>
+                    <PasswordBox Grid.Row="3"
+                                 x:Name="RegisterPasswordBox"
+                                 Padding="4"
+                                 Margin="0,0,0,15"/>
 
-                    <!-- Кнопка зарегистрироваться -->
-                    <Button Grid.Row="4" 
-                            Name="RegisterButton" 
-                            Content="Зарегистрироваться" 
-                            Height="30"
-                            HorizontalAlignment="Center" Width="334"/>
+                    <Button Grid.Row="4"
+                            Content="Зарегистрироваться"
+                            Height="32"
+                            VerticalAlignment="Top"
+                            HorizontalAlignment="Stretch"
+                            Command="{Binding RegisterCommand}"
+                            CommandParameter="{Binding ElementName=RegisterPasswordBox}"/>
                 </Grid>
             </TabItem>
         </TabControl>
 
-        <!-- Сообщение об ошибке/подсказка -->
-        <TextBlock Grid.Row="5" 
+        <TextBlock Grid.Row="2" 
                    Name="StatusMessage" 
                    TextWrapping="Wrap" 
-                   Text="Войдите или зарегистрируйтесь" 
+                   Text="{Binding StatusText}" 
+                   Foreground="DarkBlue"
+                   FontSize="12"
                    HorizontalAlignment="Center" 
-                   VerticalAlignment="Bottom"/>
+                   VerticalAlignment="Center"
+                   TextAlignment="Center"/>
     </Grid>
 </Window>
