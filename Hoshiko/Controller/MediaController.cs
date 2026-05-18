@@ -25,7 +25,7 @@ namespace Hoshiko.Controller
             };
         }
 
-        private IRepository<T> GetRepository<T>() where T : MediaItem, new()
+        private IRepository<T> GetRepository<T>() where T : class, new()
         {
             if (_repositories.TryGetValue(typeof(T), out var repoObj)
                 && repoObj is IRepository<T> repo)

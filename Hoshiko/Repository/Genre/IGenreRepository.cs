@@ -10,20 +10,13 @@ namespace Hoshiko.Repository.Genre
 {
     public interface IGenreRepository : IRepository<GenreEntity>
     {
-        List<MovieEntity> GetAllMoviesGenres();
-        List<SeriesEntity> GetAllSeriesGenres();
-        List<MusicEntity> GetAllMusicGenres();
+        bool AddFavoriteGenres(UserEntity user, List<GenreEntity> genres);
+        bool RemoveFavoriteGenres(UserEntity user, List<GenreEntity> genres);
 
-        bool AddToFavorites<T>(T media) where T : MediaItem;
-        bool RemoveFromFavorites<T>(T media) where T : MediaItem;
-
-        List<MovieEntity> GetMoviesByGenre(int genreId);
-        List<SeriesEntity> GetSeriesByGenre(int genreId);
-        List<MusicEntity> GetTracksByGenre(int genreId);
-
-        List<MediaItem> GetAllMediaByGenre(int genreId);
+        List<GenreEntity> GetAllGenres();
 
         GenreEntity GetGenreById(int id);
-        List<GenreEntity> GetAllGenres();
+
+        List<GenreEntity> GetGenresByMediaType(string mediaTypeName);
     }
 }

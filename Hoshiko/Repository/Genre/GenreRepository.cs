@@ -1,4 +1,5 @@
 ﻿using Hoshiko.Context;
+using Hoshiko.Models;
 using Hoshiko.Models.Entity;
 using System;
 using System.Collections.Generic;
@@ -9,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace Hoshiko.Repository.Genre
 {
-    public class GenreRepository : IRepository<GenreEntity>
+    public class GenreRepository : IGenreRepository
     {
         public int Add(GenreEntity item)
         {
@@ -41,7 +42,9 @@ namespace Hoshiko.Repository.Genre
         {
             using (var db = new HoshikoDbContext())
             {
-                var genre = db.Genres.Find(id);
+                var genre = db.Genres
+                              .Include(g => g.MediaContent)
+                              .FirstOrDefault(g => g.Id == id);
                 if (genre == null)
                     return false;
 
@@ -55,7 +58,8 @@ namespace Hoshiko.Repository.Genre
             using (var db = new HoshikoDbContext())
             {
                 return db.Genres
-                         .FirstOrDefault(x => x.Id == id);
+                         .Include(g => g.MediaContent)
+                         .FirstOrDefault(g => g.Id == id);
             }
         }
 
@@ -63,7 +67,9 @@ namespace Hoshiko.Repository.Genre
         {
             using (var db = new HoshikoDbContext())
             {
-                return db.Genres.ToList();
+                return db.Genres
+                         .Include(g => g.MediaContent)
+                         .ToList();
             }
         }
 
@@ -75,9 +81,70 @@ namespace Hoshiko.Repository.Genre
             using (var db = new HoshikoDbContext())
             {
                 return db.Genres
-                         .Where(x => x.Name.Contains(query))
+                         .Include(g => g.MediaContent)
+                         .Where(g => g.Name.Contains(query))
                          .ToList();
             }
         }
+
+        public bool AddFavoriteGenres(UserEntity user, List<GenreEntity> genres)
+        {
+            if (user == null || genres == null || !genres.Any())
+                return false;
+
+            using (var db = new HoshikoDbContext())
+            {
+                var genreIds = genres.Select(g => g.Id).ToList();
+
+                var currentFav = db.UserFavoriteGenres
+                                   .Where(ufg => ufg.UserId == user.Id)
+                                   .Select(ufg => ufg.GenreId)
+                                   .ToHashSet();
+
+                foreach (var genreId in genreIds.Where(id => !currentFav.Contains(id)))
+                {
+                    db.UserFavoriteGenres.Add(new UserFavoriteGenreEntity
+                    {
+                        UserId = user.Id,
+                        GenreId = genreId
+                    });
+                }
+
+                return db.SaveChanges() > 0;
+            }
+        }
+
+        public bool RemoveFavoriteGenres(UserEntity user, List<GenreEntity> genres)
+        {
+            if (user == null || genres == null || !genres.Any())
+                return false;
+
+            using (var db = new HoshikoDbContext())
+            {
+                var genreIds = genres.Select(g => g.Id).ToList();
+
+                var favorites = db.UserFavoriteGenres
+                                  .Where(ufg => ufg.UserId == user.Id && genreIds.Contains(ufg.GenreId));
+
+                db.UserFavoriteGenres.RemoveRange(favorites);
+
+                return db.SaveChanges() > 0;
+            }
+        }
+
+        public List<GenreEntity> GetGenresByMediaType(string mediaTypeName)
+        {
+            using (var db = new HoshikoDbContext())
+            {
+                return db.Genres
+                         .Include(g => g.MediaContent)
+                         .Where(g => g.MediaContent.Name == mediaTypeName)
+                         .ToList();
+            }
+        }
+
+        public List<GenreEntity> GetAllGenres() => GetAll();
+
+        public GenreEntity GetGenreById(int id) => GetById(id);
     }
 }

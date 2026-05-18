@@ -1,6 +1,7 @@
 ﻿using Hoshiko.Controller;
 using Hoshiko.Models.Entity;
 using Hoshiko.Models.View.Command;
+using Hoshiko.Repository.Genre;
 using System;
 using System.Collections.ObjectModel;
 using System.Linq;
@@ -11,6 +12,7 @@ namespace Hoshiko.Models.View
     public class MediaViewModel
     {
         private readonly MediaController _controller;
+        private readonly GenreController _genreController;
 
         private readonly Logger logger = new Logger();
 
@@ -32,6 +34,14 @@ namespace Hoshiko.Models.View
         public ICommand PlaySeriesCommand { get; }
         public ICommand LoadAllSeriesCommand { get; }
 
+        // Жанры
+        public ObservableCollection<GenreEntity> Genres { get; }
+        public ICommand LoadAllGenresCommand { get; }
+
+        public ObservableCollection<GenreEntity> MovieGenres { get; set; }
+        public ObservableCollection<GenreEntity> SeriesGenres { get; set; }
+        public ObservableCollection<GenreEntity> MusicGenres { get; set; }
+
         private SeriesEntity _selectedSeries;
         public SeriesEntity SelectedSeries
         {
@@ -46,6 +56,7 @@ namespace Hoshiko.Models.View
         public MediaViewModel()
         {
             _controller = new MediaController();
+            _genreController = new GenreController();
 
             // === Фильмы ===
             Movies = new ObservableCollection<MovieEntity>();
@@ -67,6 +78,15 @@ namespace Hoshiko.Models.View
 
             PlaySeriesCommand = new RelayCommand<SeriesEntity>(PlaySeries);
             LoadAllSeriesCommand = new RelayCommand(LoadAllSeries);
+
+            Genres = new ObservableCollection<GenreEntity>();
+            LoadAllGenresCommand = new RelayCommand(LoadAllGenres);
+
+            MovieGenres = new ObservableCollection<GenreEntity>();
+            SeriesGenres = new ObservableCollection<GenreEntity>();
+            MusicGenres = new ObservableCollection<GenreEntity>();
+
+            LoadAllGenres();
         }
 
         // ========= Фильмы =========
@@ -130,12 +150,39 @@ namespace Hoshiko.Models.View
 
             var playlist = series.Episodes
                                  .OrderBy(e => e.EpisodeNumber)
-                                 .Select(e => new Uri(e.SourcePath))
+                                 .Select(e => new Uri(e.FilePath))
                                  .ToList();
 
             var player = new Hoshiko.XAML.MediaPlayerWindow();
             player.SetPlaylist(playlist);
             player.Show();
+        }
+
+        private void LoadAllGenres()
+        {
+            var movieGenres = _genreController.GetGenresByMediaType("Movie");
+            MovieGenres.Clear();
+            foreach (var g in movieGenres)
+            {
+                MovieGenres.Add(g);
+            }
+            logger.Info($"MovieGenres: Count = {movieGenres.Count}");
+
+            var seriesGenres = _genreController.GetGenresByMediaType("Series");
+            SeriesGenres.Clear();
+            foreach (var g in seriesGenres)
+            {
+                SeriesGenres.Add(g);
+            }
+            logger.Info($"SeriesGenres: Count = {seriesGenres.Count}");
+
+            var musicGenres = _genreController.GetGenresByMediaType("Music");
+            MusicGenres.Clear();
+            foreach (var g in musicGenres)
+            {
+                MusicGenres.Add(g);
+            }
+            logger.Info($"MusicGenres: Count = {musicGenres.Count}");
         }
     }
 }

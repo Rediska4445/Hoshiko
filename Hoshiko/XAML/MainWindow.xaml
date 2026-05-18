@@ -11,21 +11,27 @@
     <Grid Margin="10">
         <TabControl>
 
-            <!-- 1. Вкладка "Фильмы" -->
             <TabItem Header="Фильмы">
                 <Grid Margin="10">
                     <Grid.RowDefinitions>
                         <RowDefinition Height="Auto"/>
                         <RowDefinition Height="*"/>
                         <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="120"/>
                     </Grid.RowDefinitions>
 
-                    <TextBlock Grid.Row="0" Text="Список фильмов" FontWeight="Bold" Margin="0,0,0,5"/>
+                    <TextBlock Grid.Row="0" 
+                   Text="Список фильмов" 
+                   FontWeight="Bold" 
+                   Margin="0,0,0,5"/>
 
                     <ListView Grid.Row="1"
-                          Name="MoviesList"
-                          ItemsSource="{Binding Movies}">
+                  Name="MoviesList"
+                  ItemsSource="{Binding Movies}"
+                  ScrollViewer.CanContentScroll="True"
+                  ScrollViewer.HorizontalScrollBarVisibility="Auto"
+                  ScrollViewer.VerticalScrollBarVisibility="Auto"
+                  Margin="0,0,0,10">
 
                         <ListView.ItemTemplate>
                             <DataTemplate>
@@ -36,59 +42,64 @@
                                     </Grid.ColumnDefinitions>
 
                                     <TextBlock Text="{Binding Title}"
-                                        VerticalAlignment="Center" />
+                                   VerticalAlignment="Center" />
 
                                     <Button Grid.Column="1"
-                                        Content="Воспроизвести"
-                                        Margin="10,0,0,0"
-                                        Padding="8,4"
-                                        Command="{Binding Path=DataContext.PlayMovieCommand, 
-                                                          RelativeSource={RelativeSource AncestorType={x:Type local:MainWindow}}}"
-                                        CommandParameter="{Binding}" />
+                                Content="Воспроизвести"
+                                Margin="10,0,0,0"
+                                Padding="8,4"
+                                Command="{Binding Path=DataContext.PlayMovieCommand, 
+                                                 RelativeSource={RelativeSource AncestorType={x:Type local:MainWindow}}}"
+                                CommandParameter="{Binding}" />
                                 </Grid>
                             </DataTemplate>
                         </ListView.ItemTemplate>
                     </ListView>
 
-                    <Grid Grid.Row="3" 
-                          Visibility="{Binding 
-                              IsChecked, 
-                              ElementName=ShowMoviesRecommendations}">
-                        <Grid.RowDefinitions>
-                            <RowDefinition Height="Auto"/>
-                            <RowDefinition Height="Auto"/>
-                        </Grid.RowDefinitions>
+                    <TextBlock Grid.Row="2" 
+                   Text="Рекомендуемые фильмы" 
+                   FontWeight="Bold" 
+                   Margin="0,10,0,5"
+                   Visibility="{Binding IsChecked, ElementName=ShowMoviesRecommendations}"/>
 
-                        <TextBlock Grid.Row="0" Text="Рекомендуемые фильмы" FontWeight="Bold" Margin="0,0,0,5"/>
-                        <ListView Grid.Row="1" Name="RecommendedMoviesList"
-                                  Height="100"
-                                  HorizontalContentAlignment="Stretch">
-                            <ListView.ItemTemplate>
-                                <DataTemplate>
-                                    <TextBlock Text="{Binding Title}"/>
-                                </DataTemplate>
-                            </ListView.ItemTemplate>
-                        </ListView>
-                    </Grid>
+                    <ListView Grid.Row="3" 
+                          Name="RecommendedMoviesList"
+                          HorizontalContentAlignment="Stretch"
+                          ScrollViewer.CanContentScroll="True"
+                          ScrollViewer.HorizontalScrollBarVisibility="Auto"
+                          ScrollViewer.VerticalScrollBarVisibility="Auto"
+                          Visibility="{Binding IsChecked, ElementName=ShowMoviesRecommendations}">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding Title}"/>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+
                 </Grid>
             </TabItem>
 
-
-            <!-- 2. Вкладка "Сериалы" -->
             <TabItem Header="Сериалы">
                 <Grid Margin="10">
                     <Grid.RowDefinitions>
                         <RowDefinition Height="Auto"/>
                         <RowDefinition Height="*"/>
                         <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="120"/>
                     </Grid.RowDefinitions>
 
-                    <TextBlock Grid.Row="0" Text="Список сериалов" FontWeight="Bold" Margin="0,0,0,5"/>
+                    <TextBlock Grid.Row="0" 
+                   Text="Список сериалов" 
+                   FontWeight="Bold" 
+                   Margin="0,0,0,5"/>
 
                     <ListView Grid.Row="1"
                           Name="SeriesList"
-                          ItemsSource="{Binding Series}">
+                          ItemsSource="{Binding Series}"
+                          ScrollViewer.CanContentScroll="True"
+                          ScrollViewer.HorizontalScrollBarVisibility="Auto"
+                          ScrollViewer.VerticalScrollBarVisibility="Auto"
+                          Margin="0,0,0,10">
 
                         <ListView.ItemTemplate>
                             <DataTemplate>
@@ -99,57 +110,68 @@
                                     </Grid.ColumnDefinitions>
 
                                     <TextBlock Text="{Binding Title}"
-                                        VerticalAlignment="Center" />
+                                   VerticalAlignment="Center" />
 
                                     <Button Grid.Column="1"
-                                        Content="Смотреть"
-                                        Margin="10,0,0,0"
-                                         Command="{Binding Path=DataContext.PlaySeriesCommand, 
-                                                          RelativeSource={RelativeSource AncestorType={x:Type local:MainWindow}}}"
-                                        CommandParameter="{Binding}" />
+                                Content="Смотреть"
+                                Margin="10,0,0,0"
+                                Command="{Binding Path=DataContext.PlaySeriesCommand, 
+                                                 RelativeSource={RelativeSource AncestorType={x:Type local:MainWindow}}}"
+                                CommandParameter="{Binding}" />
                                 </Grid>
                             </DataTemplate>
                         </ListView.ItemTemplate>
                     </ListView>
 
-                    <Grid Grid.Row="3" 
-                          Visibility="{Binding 
-                              IsChecked, 
-                              ElementName=ShowSeriesRecommendations}">
-                        <Grid.RowDefinitions>
-                            <RowDefinition Height="Auto"/>
-                            <RowDefinition Height="Auto"/>
-                        </Grid.RowDefinitions>
+                    <TextBlock Grid.Row="2" 
+                   Text="Рекомендуемые сериалы" 
+                   FontWeight="Bold" 
+                   Margin="0,10,0,5"
+                   Visibility="{Binding IsChecked, ElementName=ShowSeriesRecommendations}"/>
 
-                        <TextBlock Grid.Row="0" Text="Рекомендуемые сериалы" FontWeight="Bold" Margin="0,0,0,5"/>
-                        <ListView Grid.Row="1" Name="RecommendedSeriesList"
-                                  Height="100"
-                                  HorizontalContentAlignment="Stretch">
-                            <ListView.ItemTemplate>
-                                <DataTemplate>
-                                    <TextBlock Text="{Binding Title}"/>
-                                </DataTemplate>
-                            </ListView.ItemTemplate>
-                        </ListView>
-                    </Grid>
+                    <ListView Grid.Row="3" 
+                          Name="RecommendedSeriesList"
+                          HorizontalContentAlignment="Stretch"
+                          ScrollViewer.CanContentScroll="True"
+                          ScrollViewer.HorizontalScrollBarVisibility="Auto"
+                          ScrollViewer.VerticalScrollBarVisibility="Auto"
+                          Visibility="{Binding IsChecked, ElementName=ShowSeriesRecommendations}">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding Title}"/>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+
                 </Grid>
             </TabItem>
 
-
-            <!-- 3. Вкладка "Музыка" -->
             <TabItem Header="Музыка">
-                <Grid Margin="10">
+                <Grid Margin="10" 
+                    VerticalAlignment="Stretch"
+                    MaxHeight="{Binding RelativeSource={RelativeSource AncestorType={x:Type Window}}, Path=ActualHeight, ConverterParameter=100}">
+
                     <Grid.RowDefinitions>
                         <RowDefinition Height="Auto"/>
                         <RowDefinition Height="*"/>
                         <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="150"/>
                     </Grid.RowDefinitions>
 
-                    <TextBlock Grid.Row="0" Text="Список треков" FontWeight="Bold" Margin="0,0,0,5"/>
-                    <ListView Grid.Row="1"
-                          Name="MusicList"
-                          ItemsSource="{Binding Musics}">
+                    <TextBlock
+                        Grid.Row="0"
+                        Text="Список треков"
+                        FontWeight="Bold"
+                        Margin="0,0,0,5" />
+
+                    <ListView
+                        Grid.Row="1"
+                        Name="MusicList"
+                        ItemsSource="{Binding Musics}"
+                        ScrollViewer.CanContentScroll="True"
+                        ScrollViewer.HorizontalScrollBarVisibility="Auto"
+                        ScrollViewer.VerticalScrollBarVisibility="Auto"
+                        Margin="0,0,0,10">
 
                         <ListView.ItemTemplate>
                             <DataTemplate>
@@ -159,75 +181,67 @@
                                         <ColumnDefinition Width="Auto"/>
                                     </Grid.ColumnDefinitions>
 
-                                    <TextBlock Text="{Binding Title}"
-                                     VerticalAlignment="Center" />
+                                    <TextBlock
+                            Grid.Column="0"
+                            Text="{Binding Title}"
+                            VerticalAlignment="Center" />
 
-                                    <Button Grid.Column="1"
-                                    Content="Воспроизвести"
-                                    Margin="10,0,0,0"
-                                      Command="{Binding Path=DataContext.PlayMusicCommand, 
-                                                        RelativeSource={RelativeSource AncestorType={x:Type local:MainWindow}}}"
-                                      CommandParameter="{Binding}" />
+                                    <Button
+                            Grid.Column="1"
+                            Content="Воспроизвести"
+                            Margin="10,0,0,0"
+                            Command="{Binding Path=DataContext.PlayMusicCommand, RelativeSource={RelativeSource AncestorType={x:Type local:MainWindow}}}"
+                            CommandParameter="{Binding}" />
                                 </Grid>
                             </DataTemplate>
                         </ListView.ItemTemplate>
                     </ListView>
 
-                    <Grid Grid.Row="3" 
-                          Visibility="{Binding 
-                              IsChecked, 
-                              ElementName=ShowMusicRecommendations}">
-                        <Grid.RowDefinitions>
-                            <RowDefinition Height="Auto"/>
-                            <RowDefinition Height="Auto"/>
-                        </Grid.RowDefinitions>
+                    <TextBlock
+                        Grid.Row="2"
+                        Text="Рекомендуемая музыка"
+                        FontWeight="Bold"
+                        Margin="0,10,0,5" />
 
-                        <TextBlock Grid.Row="0" Text="Рекомендуемая музыка" FontWeight="Bold" Margin="0,0,0,5"/>
-                        <ListView Grid.Row="1" Name="RecommendedMusicList"
-                                  Height="100"
-                                  HorizontalContentAlignment="Stretch">
-                            <ListView.ItemTemplate>
-                                <DataTemplate>
-                                    <TextBlock Text="{Binding Title}"/>
-                                </DataTemplate>
-                            </ListView.ItemTemplate>
-                        </ListView>
-                    </Grid>
+                    <ListView
+                        Grid.Row="3"
+                        Name="RecommendedMusicList"
+                        ScrollViewer.CanContentScroll="True"
+                        ScrollViewer.HorizontalScrollBarVisibility="Auto"
+                        ScrollViewer.VerticalScrollBarVisibility="Auto">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding Title}" />
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+
                 </Grid>
             </TabItem>
 
-
-            <!-- 4. Вкладка "Жанры" -->
             <TabItem Header="Жанры">
                 <Grid Margin="10">
                     <Grid.RowDefinitions>
                         <RowDefinition Height="*"/>
                         <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="120"/>
+                        <RowDefinition Height="Auto"/>
                     </Grid.RowDefinitions>
 
-                    <!-- Вверху — три списка жанров -->
-                    <Grid Grid.Row="0">
+                    <Grid Grid.Row="0" Margin="0,0,0,10">
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="*"/>
                             <ColumnDefinition Width="*"/>
                             <ColumnDefinition Width="*"/>
                         </Grid.ColumnDefinitions>
 
-                        <!-- Жанры фильмов -->
-                        <Grid Grid.Column="0">
+                        <Grid Grid.Column="0" Margin="0,0,5,0">
                             <Grid.RowDefinitions>
                                 <RowDefinition Height="Auto"/>
                                 <RowDefinition Height="*"/>
                             </Grid.RowDefinitions>
-
-                            <TextBlock Grid.Row="0"
-                           Text="Жанры фильмов"
-                           FontWeight="Bold"
-                           Margin="0,0,0,5"/>
-
-                            <ListView Grid.Row="1"
-                          Name="MovieGenresList"
-                          ItemsSource="{Binding MovieGenres}">
+                            <TextBlock Grid.Row="0" Text="Жанры фильмов" FontWeight="Bold" Margin="0,0,0,5"/>
+                            <ListView Grid.Row="1" Name="MovieGenresList" ItemsSource="{Binding MovieGenres}">
                                 <ListView.ItemTemplate>
                                     <DataTemplate>
                                         <TextBlock Text="{Binding Name}"/>
@@ -236,21 +250,13 @@
                             </ListView>
                         </Grid>
 
-                        <!-- Жанры сериалов -->
-                        <Grid Grid.Column="1">
+                        <Grid Grid.Column="1" Margin="5,0,5,0">
                             <Grid.RowDefinitions>
                                 <RowDefinition Height="Auto"/>
                                 <RowDefinition Height="*"/>
                             </Grid.RowDefinitions>
-
-                            <TextBlock Grid.Row="0"
-                           Text="Жанры сериалов"
-                           FontWeight="Bold"
-                           Margin="0,0,0,5"/>
-
-                            <ListView Grid.Row="1"
-                          Name="SeriesGenresList"
-                          ItemsSource="{Binding SeriesGenres}">
+                            <TextBlock Grid.Row="0" Text="Жанры сериалов" FontWeight="Bold" Margin="0,0,0,5"/>
+                            <ListView Grid.Row="1" Name="SeriesGenresList" ItemsSource="{Binding SeriesGenres}">
                                 <ListView.ItemTemplate>
                                     <DataTemplate>
                                         <TextBlock Text="{Binding Name}"/>
@@ -259,21 +265,13 @@
                             </ListView>
                         </Grid>
 
-                        <!-- Жанры музыки -->
-                        <Grid Grid.Column="2">
+                        <Grid Grid.Column="2" Margin="5,0,0,0">
                             <Grid.RowDefinitions>
                                 <RowDefinition Height="Auto"/>
                                 <RowDefinition Height="*"/>
                             </Grid.RowDefinitions>
-
-                            <TextBlock Grid.Row="0"
-                           Text="Жанры музыки"
-                           FontWeight="Bold"
-                           Margin="0,0,0,5"/>
-
-                            <ListView Grid.Row="1"
-                          Name="MusicGenresList"
-                          ItemsSource="{Binding MusicGenres}">
+                            <TextBlock Grid.Row="0" Text="Жанры музыки" FontWeight="Bold" Margin="0,0,0,5"/>
+                            <ListView Grid.Row="1" Name="MusicGenresList" ItemsSource="{Binding MusicGenres}">
                                 <ListView.ItemTemplate>
                                     <DataTemplate>
                                         <TextBlock Text="{Binding Name}"/>
@@ -283,16 +281,30 @@
                         </Grid>
                     </Grid>
 
-                    <!-- Внизу — кнопки управления жанрами -->
-                    <StackPanel Grid.Row="1"
-                    Margin="0,10,0,0"
-                    Orientation="Horizontal">
+                    <TextBlock Grid.Row="1" 
+                   Text="Любимые жанры" 
+                   FontWeight="Bold" 
+                   Margin="0,5,0,5"/>
 
-                        <Button Content="Добавить в любимые"
-                    Margin="0,0,10,0"/>
-                        <Button Content="Удалить выбранный"
-                    Margin="0,0,10,0"/>
-                        <Button Content="Сохранить" />
+                    <ListView Grid.Row="2" 
+                  Name="FavoriteGenresList" 
+                  ItemsSource="{Binding FavoriteGenres}"
+                  ScrollViewer.CanContentScroll="True"
+                  ScrollViewer.HorizontalScrollBarVisibility="Auto"
+                  ScrollViewer.VerticalScrollBarVisibility="Auto">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding Name}"/>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+
+                    <StackPanel Grid.Row="3"
+                    Margin="0,15,0,0"
+                    Orientation="Horizontal">
+                        <Button Content="Добавить в любимые" Margin="0,0,10,0" Padding="10,5"/>
+                        <Button Content="Удалить выбранный" Margin="0,0,10,0" Padding="10,5"/>
+                        <Button Content="Сохранить" Padding="15,5" />
                     </StackPanel>
                 </Grid>
             </TabItem>
