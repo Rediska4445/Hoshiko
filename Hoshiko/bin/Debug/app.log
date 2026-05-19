@@ -482,3 +482,846 @@
 [2026-05-19 03:35:31] shit = C:\Users\2022\source\repos\Hoshiko\test-resources\
 [2026-05-19 03:35:33] shit = C:\Users\2022\source\repos\Hoshiko\test-resources\
 [2026-05-19 03:35:45] C:\\Users\\2022\\source\\repos\\Hoshiko\\test-resources\\$uicideboy$, Getter - Stop Calling Us Horrorcore.mp3
+[2026-05-19 04:21:41] === Старт LoginExecute ===
+[2026-05-19 04:21:41] Введённый логин: 'fd'
+[2026-05-19 04:21:41] Пароль передан (символов): 6
+[2026-05-19 04:21:41] Отправка запроса в _userController.Authenticate...
+[2026-05-19 04:21:41] Успех! Найден пользователь: ID=1, Username='fd'
+[2026-05-19 04:21:41] MovieGenres: Count = 0
+[2026-05-19 04:21:41] SeriesGenres: Count = 0
+[2026-05-19 04:21:41] MusicGenres: Count = 0
+[2026-05-19 04:21:41] FavoriteGenres: Count = 0 для пользователя fd
+[2026-05-19 04:21:41] === Старт загрузки медиа-рекомендаций ===
+[2026-05-19 04:21:41] Найдено любимых жанров в профиле: 0
+[2026-05-19 04:21:41] Загружено музыкальных рекомендаций: 0
+[2026-05-19 04:21:41] Загружено рекомендаций фильмов: 0
+[2026-05-19 04:21:41] Загружено рекомендаций сериалов: 0
+[2026-05-19 04:21:41] === Все рекомендации успешно обновлены ===
+[2026-05-19 04:21:41] Конец LoginExecute. Текущий StatusText во ViewModel: 'Успешный вход! Добро пожаловать fd!'
+[2026-05-19 04:21:41] === Конец LoginExecute ===
+[2026-05-19 04:27:25] === Старт LoginExecute ===
+[2026-05-19 04:27:25] Введённый логин: 'fd'
+[2026-05-19 04:27:25] Пароль передан (символов): 6
+[2026-05-19 04:27:25] Отправка запроса в _userController.Authenticate...
+[2026-05-19 04:27:26] Успех! Найден пользователь: ID=1, Username='fd'
+[2026-05-19 04:27:26] MovieGenres: Count = 0
+[2026-05-19 04:27:26] SeriesGenres: Count = 0
+[2026-05-19 04:27:26] MusicGenres: Count = 0
+[2026-05-19 04:27:26] FavoriteGenres: Count = 0 для пользователя fd
+[2026-05-19 04:27:26] === Старт загрузки медиа-рекомендаций ===
+[2026-05-19 04:27:26] Найдено любимых жанров в профиле: 0
+[2026-05-19 04:27:26] Загружено музыкальных рекомендаций: 0
+[2026-05-19 04:27:26] Загружено рекомендаций фильмов: 0
+[2026-05-19 04:27:26] Загружено рекомендаций сериалов: 0
+[2026-05-19 04:27:26] === Все рекомендации успешно обновлены ===
+[2026-05-19 04:27:26] Конец LoginExecute. Текущий StatusText во ViewModel: 'Успешный вход! Добро пожаловать fd!'
+[2026-05-19 04:27:26] === Конец LoginExecute ===
+[2026-05-19 04:46:47] === Старт LoginExecute ===
+[2026-05-19 04:46:47] Введённый логин: 'byak'
+[2026-05-19 04:46:47] Пароль передан (символов): 6
+[2026-05-19 04:46:47] Отправка запроса в _userController.Authenticate...
+[2026-05-19 04:46:48] Успех! Найден пользователь: ID=2, Username='byak'
+[2026-05-19 04:46:48] MovieGenres: Count = 9
+[2026-05-19 04:46:48] SeriesGenres: Count = 8
+[2026-05-19 04:46:48] MusicGenres: Count = 10
+[2026-05-19 04:46:48] FavoriteGenres: Count = 0 для пользователя byak
+[2026-05-19 04:46:48] === Старт загрузки медиа-рекомендаций ===
+[2026-05-19 04:46:48] Найдено любимых жанров в профиле: 0
+[2026-05-19 04:46:48] Загружено музыкальных рекомендаций: 7
+[2026-05-19 04:46:48] Загружено рекомендаций фильмов: 1
+[2026-05-19 04:46:48] Загружено рекомендаций сериалов: 1
+[2026-05-19 04:46:48] === Все рекомендации успешно обновлены ===
+[2026-05-19 04:46:48] Конец LoginExecute. Текущий StatusText во ViewModel: 'Успешный вход! Добро пожаловать byak!'
+[2026-05-19 04:46:48] === Конец LoginExecute ===
+[2026-05-19 04:46:55] shit = C:\Users\2022\source\repos\Hoshiko\test-resources\
+[2026-05-19 04:47:22] C:\Users\2022\source\repos\Hoshiko\test-resources\$uicideboy$, Getter - Stop Calling Us Horrorcore.mp3
+[2026-05-19 04:47:27] C:\Users\2022\source\repos\Hoshiko\test-resources\$uicideboy$ - I'm Done.mp3
+[2026-05-19 04:47:47] Клик по списку [Сериалы]: Выбран жанр 'Приключения' (ID: 17)
+[2026-05-19 04:47:48] Клик по списку [Сериалы]: Выбран жанр 'Ситком' (ID: 12)
+[2026-05-19 04:47:49] Клик по списку [Музыка]: Выбран жанр 'Jazz' (ID: 27)
+[2026-05-19 04:47:49] Клик по списку [Музыка]: Выбран жанр 'Cloud Rap' (ID: 19)
+[2026-05-19 04:47:50] Клик по списку [Музыка]: Выбран жанр 'Pop' (ID: 24)
+[2026-05-19 04:47:51] Клик по списку [Фильмы]: Выбран жанр 'Фантастика' (ID: 3)
+[2026-05-19 04:47:51] Клик по списку [Фильмы]: Выбран жанр 'Исторический' (ID: 9)
+[2026-05-19 04:47:52] Клик по списку [Фильмы]: Выбран жанр 'Боевик' (ID: 1)
+[2026-05-19 04:47:53] Клик по списку [Сериалы]: Выбран жанр 'Аниме' (ID: 10)
+[2026-05-19 04:47:54] Кнопка [Добавить]: Жанр 'Аниме' (ID: 10) перенесен в избранное.
+[2026-05-19 04:47:54] === Старт загрузки медиа-рекомендаций ===
+[2026-05-19 04:47:54] Найдено любимых жанров в профиле: 1
+[2026-05-19 04:47:54] Загружено музыкальных рекомендаций: 6
+[2026-05-19 04:47:54] Загружено рекомендаций фильмов: 1
+[2026-05-19 04:47:54] Загружено рекомендаций сериалов: 1
+[2026-05-19 04:47:54] === Все рекомендации успешно обновлены ===
+[2026-05-19 04:47:56] Клик по списку [Музыка]: Выбран жанр 'Horrorcore' (ID: 20)
+[2026-05-19 04:47:56] Клик по списку [Музыка]: Выбран жанр 'Electronic' (ID: 25)
+[2026-05-19 04:47:57] Кнопка [Добавить]: Жанр 'Electronic' (ID: 25) перенесен в избранное.
+[2026-05-19 04:47:57] === Старт загрузки медиа-рекомендаций ===
+[2026-05-19 04:47:57] Найдено любимых жанров в профиле: 2
+[2026-05-19 04:47:57] Загружено музыкальных рекомендаций: 4
+[2026-05-19 04:47:57] Загружено рекомендаций фильмов: 1
+[2026-05-19 04:47:57] Загружено рекомендаций сериалов: 1
+[2026-05-19 04:47:57] === Все рекомендации успешно обновлены ===
+[2026-05-19 04:47:57] Клик по списку [Музыка]: Выбран жанр 'Cloud Rap' (ID: 19)
+[2026-05-19 04:47:58] Кнопка [Добавить]: Жанр 'Cloud Rap' (ID: 19) перенесен в избранное.
+[2026-05-19 04:47:58] === Старт загрузки медиа-рекомендаций ===
+[2026-05-19 04:47:58] Найдено любимых жанров в профиле: 3
+[2026-05-19 04:47:58] Загружено музыкальных рекомендаций: 1
+[2026-05-19 04:47:58] Загружено рекомендаций фильмов: 1
+[2026-05-19 04:47:58] Загружено рекомендаций сериалов: 1
+[2026-05-19 04:47:58] === Все рекомендации успешно обновлены ===
+[2026-05-19 04:48:04] Клик по списку [Музыка]: Выбран жанр 'Electronic' (ID: 25)
+[2026-05-19 04:48:05] Кнопка [Добавить]: Отмена. Жанр 'Electronic' уже есть в избранном.
+[2026-05-19 04:48:06] Клик по списку [Музыка]: Выбран жанр 'Horrorcore' (ID: 20)
+[2026-05-19 04:48:06] Кнопка [Добавить]: Жанр 'Horrorcore' (ID: 20) перенесен в избранное.
+[2026-05-19 04:48:06] === Старт загрузки медиа-рекомендаций ===
+[2026-05-19 04:48:07] Найдено любимых жанров в профиле: 4
+[2026-05-19 04:48:07] Загружено музыкальных рекомендаций: 8
+[2026-05-19 04:48:07] Загружено рекомендаций фильмов: 1
+[2026-05-19 04:48:07] Загружено рекомендаций сериалов: 1
+[2026-05-19 04:48:07] === Все рекомендации успешно обновлены ===
+[2026-05-19 04:48:07] Клик по списку [Музыка]: Выбран жанр 'Rap' (ID: 18)
+[2026-05-19 04:48:08] Кнопка [Добавить]: Жанр 'Rap' (ID: 18) перенесен в избранное.
+[2026-05-19 04:48:08] === Старт загрузки медиа-рекомендаций ===
+[2026-05-19 04:48:08] Найдено любимых жанров в профиле: 5
+[2026-05-19 04:48:08] Загружено музыкальных рекомендаций: 10
+[2026-05-19 04:48:08] Загружено рекомендаций фильмов: 1
+[2026-05-19 04:48:08] Загружено рекомендаций сериалов: 1
+[2026-05-19 04:48:08] === Все рекомендации успешно обновлены ===
+[2026-05-19 04:48:09] Клик по списку [Музыка]: Выбран жанр 'Rock' (ID: 22)
+[2026-05-19 04:48:10] Кнопка [Добавить]: Жанр 'Rock' (ID: 22) перенесен в избранное.
+[2026-05-19 04:48:10] === Старт загрузки медиа-рекомендаций ===
+[2026-05-19 04:48:10] Найдено любимых жанров в профиле: 6
+[2026-05-19 04:48:10] Загружено музыкальных рекомендаций: 10
+[2026-05-19 04:48:10] Загружено рекомендаций фильмов: 1
+[2026-05-19 04:48:10] Загружено рекомендаций сериалов: 1
+[2026-05-19 04:48:10] === Все рекомендации успешно обновлены ===
+[2026-05-19 04:51:44] === Старт LoginExecute ===
+[2026-05-19 04:51:44] Введённый логин: 'byak'
+[2026-05-19 04:51:44] Пароль передан (символов): 6
+[2026-05-19 04:51:44] Отправка запроса в _userController.Authenticate...
+[2026-05-19 04:51:45] Успех! Найден пользователь: ID=2, Username='byak'
+[2026-05-19 04:51:45] MovieGenres: Count = 9
+[2026-05-19 04:51:45] SeriesGenres: Count = 8
+[2026-05-19 04:51:45] MusicGenres: Count = 10
+[2026-05-19 04:51:45] FavoriteGenres: Count = 6 для пользователя byak
+[2026-05-19 04:51:45] === Старт загрузки медиа-рекомендаций ===
+[2026-05-19 04:51:45] Найдено любимых жанров в профиле: 6
+[2026-05-19 04:51:45] Загружено музыкальных рекомендаций: 10
+[2026-05-19 04:51:46] Загружено рекомендаций фильмов: 2
+[2026-05-19 04:51:46] Загружено рекомендаций сериалов: 1
+[2026-05-19 04:51:46] === Все рекомендации успешно обновлены ===
+[2026-05-19 04:51:46] Конец LoginExecute. Текущий StatusText во ViewModel: 'Успешный вход! Добро пожаловать byak!'
+[2026-05-19 04:51:46] === Конец LoginExecute ===
+[2026-05-19 04:52:04] === Старт LoginExecute ===
+[2026-05-19 04:52:04] Введённый логин: 'byak'
+[2026-05-19 04:52:04] Пароль передан (символов): 6
+[2026-05-19 04:52:04] Отправка запроса в _userController.Authenticate...
+[2026-05-19 04:52:06] Успех! Найден пользователь: ID=2, Username='byak'
+[2026-05-19 04:52:06] MovieGenres: Count = 9
+[2026-05-19 04:52:06] SeriesGenres: Count = 8
+[2026-05-19 04:52:06] MusicGenres: Count = 10
+[2026-05-19 04:52:06] FavoriteGenres: Count = 6 для пользователя byak
+[2026-05-19 04:52:06] === Старт загрузки медиа-рекомендаций ===
+[2026-05-19 04:52:06] Найдено любимых жанров в профиле: 6
+[2026-05-19 04:52:06] Загружено музыкальных рекомендаций: 10
+[2026-05-19 04:52:06] Загружено рекомендаций фильмов: 2
+[2026-05-19 04:52:06] Загружено рекомендаций сериалов: 1
+[2026-05-19 04:52:06] === Все рекомендации успешно обновлены ===
+[2026-05-19 04:52:06] Конец LoginExecute. Текущий StatusText во ViewModel: 'Успешный вход! Добро пожаловать byak!'
+[2026-05-19 04:52:06] === Конец LoginExecute ===
+[2026-05-19 04:54:45] === Старт LoginExecute ===
+[2026-05-19 04:54:45] Введённый логин: 'byak'
+[2026-05-19 04:54:45] Пароль передан (символов): 6
+[2026-05-19 04:54:45] Отправка запроса в _userController.Authenticate...
+[2026-05-19 04:54:47] Успех! Найден пользователь: ID=2, Username='byak'
+[2026-05-19 04:54:47] MovieGenres: Count = 9
+[2026-05-19 04:54:47] SeriesGenres: Count = 8
+[2026-05-19 04:54:47] MusicGenres: Count = 10
+[2026-05-19 04:54:47] FavoriteGenres: Count = 6 для пользователя byak
+[2026-05-19 04:54:47] === Старт загрузки медиа-рекомендаций ===
+[2026-05-19 04:54:47] Найдено любимых жанров в профиле: 6
+[2026-05-19 04:54:47] Загружено музыкальных рекомендаций: 10
+[2026-05-19 04:54:47] Загружено рекомендаций фильмов: 2
+[2026-05-19 04:54:47] Загружено рекомендаций сериалов: 1
+[2026-05-19 04:54:47] === Все рекомендации успешно обновлены ===
+[2026-05-19 04:54:47] Конец LoginExecute. Текущий StatusText во ViewModel: 'Успешный вход! Добро пожаловать byak!'
+[2026-05-19 04:54:47] === Конец LoginExecute ===
+[2026-05-19 04:57:27] === Старт LoginExecute ===
+[2026-05-19 04:57:27] Введённый логин: 'byak'
+[2026-05-19 04:57:27] Пароль передан (символов): 6
+[2026-05-19 04:57:27] Отправка запроса в _userController.Authenticate...
+[2026-05-19 04:57:29] Успех! Найден пользователь: ID=2, Username='byak'
+[2026-05-19 04:57:29] MovieGenres: Count = 9
+[2026-05-19 04:57:29] SeriesGenres: Count = 8
+[2026-05-19 04:57:29] MusicGenres: Count = 10
+[2026-05-19 04:57:29] FavoriteGenres: Count = 6 для пользователя byak
+[2026-05-19 04:57:29] === Старт загрузки медиа-рекомендаций ===
+[2026-05-19 04:57:29] Найдено любимых жанров в профиле: 6
+[2026-05-19 04:57:29] Загружено музыкальных рекомендаций: 10
+[2026-05-19 04:57:29] Загружено рекомендаций фильмов: 1
+[2026-05-19 04:57:29] Загружено рекомендаций сериалов: 1
+[2026-05-19 04:57:29] === Все рекомендации успешно обновлены ===
+[2026-05-19 04:57:29] Конец LoginExecute. Текущий StatusText во ViewModel: 'Успешный вход! Добро пожаловать byak!'
+[2026-05-19 04:57:29] === Конец LoginExecute ===
+[2026-05-19 04:58:11] === Старт LoginExecute ===
+[2026-05-19 04:58:11] Введённый логин: 'byak'
+[2026-05-19 04:58:11] Пароль передан (символов): 6
+[2026-05-19 04:58:11] Отправка запроса в _userController.Authenticate...
+[2026-05-19 04:58:12] Успех! Найден пользователь: ID=2, Username='byak'
+[2026-05-19 04:58:13] MovieGenres: Count = 9
+[2026-05-19 04:58:13] SeriesGenres: Count = 8
+[2026-05-19 04:58:13] MusicGenres: Count = 10
+[2026-05-19 04:58:13] FavoriteGenres: Count = 6 для пользователя byak
+[2026-05-19 04:58:13] === Старт загрузки медиа-рекомендаций ===
+[2026-05-19 04:58:13] Найдено любимых жанров в профиле: 6
+[2026-05-19 04:58:13] Загружено музыкальных рекомендаций: 10
+[2026-05-19 04:58:13] Загружено рекомендаций фильмов: 1
+[2026-05-19 04:58:13] Загружено рекомендаций сериалов: 1
+[2026-05-19 04:58:13] === Все рекомендации успешно обновлены ===
+[2026-05-19 04:58:13] Конец LoginExecute. Текущий StatusText во ViewModel: 'Успешный вход! Добро пожаловать byak!'
+[2026-05-19 04:58:13] === Конец LoginExecute ===
+[2026-05-19 04:58:25] shit = C:\Users\2022\source\repos\Hoshiko\test-resources\
+[2026-05-19 04:58:38] C:\Users\2022\source\repos\Hoshiko\test-resources\Ghostemane - D(R)Own.mp3
+[2026-05-19 04:58:45] C:\Users\2022\source\repos\Hoshiko\test-resources\DVRST_-_Close_Eyes_73006469.mp3
+[2026-05-19 04:59:00] Клик по списку [Избранное]: Выбран жанр 'Electronic' (ID: 25)
+[2026-05-19 04:59:01] Кнопка [Удалить]: Жанр 'Electronic' (ID: 25) удален из локального избранного.
+[2026-05-19 04:59:01] === Старт загрузки медиа-рекомендаций ===
+[2026-05-19 04:59:01] Найдено любимых жанров в профиле: 5
+[2026-05-19 04:59:01] Загружено музыкальных рекомендаций: 10
+[2026-05-19 04:59:01] Загружено рекомендаций фильмов: 1
+[2026-05-19 04:59:01] Загружено рекомендаций сериалов: 1
+[2026-05-19 04:59:01] === Все рекомендации успешно обновлены ===
+[2026-05-19 04:59:01] Клик по списку [Избранное]: Выбран жанр 'Horrorcore' (ID: 20)
+[2026-05-19 04:59:02] Кнопка [Удалить]: Жанр 'Horrorcore' (ID: 20) удален из локального избранного.
+[2026-05-19 04:59:02] === Старт загрузки медиа-рекомендаций ===
+[2026-05-19 04:59:02] Найдено любимых жанров в профиле: 4
+[2026-05-19 04:59:02] Загружено музыкальных рекомендаций: 5
+[2026-05-19 04:59:02] Загружено рекомендаций фильмов: 1
+[2026-05-19 04:59:02] Загружено рекомендаций сериалов: 1
+[2026-05-19 04:59:02] === Все рекомендации успешно обновлены ===
+[2026-05-19 04:59:02] Клик по списку [Избранное]: Выбран жанр 'Rock' (ID: 22)
+[2026-05-19 04:59:03] Кнопка [Удалить]: Жанр 'Rock' (ID: 22) удален из локального избранного.
+[2026-05-19 04:59:03] === Старт загрузки медиа-рекомендаций ===
+[2026-05-19 04:59:03] Найдено любимых жанров в профиле: 3
+[2026-05-19 04:59:03] Загружено музыкальных рекомендаций: 5
+[2026-05-19 04:59:03] Загружено рекомендаций фильмов: 1
+[2026-05-19 04:59:03] Загружено рекомендаций сериалов: 1
+[2026-05-19 04:59:03] === Все рекомендации успешно обновлены ===
+[2026-05-19 04:59:03] Клик по списку [Избранное]: Выбран жанр 'Cloud Rap' (ID: 19)
+[2026-05-19 04:59:04] Кнопка [Удалить]: Жанр 'Cloud Rap' (ID: 19) удален из локального избранного.
+[2026-05-19 04:59:04] === Старт загрузки медиа-рекомендаций ===
+[2026-05-19 04:59:04] Найдено любимых жанров в профиле: 2
+[2026-05-19 04:59:04] Загружено музыкальных рекомендаций: 4
+[2026-05-19 04:59:04] Загружено рекомендаций фильмов: 1
+[2026-05-19 04:59:04] Загружено рекомендаций сериалов: 1
+[2026-05-19 04:59:04] === Все рекомендации успешно обновлены ===
+[2026-05-19 04:59:07] Клик по списку [Избранное]: Выбран жанр 'Аниме' (ID: 10)
+[2026-05-19 04:59:08] Кнопка [Удалить]: Жанр 'Аниме' (ID: 10) удален из локального избранного.
+[2026-05-19 04:59:08] === Старт загрузки медиа-рекомендаций ===
+[2026-05-19 04:59:08] Найдено любимых жанров в профиле: 1
+[2026-05-19 04:59:08] Загружено музыкальных рекомендаций: 4
+[2026-05-19 04:59:08] Загружено рекомендаций фильмов: 1
+[2026-05-19 04:59:08] Загружено рекомендаций сериалов: 1
+[2026-05-19 04:59:08] === Все рекомендации успешно обновлены ===
+[2026-05-19 04:59:08] Клик по списку [Избранное]: Выбран жанр 'Rap' (ID: 18)
+[2026-05-19 04:59:09] Кнопка [Удалить]: Жанр 'Rap' (ID: 18) удален из локального избранного.
+[2026-05-19 04:59:09] === Старт загрузки медиа-рекомендаций ===
+[2026-05-19 04:59:09] Найдено любимых жанров в профиле: 0
+[2026-05-19 04:59:09] Загружено музыкальных рекомендаций: 1
+[2026-05-19 04:59:09] Загружено рекомендаций фильмов: 1
+[2026-05-19 04:59:09] Загружено рекомендаций сериалов: 1
+[2026-05-19 04:59:09] === Все рекомендации успешно обновлены ===
+[2026-05-19 04:59:13] Клик по списку [Музыка]: Выбран жанр 'Jazz' (ID: 27)
+[2026-05-19 04:59:14] Кнопка [Добавить]: Жанр 'Jazz' (ID: 27) перенесен в избранное.
+[2026-05-19 04:59:14] === Старт загрузки медиа-рекомендаций ===
+[2026-05-19 04:59:14] Найдено любимых жанров в профиле: 1
+[2026-05-19 04:59:14] Загружено музыкальных рекомендаций: 3
+[2026-05-19 04:59:14] Загружено рекомендаций фильмов: 1
+[2026-05-19 04:59:14] Загружено рекомендаций сериалов: 1
+[2026-05-19 04:59:14] === Все рекомендации успешно обновлены ===
+[2026-05-19 04:59:15] Клик по списку [Музыка]: Выбран жанр 'Cloud Rap' (ID: 19)
+[2026-05-19 04:59:16] Кнопка [Добавить]: Жанр 'Cloud Rap' (ID: 19) перенесен в избранное.
+[2026-05-19 04:59:16] === Старт загрузки медиа-рекомендаций ===
+[2026-05-19 04:59:16] Найдено любимых жанров в профиле: 2
+[2026-05-19 04:59:16] Загружено музыкальных рекомендаций: 1
+[2026-05-19 04:59:16] Загружено рекомендаций фильмов: 1
+[2026-05-19 04:59:16] Загружено рекомендаций сериалов: 1
+[2026-05-19 04:59:16] === Все рекомендации успешно обновлены ===
+[2026-05-19 04:59:16] Клик по списку [Музыка]: Выбран жанр 'Horrorcore' (ID: 20)
+[2026-05-19 04:59:17] Кнопка [Добавить]: Жанр 'Horrorcore' (ID: 20) перенесен в избранное.
+[2026-05-19 04:59:17] === Старт загрузки медиа-рекомендаций ===
+[2026-05-19 04:59:17] Найдено любимых жанров в профиле: 3
+[2026-05-19 04:59:17] Загружено музыкальных рекомендаций: 8
+[2026-05-19 04:59:17] Загружено рекомендаций фильмов: 1
+[2026-05-19 04:59:17] Загружено рекомендаций сериалов: 1
+[2026-05-19 04:59:17] === Все рекомендации успешно обновлены ===
+[2026-05-19 04:59:18] Клик по списку [Музыка]: Выбран жанр 'Pop' (ID: 24)
+[2026-05-19 04:59:18] Клик по списку [Музыка]: Выбран жанр 'Rap' (ID: 18)
+[2026-05-19 04:59:19] Кнопка [Добавить]: Жанр 'Rap' (ID: 18) перенесен в избранное.
+[2026-05-19 04:59:19] === Старт загрузки медиа-рекомендаций ===
+[2026-05-19 04:59:19] Найдено любимых жанров в профиле: 4
+[2026-05-19 04:59:19] Загружено музыкальных рекомендаций: 10
+[2026-05-19 04:59:19] Загружено рекомендаций фильмов: 1
+[2026-05-19 04:59:19] Загружено рекомендаций сериалов: 1
+[2026-05-19 04:59:19] === Все рекомендации успешно обновлены ===
+[2026-05-19 05:06:19] === Старт LoginExecute ===
+[2026-05-19 05:06:19] Введённый логин: 'byak'
+[2026-05-19 05:06:19] Пароль передан (символов): 6
+[2026-05-19 05:06:19] Отправка запроса в _userController.Authenticate...
+[2026-05-19 05:06:20] Успех! Найден пользователь: ID=2, Username='byak'
+[2026-05-19 05:06:21] MovieGenres: Count = 9
+[2026-05-19 05:06:21] SeriesGenres: Count = 8
+[2026-05-19 05:06:21] MusicGenres: Count = 10
+[2026-05-19 05:06:21] FavoriteGenres: Count = 4 для пользователя byak
+[2026-05-19 05:06:21] === Старт загрузки медиа-рекомендаций ===
+[2026-05-19 05:06:21] Найдено любимых жанров в профиле: 4
+[2026-05-19 05:06:21] Загружено музыкальных рекомендаций: 10
+[2026-05-19 05:06:21] Загружено рекомендаций фильмов: 1
+[2026-05-19 05:06:21] Загружено рекомендаций сериалов: 1
+[2026-05-19 05:06:21] === Все рекомендации успешно обновлены ===
+[2026-05-19 05:06:21] Конец LoginExecute. Текущий StatusText во ViewModel: 'Успешный вход! Добро пожаловать byak!'
+[2026-05-19 05:06:21] === Конец LoginExecute ===
+[2026-05-19 05:10:49] === Старт LoginExecute ===
+[2026-05-19 05:10:49] Введённый логин: 'tygyhjtr'
+[2026-05-19 05:10:49] Пароль передан (символов): 5
+[2026-05-19 05:10:49] Отправка запроса в _userController.Authenticate...
+[2026-05-19 05:10:50] Провал авторизации: _userController вернул null (пользователь не найден или пароль неверен).
+[2026-05-19 05:10:50] Конец LoginExecute. Текущий StatusText во ViewModel: 'Неверный логин или пароль.'
+[2026-05-19 05:10:50] === Конец LoginExecute ===
+[2026-05-19 05:11:12] === Старт LoginExecute ===
+[2026-05-19 05:11:12] Введённый логин: 'byak'
+[2026-05-19 05:11:12] Пароль передан (символов): 6
+[2026-05-19 05:11:12] Отправка запроса в _userController.Authenticate...
+[2026-05-19 05:11:13] Успех! Найден пользователь: ID=2, Username='byak'
+[2026-05-19 05:11:13] MovieGenres: Count = 9
+[2026-05-19 05:11:13] SeriesGenres: Count = 8
+[2026-05-19 05:11:13] MusicGenres: Count = 10
+[2026-05-19 05:11:13] FavoriteGenres: Count = 4 для пользователя byak
+[2026-05-19 05:11:13] === Старт загрузки медиа-рекомендаций ===
+[2026-05-19 05:11:13] Найдено любимых жанров в профиле: 4
+[2026-05-19 05:11:13] Загружено музыкальных рекомендаций: 10
+[2026-05-19 05:11:13] Загружено рекомендаций фильмов: 1
+[2026-05-19 05:11:13] Загружено рекомендаций сериалов: 1
+[2026-05-19 05:11:13] === Все рекомендации успешно обновлены ===
+[2026-05-19 05:11:13] Конец LoginExecute. Текущий StatusText во ViewModel: 'Успешный вход! Добро пожаловать byak!'
+[2026-05-19 05:11:13] === Конец LoginExecute ===
+[2026-05-19 05:12:34] === Старт LoginExecute ===
+[2026-05-19 05:12:34] Введённый логин: 'byak'
+[2026-05-19 05:12:34] Пароль передан (символов): 6
+[2026-05-19 05:12:34] Отправка запроса в _userController.Authenticate...
+[2026-05-19 05:19:17] === Старт LoginExecute ===
+[2026-05-19 05:19:17] Введённый логин: 'byak'
+[2026-05-19 05:19:17] Пароль передан (символов): 6
+[2026-05-19 05:19:17] Отправка запроса в _userController.Authenticate...
+[2026-05-19 05:19:17] КРИТИЧЕСКАЯ ОШИБКА при аутентификации: Файл 'C:\Users\2022\source\repos\Hoshiko\Hoshiko\bin\Debug\settings.json' не найден.
+   в System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   в System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   в System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   в System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   в System.IO.File.InternalReadAllText(String path, Encoding encoding, Boolean checkHost)
+   в System.IO.File.ReadAllText(String path)
+   в Hoshiko.Utils.JsonDictionaryReader.ReadAsDictionary(String filePath) в C:\Users\2022\source\repos\Hoshiko\Hoshiko\Utils\JsonDictionaryReader.cs:строка 15
+   в Hoshiko.Context.HoshikoDbContext..ctor() в C:\Users\2022\source\repos\Hoshiko\Hoshiko\Context\HoshikoDbContext.cs:строка 23
+   в Hoshiko.Repository.User.Implementation.UserRepository.Authenticate(String username, String password) в C:\Users\2022\source\repos\Hoshiko\Hoshiko\Repository\User\Implementation\UserRepository.cs:строка 144
+   в Hoshiko.Controller.UserController.Authenticate(String username, String password) в C:\Users\2022\source\repos\Hoshiko\Hoshiko\Controller\UserController.cs:строка 56
+   в Hoshiko.Models.View.AuthViewModel.LoginExecute(Object parameter) в C:\Users\2022\source\repos\Hoshiko\Hoshiko\Models\View\AuthViewModel.cs:строка 108
+[2026-05-19 05:19:18] === Старт LoginExecute ===
+[2026-05-19 05:19:18] Введённый логин: 'byak'
+[2026-05-19 05:19:18] Пароль передан (символов): 6
+[2026-05-19 05:19:18] Отправка запроса в _userController.Authenticate...
+[2026-05-19 05:19:18] КРИТИЧЕСКАЯ ОШИБКА при аутентификации: Файл 'C:\Users\2022\source\repos\Hoshiko\Hoshiko\bin\Debug\settings.json' не найден.
+   в System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   в System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   в System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   в System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   в System.IO.File.InternalReadAllText(String path, Encoding encoding, Boolean checkHost)
+   в System.IO.File.ReadAllText(String path)
+   в Hoshiko.Utils.JsonDictionaryReader.ReadAsDictionary(String filePath) в C:\Users\2022\source\repos\Hoshiko\Hoshiko\Utils\JsonDictionaryReader.cs:строка 15
+   в Hoshiko.Context.HoshikoDbContext..ctor() в C:\Users\2022\source\repos\Hoshiko\Hoshiko\Context\HoshikoDbContext.cs:строка 23
+   в Hoshiko.Repository.User.Implementation.UserRepository.Authenticate(String username, String password) в C:\Users\2022\source\repos\Hoshiko\Hoshiko\Repository\User\Implementation\UserRepository.cs:строка 144
+   в Hoshiko.Controller.UserController.Authenticate(String username, String password) в C:\Users\2022\source\repos\Hoshiko\Hoshiko\Controller\UserController.cs:строка 56
+   в Hoshiko.Models.View.AuthViewModel.LoginExecute(Object parameter) в C:\Users\2022\source\repos\Hoshiko\Hoshiko\Models\View\AuthViewModel.cs:строка 108
+[2026-05-19 05:19:18] === Старт LoginExecute ===
+[2026-05-19 05:19:18] Введённый логин: 'byak'
+[2026-05-19 05:19:18] Пароль передан (символов): 6
+[2026-05-19 05:19:18] Отправка запроса в _userController.Authenticate...
+[2026-05-19 05:19:18] КРИТИЧЕСКАЯ ОШИБКА при аутентификации: Файл 'C:\Users\2022\source\repos\Hoshiko\Hoshiko\bin\Debug\settings.json' не найден.
+   в System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   в System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   в System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   в System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   в System.IO.File.InternalReadAllText(String path, Encoding encoding, Boolean checkHost)
+   в System.IO.File.ReadAllText(String path)
+   в Hoshiko.Utils.JsonDictionaryReader.ReadAsDictionary(String filePath) в C:\Users\2022\source\repos\Hoshiko\Hoshiko\Utils\JsonDictionaryReader.cs:строка 15
+   в Hoshiko.Context.HoshikoDbContext..ctor() в C:\Users\2022\source\repos\Hoshiko\Hoshiko\Context\HoshikoDbContext.cs:строка 23
+   в Hoshiko.Repository.User.Implementation.UserRepository.Authenticate(String username, String password) в C:\Users\2022\source\repos\Hoshiko\Hoshiko\Repository\User\Implementation\UserRepository.cs:строка 144
+   в Hoshiko.Controller.UserController.Authenticate(String username, String password) в C:\Users\2022\source\repos\Hoshiko\Hoshiko\Controller\UserController.cs:строка 56
+   в Hoshiko.Models.View.AuthViewModel.LoginExecute(Object parameter) в C:\Users\2022\source\repos\Hoshiko\Hoshiko\Models\View\AuthViewModel.cs:строка 108
+[2026-05-19 05:19:18] === Старт LoginExecute ===
+[2026-05-19 05:19:18] Введённый логин: 'byak'
+[2026-05-19 05:19:18] Пароль передан (символов): 6
+[2026-05-19 05:19:18] Отправка запроса в _userController.Authenticate...
+[2026-05-19 05:19:18] КРИТИЧЕСКАЯ ОШИБКА при аутентификации: Файл 'C:\Users\2022\source\repos\Hoshiko\Hoshiko\bin\Debug\settings.json' не найден.
+   в System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   в System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   в System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   в System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   в System.IO.File.InternalReadAllText(String path, Encoding encoding, Boolean checkHost)
+   в System.IO.File.ReadAllText(String path)
+   в Hoshiko.Utils.JsonDictionaryReader.ReadAsDictionary(String filePath) в C:\Users\2022\source\repos\Hoshiko\Hoshiko\Utils\JsonDictionaryReader.cs:строка 15
+   в Hoshiko.Context.HoshikoDbContext..ctor() в C:\Users\2022\source\repos\Hoshiko\Hoshiko\Context\HoshikoDbContext.cs:строка 23
+   в Hoshiko.Repository.User.Implementation.UserRepository.Authenticate(String username, String password) в C:\Users\2022\source\repos\Hoshiko\Hoshiko\Repository\User\Implementation\UserRepository.cs:строка 144
+   в Hoshiko.Controller.UserController.Authenticate(String username, String password) в C:\Users\2022\source\repos\Hoshiko\Hoshiko\Controller\UserController.cs:строка 56
+   в Hoshiko.Models.View.AuthViewModel.LoginExecute(Object parameter) в C:\Users\2022\source\repos\Hoshiko\Hoshiko\Models\View\AuthViewModel.cs:строка 108
+[2026-05-19 05:19:26] === Старт LoginExecute ===
+[2026-05-19 05:19:26] Введённый логин: 'byak'
+[2026-05-19 05:19:26] Пароль передан (символов): 6
+[2026-05-19 05:19:26] Отправка запроса в _userController.Authenticate...
+[2026-05-19 05:19:26] КРИТИЧЕСКАЯ ОШИБКА при аутентификации: Файл 'C:\Users\2022\source\repos\Hoshiko\Hoshiko\bin\Debug\settings.json' не найден.
+   в System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   в System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   в System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   в System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   в System.IO.File.InternalReadAllText(String path, Encoding encoding, Boolean checkHost)
+   в System.IO.File.ReadAllText(String path)
+   в Hoshiko.Utils.JsonDictionaryReader.ReadAsDictionary(String filePath) в C:\Users\2022\source\repos\Hoshiko\Hoshiko\Utils\JsonDictionaryReader.cs:строка 15
+   в Hoshiko.Context.HoshikoDbContext..ctor() в C:\Users\2022\source\repos\Hoshiko\Hoshiko\Context\HoshikoDbContext.cs:строка 23
+   в Hoshiko.Repository.User.Implementation.UserRepository.Authenticate(String username, String password) в C:\Users\2022\source\repos\Hoshiko\Hoshiko\Repository\User\Implementation\UserRepository.cs:строка 144
+   в Hoshiko.Controller.UserController.Authenticate(String username, String password) в C:\Users\2022\source\repos\Hoshiko\Hoshiko\Controller\UserController.cs:строка 56
+   в Hoshiko.Models.View.AuthViewModel.LoginExecute(Object parameter) в C:\Users\2022\source\repos\Hoshiko\Hoshiko\Models\View\AuthViewModel.cs:строка 108
+[2026-05-19 05:19:26] === Старт LoginExecute ===
+[2026-05-19 05:19:26] Введённый логин: 'byak'
+[2026-05-19 05:19:26] Пароль передан (символов): 6
+[2026-05-19 05:19:26] Отправка запроса в _userController.Authenticate...
+[2026-05-19 05:19:26] КРИТИЧЕСКАЯ ОШИБКА при аутентификации: Файл 'C:\Users\2022\source\repos\Hoshiko\Hoshiko\bin\Debug\settings.json' не найден.
+   в System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   в System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   в System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   в System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   в System.IO.File.InternalReadAllText(String path, Encoding encoding, Boolean checkHost)
+   в System.IO.File.ReadAllText(String path)
+   в Hoshiko.Utils.JsonDictionaryReader.ReadAsDictionary(String filePath) в C:\Users\2022\source\repos\Hoshiko\Hoshiko\Utils\JsonDictionaryReader.cs:строка 15
+   в Hoshiko.Context.HoshikoDbContext..ctor() в C:\Users\2022\source\repos\Hoshiko\Hoshiko\Context\HoshikoDbContext.cs:строка 23
+   в Hoshiko.Repository.User.Implementation.UserRepository.Authenticate(String username, String password) в C:\Users\2022\source\repos\Hoshiko\Hoshiko\Repository\User\Implementation\UserRepository.cs:строка 144
+   в Hoshiko.Controller.UserController.Authenticate(String username, String password) в C:\Users\2022\source\repos\Hoshiko\Hoshiko\Controller\UserController.cs:строка 56
+   в Hoshiko.Models.View.AuthViewModel.LoginExecute(Object parameter) в C:\Users\2022\source\repos\Hoshiko\Hoshiko\Models\View\AuthViewModel.cs:строка 108
+[2026-05-19 05:19:26] === Старт LoginExecute ===
+[2026-05-19 05:19:26] Введённый логин: 'byak'
+[2026-05-19 05:19:26] Пароль передан (символов): 6
+[2026-05-19 05:19:26] Отправка запроса в _userController.Authenticate...
+[2026-05-19 05:19:26] КРИТИЧЕСКАЯ ОШИБКА при аутентификации: Файл 'C:\Users\2022\source\repos\Hoshiko\Hoshiko\bin\Debug\settings.json' не найден.
+   в System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   в System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   в System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   в System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   в System.IO.File.InternalReadAllText(String path, Encoding encoding, Boolean checkHost)
+   в System.IO.File.ReadAllText(String path)
+   в Hoshiko.Utils.JsonDictionaryReader.ReadAsDictionary(String filePath) в C:\Users\2022\source\repos\Hoshiko\Hoshiko\Utils\JsonDictionaryReader.cs:строка 15
+   в Hoshiko.Context.HoshikoDbContext..ctor() в C:\Users\2022\source\repos\Hoshiko\Hoshiko\Context\HoshikoDbContext.cs:строка 23
+   в Hoshiko.Repository.User.Implementation.UserRepository.Authenticate(String username, String password) в C:\Users\2022\source\repos\Hoshiko\Hoshiko\Repository\User\Implementation\UserRepository.cs:строка 144
+   в Hoshiko.Controller.UserController.Authenticate(String username, String password) в C:\Users\2022\source\repos\Hoshiko\Hoshiko\Controller\UserController.cs:строка 56
+   в Hoshiko.Models.View.AuthViewModel.LoginExecute(Object parameter) в C:\Users\2022\source\repos\Hoshiko\Hoshiko\Models\View\AuthViewModel.cs:строка 108
+[2026-05-19 05:19:56] === Старт LoginExecute ===
+[2026-05-19 05:19:56] Введённый логин: 'trhr'
+[2026-05-19 05:19:56] Пароль передан (символов): 4
+[2026-05-19 05:19:56] Отправка запроса в _userController.Authenticate...
+[2026-05-19 05:19:56] КРИТИЧЕСКАЯ ОШИБКА при аутентификации: Файл 'C:\Users\2022\source\repos\Hoshiko\Hoshiko\bin\Debug\settings.json' не найден.
+   в System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   в System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   в System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   в System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   в System.IO.File.InternalReadAllText(String path, Encoding encoding, Boolean checkHost)
+   в System.IO.File.ReadAllText(String path)
+   в Hoshiko.Utils.JsonDictionaryReader.ReadAsDictionary(String filePath) в C:\Users\2022\source\repos\Hoshiko\Hoshiko\Utils\JsonDictionaryReader.cs:строка 15
+   в Hoshiko.Context.HoshikoDbContext..ctor() в C:\Users\2022\source\repos\Hoshiko\Hoshiko\Context\HoshikoDbContext.cs:строка 23
+   в Hoshiko.Repository.User.Implementation.UserRepository.Authenticate(String username, String password) в C:\Users\2022\source\repos\Hoshiko\Hoshiko\Repository\User\Implementation\UserRepository.cs:строка 144
+   в Hoshiko.Controller.UserController.Authenticate(String username, String password) в C:\Users\2022\source\repos\Hoshiko\Hoshiko\Controller\UserController.cs:строка 56
+   в Hoshiko.Models.View.AuthViewModel.LoginExecute(Object parameter) в C:\Users\2022\source\repos\Hoshiko\Hoshiko\Models\View\AuthViewModel.cs:строка 108
+[2026-05-19 05:19:56] === Старт LoginExecute ===
+[2026-05-19 05:19:56] Введённый логин: 'trhr'
+[2026-05-19 05:19:56] Пароль передан (символов): 4
+[2026-05-19 05:19:56] Отправка запроса в _userController.Authenticate...
+[2026-05-19 05:19:56] КРИТИЧЕСКАЯ ОШИБКА при аутентификации: Файл 'C:\Users\2022\source\repos\Hoshiko\Hoshiko\bin\Debug\settings.json' не найден.
+   в System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   в System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   в System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   в System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   в System.IO.File.InternalReadAllText(String path, Encoding encoding, Boolean checkHost)
+   в System.IO.File.ReadAllText(String path)
+   в Hoshiko.Utils.JsonDictionaryReader.ReadAsDictionary(String filePath) в C:\Users\2022\source\repos\Hoshiko\Hoshiko\Utils\JsonDictionaryReader.cs:строка 15
+   в Hoshiko.Context.HoshikoDbContext..ctor() в C:\Users\2022\source\repos\Hoshiko\Hoshiko\Context\HoshikoDbContext.cs:строка 23
+   в Hoshiko.Repository.User.Implementation.UserRepository.Authenticate(String username, String password) в C:\Users\2022\source\repos\Hoshiko\Hoshiko\Repository\User\Implementation\UserRepository.cs:строка 144
+   в Hoshiko.Controller.UserController.Authenticate(String username, String password) в C:\Users\2022\source\repos\Hoshiko\Hoshiko\Controller\UserController.cs:строка 56
+   в Hoshiko.Models.View.AuthViewModel.LoginExecute(Object parameter) в C:\Users\2022\source\repos\Hoshiko\Hoshiko\Models\View\AuthViewModel.cs:строка 108
+[2026-05-19 05:19:56] === Старт LoginExecute ===
+[2026-05-19 05:19:56] Введённый логин: 'trhr'
+[2026-05-19 05:19:56] Пароль передан (символов): 4
+[2026-05-19 05:19:56] Отправка запроса в _userController.Authenticate...
+[2026-05-19 05:19:56] КРИТИЧЕСКАЯ ОШИБКА при аутентификации: Файл 'C:\Users\2022\source\repos\Hoshiko\Hoshiko\bin\Debug\settings.json' не найден.
+   в System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   в System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   в System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   в System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   в System.IO.File.InternalReadAllText(String path, Encoding encoding, Boolean checkHost)
+   в System.IO.File.ReadAllText(String path)
+   в Hoshiko.Utils.JsonDictionaryReader.ReadAsDictionary(String filePath) в C:\Users\2022\source\repos\Hoshiko\Hoshiko\Utils\JsonDictionaryReader.cs:строка 15
+   в Hoshiko.Context.HoshikoDbContext..ctor() в C:\Users\2022\source\repos\Hoshiko\Hoshiko\Context\HoshikoDbContext.cs:строка 23
+   в Hoshiko.Repository.User.Implementation.UserRepository.Authenticate(String username, String password) в C:\Users\2022\source\repos\Hoshiko\Hoshiko\Repository\User\Implementation\UserRepository.cs:строка 144
+   в Hoshiko.Controller.UserController.Authenticate(String username, String password) в C:\Users\2022\source\repos\Hoshiko\Hoshiko\Controller\UserController.cs:строка 56
+   в Hoshiko.Models.View.AuthViewModel.LoginExecute(Object parameter) в C:\Users\2022\source\repos\Hoshiko\Hoshiko\Models\View\AuthViewModel.cs:строка 108
+[2026-05-19 05:20:03] === Старт LoginExecute ===
+[2026-05-19 05:20:03] Введённый логин: 'gbtr'
+[2026-05-19 05:20:03] Пароль передан (символов): 4
+[2026-05-19 05:20:03] Отправка запроса в _userController.Authenticate...
+[2026-05-19 05:20:04] КРИТИЧЕСКАЯ ОШИБКА при аутентификации: Файл 'C:\Users\2022\source\repos\Hoshiko\Hoshiko\bin\Debug\settings.json' не найден.
+   в System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   в System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   в System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   в System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   в System.IO.File.InternalReadAllText(String path, Encoding encoding, Boolean checkHost)
+   в System.IO.File.ReadAllText(String path)
+   в Hoshiko.Utils.JsonDictionaryReader.ReadAsDictionary(String filePath) в C:\Users\2022\source\repos\Hoshiko\Hoshiko\Utils\JsonDictionaryReader.cs:строка 15
+   в Hoshiko.Context.HoshikoDbContext..ctor() в C:\Users\2022\source\repos\Hoshiko\Hoshiko\Context\HoshikoDbContext.cs:строка 23
+   в Hoshiko.Repository.User.Implementation.UserRepository.Authenticate(String username, String password) в C:\Users\2022\source\repos\Hoshiko\Hoshiko\Repository\User\Implementation\UserRepository.cs:строка 144
+   в Hoshiko.Controller.UserController.Authenticate(String username, String password) в C:\Users\2022\source\repos\Hoshiko\Hoshiko\Controller\UserController.cs:строка 56
+   в Hoshiko.Models.View.AuthViewModel.LoginExecute(Object parameter) в C:\Users\2022\source\repos\Hoshiko\Hoshiko\Models\View\AuthViewModel.cs:строка 108
+[2026-05-19 05:20:19] === Старт LoginExecute ===
+[2026-05-19 05:20:19] Введённый логин: 'ergb'
+[2026-05-19 05:20:19] Пароль передан (символов): 4
+[2026-05-19 05:20:19] Отправка запроса в _userController.Authenticate...
+[2026-05-19 05:20:20] Провал авторизации: _userController вернул null (пользователь не найден или пароль неверен).
+[2026-05-19 05:20:20] Конец LoginExecute. Текущий StatusText во ViewModel: 'Неверный логин или пароль.'
+[2026-05-19 05:20:20] === Конец LoginExecute ===
+[2026-05-19 05:22:07] === Старт LoginExecute ===
+[2026-05-19 05:22:07] Введённый логин: 'fgbe'
+[2026-05-19 05:22:07] Пароль передан (символов): 5
+[2026-05-19 05:22:07] Отправка запроса в _userController.Authenticate...
+[2026-05-19 05:22:07] КРИТИЧЕСКАЯ ОШИБКА при аутентификации: Файл 'C:\Users\2022\source\repos\Hoshiko\Hoshiko\bin\Debug\settings.json' не найден.
+   в System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   в System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   в System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   в System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   в System.IO.File.InternalReadAllText(String path, Encoding encoding, Boolean checkHost)
+   в System.IO.File.ReadAllText(String path)
+   в Hoshiko.Utils.JsonDictionaryReader.ReadAsDictionary(String filePath) в C:\Users\2022\source\repos\Hoshiko\Hoshiko\Utils\JsonDictionaryReader.cs:строка 15
+   в Hoshiko.Context.HoshikoDbContext.GetConnectionString() в C:\Users\2022\source\repos\Hoshiko\Hoshiko\Context\HoshikoDbContext.cs:строка 31
+   в Hoshiko.Context.HoshikoDbContext..ctor() в C:\Users\2022\source\repos\Hoshiko\Hoshiko\Context\HoshikoDbContext.cs:строка 23
+   в Hoshiko.Repository.User.Implementation.UserRepository.Authenticate(String username, String password) в C:\Users\2022\source\repos\Hoshiko\Hoshiko\Repository\User\Implementation\UserRepository.cs:строка 144
+   в Hoshiko.Controller.UserController.Authenticate(String username, String password) в C:\Users\2022\source\repos\Hoshiko\Hoshiko\Controller\UserController.cs:строка 56
+   в Hoshiko.Models.View.AuthViewModel.LoginExecute(Object parameter) в C:\Users\2022\source\repos\Hoshiko\Hoshiko\Models\View\AuthViewModel.cs:строка 108
+[2026-05-19 05:23:10] === Старт LoginExecute ===
+[2026-05-19 05:23:10] Введённый логин: 'rtger'
+[2026-05-19 05:23:10] Пароль передан (символов): 4
+[2026-05-19 05:23:10] Отправка запроса в _userController.Authenticate...
+[2026-05-19 05:23:10] System.Collections.Generic.Dictionary`2[System.String,System.String]
+[2026-05-19 05:23:10] HoshikoDB
+[2026-05-19 05:23:11] Провал авторизации: _userController вернул null (пользователь не найден или пароль неверен).
+[2026-05-19 05:23:11] Конец LoginExecute. Текущий StatusText во ViewModel: 'Неверный логин или пароль.'
+[2026-05-19 05:23:11] === Конец LoginExecute ===
+[2026-05-19 05:25:39] === Старт LoginExecute ===
+[2026-05-19 05:25:39] Введённый логин: 'tger'
+[2026-05-19 05:25:39] Пароль передан (символов): 6
+[2026-05-19 05:25:39] Отправка запроса в _userController.Authenticate...
+[2026-05-19 05:25:39] КРИТИЧЕСКАЯ ОШИБКА при аутентификации: The JSON object contains a trailing comma at the end which is not supported in this mode. Change the reader options. Path: $[0] | LineNumber: 3 | BytePositionInLine: 2.
+   в System.Text.Json.ThrowHelper.ReThrowWithPath(ReadStack& state, JsonReaderException ex)
+   в System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   в System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.Deserialize(Utf8JsonReader& reader, ReadStack& state)
+   в System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 utf8Json, JsonTypeInfo`1 jsonTypeInfo, Nullable`1 actualByteCount)
+   в System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   в System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   в Hoshiko.Utils.JsonDictionaryReader.ReadAsDictionary(String filePath) в C:\Users\2022\source\repos\Hoshiko\Hoshiko\Utils\JsonDictionaryReader.cs:строка 20
+   в Hoshiko.Context.HoshikoDbContext.GetConnectionString() в C:\Users\2022\source\repos\Hoshiko\Hoshiko\Context\HoshikoDbContext.cs:строка 31
+   в Hoshiko.Context.HoshikoDbContext..ctor() в C:\Users\2022\source\repos\Hoshiko\Hoshiko\Context\HoshikoDbContext.cs:строка 23
+   в Hoshiko.Repository.User.Implementation.UserRepository.Authenticate(String username, String password) в C:\Users\2022\source\repos\Hoshiko\Hoshiko\Repository\User\Implementation\UserRepository.cs:строка 144
+   в Hoshiko.Controller.UserController.Authenticate(String username, String password) в C:\Users\2022\source\repos\Hoshiko\Hoshiko\Controller\UserController.cs:строка 56
+   в Hoshiko.Models.View.AuthViewModel.LoginExecute(Object parameter) в C:\Users\2022\source\repos\Hoshiko\Hoshiko\Models\View\AuthViewModel.cs:строка 108
+[2026-05-19 05:26:11] === Старт LoginExecute ===
+[2026-05-19 05:26:11] Введённый логин: 'werfvw'
+[2026-05-19 05:26:11] Пароль передан (символов): 4
+[2026-05-19 05:26:11] Отправка запроса в _userController.Authenticate...
+[2026-05-19 05:26:11] КРИТИЧЕСКАЯ ОШИБКА при аутентификации: 'M' is an invalid escapable character within a JSON string. The string should be correctly escaped. Path: $[0].connectionString | LineNumber: 2 | BytePositionInLine: 47.
+   в System.Text.Json.ThrowHelper.ReThrowWithPath(ReadStack& state, JsonReaderException ex)
+   в System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   в System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.Deserialize(Utf8JsonReader& reader, ReadStack& state)
+   в System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 utf8Json, JsonTypeInfo`1 jsonTypeInfo, Nullable`1 actualByteCount)
+   в System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   в System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   в Hoshiko.Utils.JsonDictionaryReader.ReadAsDictionary(String filePath) в C:\Users\2022\source\repos\Hoshiko\Hoshiko\Utils\JsonDictionaryReader.cs:строка 20
+   в Hoshiko.Context.HoshikoDbContext.GetConnectionString() в C:\Users\2022\source\repos\Hoshiko\Hoshiko\Context\HoshikoDbContext.cs:строка 31
+   в Hoshiko.Context.HoshikoDbContext..ctor() в C:\Users\2022\source\repos\Hoshiko\Hoshiko\Context\HoshikoDbContext.cs:строка 23
+   в Hoshiko.Repository.User.Implementation.UserRepository.Authenticate(String username, String password) в C:\Users\2022\source\repos\Hoshiko\Hoshiko\Repository\User\Implementation\UserRepository.cs:строка 144
+   в Hoshiko.Controller.UserController.Authenticate(String username, String password) в C:\Users\2022\source\repos\Hoshiko\Hoshiko\Controller\UserController.cs:строка 56
+   в Hoshiko.Models.View.AuthViewModel.LoginExecute(Object parameter) в C:\Users\2022\source\repos\Hoshiko\Hoshiko\Models\View\AuthViewModel.cs:строка 108
+[2026-05-19 05:26:25] === Старт LoginExecute ===
+[2026-05-19 05:26:25] Введённый логин: 'werfvw'
+[2026-05-19 05:26:25] Пароль передан (символов): 4
+[2026-05-19 05:26:25] Отправка запроса в _userController.Authenticate...
+[2026-05-19 05:26:25] КРИТИЧЕСКАЯ ОШИБКА при аутентификации: 'M' is an invalid escapable character within a JSON string. The string should be correctly escaped. Path: $[0].connectionString | LineNumber: 2 | BytePositionInLine: 47.
+   в System.Text.Json.ThrowHelper.ReThrowWithPath(ReadStack& state, JsonReaderException ex)
+   в System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   в System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.Deserialize(Utf8JsonReader& reader, ReadStack& state)
+   в System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 utf8Json, JsonTypeInfo`1 jsonTypeInfo, Nullable`1 actualByteCount)
+   в System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   в System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   в Hoshiko.Utils.JsonDictionaryReader.ReadAsDictionary(String filePath) в C:\Users\2022\source\repos\Hoshiko\Hoshiko\Utils\JsonDictionaryReader.cs:строка 20
+   в Hoshiko.Context.HoshikoDbContext.GetConnectionString() в C:\Users\2022\source\repos\Hoshiko\Hoshiko\Context\HoshikoDbContext.cs:строка 31
+   в Hoshiko.Context.HoshikoDbContext..ctor() в C:\Users\2022\source\repos\Hoshiko\Hoshiko\Context\HoshikoDbContext.cs:строка 23
+   в Hoshiko.Repository.User.Implementation.UserRepository.Authenticate(String username, String password) в C:\Users\2022\source\repos\Hoshiko\Hoshiko\Repository\User\Implementation\UserRepository.cs:строка 144
+   в Hoshiko.Controller.UserController.Authenticate(String username, String password) в C:\Users\2022\source\repos\Hoshiko\Hoshiko\Controller\UserController.cs:строка 56
+   в Hoshiko.Models.View.AuthViewModel.LoginExecute(Object parameter) в C:\Users\2022\source\repos\Hoshiko\Hoshiko\Models\View\AuthViewModel.cs:строка 108
+[2026-05-19 05:26:25] === Старт LoginExecute ===
+[2026-05-19 05:26:25] Введённый логин: 'werfvw'
+[2026-05-19 05:26:25] Пароль передан (символов): 4
+[2026-05-19 05:26:25] Отправка запроса в _userController.Authenticate...
+[2026-05-19 05:26:25] КРИТИЧЕСКАЯ ОШИБКА при аутентификации: 'M' is an invalid escapable character within a JSON string. The string should be correctly escaped. Path: $[0].connectionString | LineNumber: 2 | BytePositionInLine: 47.
+   в System.Text.Json.ThrowHelper.ReThrowWithPath(ReadStack& state, JsonReaderException ex)
+   в System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   в System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.Deserialize(Utf8JsonReader& reader, ReadStack& state)
+   в System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 utf8Json, JsonTypeInfo`1 jsonTypeInfo, Nullable`1 actualByteCount)
+   в System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   в System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   в Hoshiko.Utils.JsonDictionaryReader.ReadAsDictionary(String filePath) в C:\Users\2022\source\repos\Hoshiko\Hoshiko\Utils\JsonDictionaryReader.cs:строка 20
+   в Hoshiko.Context.HoshikoDbContext.GetConnectionString() в C:\Users\2022\source\repos\Hoshiko\Hoshiko\Context\HoshikoDbContext.cs:строка 31
+   в Hoshiko.Context.HoshikoDbContext..ctor() в C:\Users\2022\source\repos\Hoshiko\Hoshiko\Context\HoshikoDbContext.cs:строка 23
+   в Hoshiko.Repository.User.Implementation.UserRepository.Authenticate(String username, String password) в C:\Users\2022\source\repos\Hoshiko\Hoshiko\Repository\User\Implementation\UserRepository.cs:строка 144
+   в Hoshiko.Controller.UserController.Authenticate(String username, String password) в C:\Users\2022\source\repos\Hoshiko\Hoshiko\Controller\UserController.cs:строка 56
+   в Hoshiko.Models.View.AuthViewModel.LoginExecute(Object parameter) в C:\Users\2022\source\repos\Hoshiko\Hoshiko\Models\View\AuthViewModel.cs:строка 108
+[2026-05-19 05:26:25] === Старт LoginExecute ===
+[2026-05-19 05:26:25] Введённый логин: 'werfvw'
+[2026-05-19 05:26:25] Пароль передан (символов): 4
+[2026-05-19 05:26:25] Отправка запроса в _userController.Authenticate...
+[2026-05-19 05:26:25] КРИТИЧЕСКАЯ ОШИБКА при аутентификации: 'M' is an invalid escapable character within a JSON string. The string should be correctly escaped. Path: $[0].connectionString | LineNumber: 2 | BytePositionInLine: 47.
+   в System.Text.Json.ThrowHelper.ReThrowWithPath(ReadStack& state, JsonReaderException ex)
+   в System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   в System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.Deserialize(Utf8JsonReader& reader, ReadStack& state)
+   в System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 utf8Json, JsonTypeInfo`1 jsonTypeInfo, Nullable`1 actualByteCount)
+   в System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   в System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   в Hoshiko.Utils.JsonDictionaryReader.ReadAsDictionary(String filePath) в C:\Users\2022\source\repos\Hoshiko\Hoshiko\Utils\JsonDictionaryReader.cs:строка 20
+   в Hoshiko.Context.HoshikoDbContext.GetConnectionString() в C:\Users\2022\source\repos\Hoshiko\Hoshiko\Context\HoshikoDbContext.cs:строка 31
+   в Hoshiko.Context.HoshikoDbContext..ctor() в C:\Users\2022\source\repos\Hoshiko\Hoshiko\Context\HoshikoDbContext.cs:строка 23
+   в Hoshiko.Repository.User.Implementation.UserRepository.Authenticate(String username, String password) в C:\Users\2022\source\repos\Hoshiko\Hoshiko\Repository\User\Implementation\UserRepository.cs:строка 144
+   в Hoshiko.Controller.UserController.Authenticate(String username, String password) в C:\Users\2022\source\repos\Hoshiko\Hoshiko\Controller\UserController.cs:строка 56
+   в Hoshiko.Models.View.AuthViewModel.LoginExecute(Object parameter) в C:\Users\2022\source\repos\Hoshiko\Hoshiko\Models\View\AuthViewModel.cs:строка 108
+[2026-05-19 05:26:25] === Старт LoginExecute ===
+[2026-05-19 05:26:25] Введённый логин: 'werfvw'
+[2026-05-19 05:26:26] Пароль передан (символов): 4
+[2026-05-19 05:26:26] Отправка запроса в _userController.Authenticate...
+[2026-05-19 05:26:26] КРИТИЧЕСКАЯ ОШИБКА при аутентификации: 'M' is an invalid escapable character within a JSON string. The string should be correctly escaped. Path: $[0].connectionString | LineNumber: 2 | BytePositionInLine: 47.
+   в System.Text.Json.ThrowHelper.ReThrowWithPath(ReadStack& state, JsonReaderException ex)
+   в System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   в System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.Deserialize(Utf8JsonReader& reader, ReadStack& state)
+   в System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 utf8Json, JsonTypeInfo`1 jsonTypeInfo, Nullable`1 actualByteCount)
+   в System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   в System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   в Hoshiko.Utils.JsonDictionaryReader.ReadAsDictionary(String filePath) в C:\Users\2022\source\repos\Hoshiko\Hoshiko\Utils\JsonDictionaryReader.cs:строка 20
+   в Hoshiko.Context.HoshikoDbContext.GetConnectionString() в C:\Users\2022\source\repos\Hoshiko\Hoshiko\Context\HoshikoDbContext.cs:строка 31
+   в Hoshiko.Context.HoshikoDbContext..ctor() в C:\Users\2022\source\repos\Hoshiko\Hoshiko\Context\HoshikoDbContext.cs:строка 23
+   в Hoshiko.Repository.User.Implementation.UserRepository.Authenticate(String username, String password) в C:\Users\2022\source\repos\Hoshiko\Hoshiko\Repository\User\Implementation\UserRepository.cs:строка 144
+   в Hoshiko.Controller.UserController.Authenticate(String username, String password) в C:\Users\2022\source\repos\Hoshiko\Hoshiko\Controller\UserController.cs:строка 56
+   в Hoshiko.Models.View.AuthViewModel.LoginExecute(Object parameter) в C:\Users\2022\source\repos\Hoshiko\Hoshiko\Models\View\AuthViewModel.cs:строка 108
+[2026-05-19 05:26:26] === Старт LoginExecute ===
+[2026-05-19 05:26:26] Введённый логин: 'werfvw'
+[2026-05-19 05:26:26] Пароль передан (символов): 4
+[2026-05-19 05:26:26] Отправка запроса в _userController.Authenticate...
+[2026-05-19 05:26:26] КРИТИЧЕСКАЯ ОШИБКА при аутентификации: 'M' is an invalid escapable character within a JSON string. The string should be correctly escaped. Path: $[0].connectionString | LineNumber: 2 | BytePositionInLine: 47.
+   в System.Text.Json.ThrowHelper.ReThrowWithPath(ReadStack& state, JsonReaderException ex)
+   в System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   в System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.Deserialize(Utf8JsonReader& reader, ReadStack& state)
+   в System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 utf8Json, JsonTypeInfo`1 jsonTypeInfo, Nullable`1 actualByteCount)
+   в System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   в System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   в Hoshiko.Utils.JsonDictionaryReader.ReadAsDictionary(String filePath) в C:\Users\2022\source\repos\Hoshiko\Hoshiko\Utils\JsonDictionaryReader.cs:строка 20
+   в Hoshiko.Context.HoshikoDbContext.GetConnectionString() в C:\Users\2022\source\repos\Hoshiko\Hoshiko\Context\HoshikoDbContext.cs:строка 31
+   в Hoshiko.Context.HoshikoDbContext..ctor() в C:\Users\2022\source\repos\Hoshiko\Hoshiko\Context\HoshikoDbContext.cs:строка 23
+   в Hoshiko.Repository.User.Implementation.UserRepository.Authenticate(String username, String password) в C:\Users\2022\source\repos\Hoshiko\Hoshiko\Repository\User\Implementation\UserRepository.cs:строка 144
+   в Hoshiko.Controller.UserController.Authenticate(String username, String password) в C:\Users\2022\source\repos\Hoshiko\Hoshiko\Controller\UserController.cs:строка 56
+   в Hoshiko.Models.View.AuthViewModel.LoginExecute(Object parameter) в C:\Users\2022\source\repos\Hoshiko\Hoshiko\Models\View\AuthViewModel.cs:строка 108
+[2026-05-19 05:26:38] === Старт LoginExecute ===
+[2026-05-19 05:26:38] Введённый логин: 'werfvw'
+[2026-05-19 05:26:38] Пароль передан (символов): 4
+[2026-05-19 05:26:38] Отправка запроса в _userController.Authenticate...
+[2026-05-19 05:26:38] КРИТИЧЕСКАЯ ОШИБКА при аутентификации: The JSON value could not be converted to System.Collections.Generic.List`1[Hoshiko.Utils.JsonDictionaryReader+Item]. Path: $ | LineNumber: 0 | BytePositionInLine: 3.
+   в System.Text.Json.ThrowHelper.ThrowJsonException_DeserializeUnableToConvertValue(Type propertyType)
+   в System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, TCollection& value)
+   в System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   в System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   в System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.Deserialize(Utf8JsonReader& reader, ReadStack& state)
+   в System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 utf8Json, JsonTypeInfo`1 jsonTypeInfo, Nullable`1 actualByteCount)
+   в System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   в System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   в Hoshiko.Utils.JsonDictionaryReader.ReadAsDictionary(String filePath) в C:\Users\2022\source\repos\Hoshiko\Hoshiko\Utils\JsonDictionaryReader.cs:строка 20
+   в Hoshiko.Context.HoshikoDbContext.GetConnectionString() в C:\Users\2022\source\repos\Hoshiko\Hoshiko\Context\HoshikoDbContext.cs:строка 31
+   в Hoshiko.Context.HoshikoDbContext..ctor() в C:\Users\2022\source\repos\Hoshiko\Hoshiko\Context\HoshikoDbContext.cs:строка 23
+   в Hoshiko.Repository.User.Implementation.UserRepository.Authenticate(String username, String password) в C:\Users\2022\source\repos\Hoshiko\Hoshiko\Repository\User\Implementation\UserRepository.cs:строка 144
+   в Hoshiko.Controller.UserController.Authenticate(String username, String password) в C:\Users\2022\source\repos\Hoshiko\Hoshiko\Controller\UserController.cs:строка 56
+   в Hoshiko.Models.View.AuthViewModel.LoginExecute(Object parameter) в C:\Users\2022\source\repos\Hoshiko\Hoshiko\Models\View\AuthViewModel.cs:строка 108
+[2026-05-19 05:26:38] === Старт LoginExecute ===
+[2026-05-19 05:26:38] Введённый логин: 'werfvw'
+[2026-05-19 05:26:38] Пароль передан (символов): 4
+[2026-05-19 05:26:38] Отправка запроса в _userController.Authenticate...
+[2026-05-19 05:26:38] КРИТИЧЕСКАЯ ОШИБКА при аутентификации: The JSON value could not be converted to System.Collections.Generic.List`1[Hoshiko.Utils.JsonDictionaryReader+Item]. Path: $ | LineNumber: 0 | BytePositionInLine: 3.
+   в System.Text.Json.ThrowHelper.ThrowJsonException_DeserializeUnableToConvertValue(Type propertyType)
+   в System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, TCollection& value)
+   в System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   в System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   в System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.Deserialize(Utf8JsonReader& reader, ReadStack& state)
+   в System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 utf8Json, JsonTypeInfo`1 jsonTypeInfo, Nullable`1 actualByteCount)
+   в System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   в System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   в Hoshiko.Utils.JsonDictionaryReader.ReadAsDictionary(String filePath) в C:\Users\2022\source\repos\Hoshiko\Hoshiko\Utils\JsonDictionaryReader.cs:строка 20
+   в Hoshiko.Context.HoshikoDbContext.GetConnectionString() в C:\Users\2022\source\repos\Hoshiko\Hoshiko\Context\HoshikoDbContext.cs:строка 31
+   в Hoshiko.Context.HoshikoDbContext..ctor() в C:\Users\2022\source\repos\Hoshiko\Hoshiko\Context\HoshikoDbContext.cs:строка 23
+   в Hoshiko.Repository.User.Implementation.UserRepository.Authenticate(String username, String password) в C:\Users\2022\source\repos\Hoshiko\Hoshiko\Repository\User\Implementation\UserRepository.cs:строка 144
+   в Hoshiko.Controller.UserController.Authenticate(String username, String password) в C:\Users\2022\source\repos\Hoshiko\Hoshiko\Controller\UserController.cs:строка 56
+   в Hoshiko.Models.View.AuthViewModel.LoginExecute(Object parameter) в C:\Users\2022\source\repos\Hoshiko\Hoshiko\Models\View\AuthViewModel.cs:строка 108
+[2026-05-19 05:26:44] === Старт LoginExecute ===
+[2026-05-19 05:26:44] Введённый логин: 'gertg'
+[2026-05-19 05:26:44] Пароль передан (символов): 4
+[2026-05-19 05:26:44] Отправка запроса в _userController.Authenticate...
+[2026-05-19 05:26:44] КРИТИЧЕСКАЯ ОШИБКА при аутентификации: The JSON value could not be converted to System.Collections.Generic.List`1[Hoshiko.Utils.JsonDictionaryReader+Item]. Path: $ | LineNumber: 0 | BytePositionInLine: 3.
+   в System.Text.Json.ThrowHelper.ThrowJsonException_DeserializeUnableToConvertValue(Type propertyType)
+   в System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, TCollection& value)
+   в System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   в System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   в System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.Deserialize(Utf8JsonReader& reader, ReadStack& state)
+   в System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 utf8Json, JsonTypeInfo`1 jsonTypeInfo, Nullable`1 actualByteCount)
+   в System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   в System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   в Hoshiko.Utils.JsonDictionaryReader.ReadAsDictionary(String filePath) в C:\Users\2022\source\repos\Hoshiko\Hoshiko\Utils\JsonDictionaryReader.cs:строка 20
+   в Hoshiko.Context.HoshikoDbContext.GetConnectionString() в C:\Users\2022\source\repos\Hoshiko\Hoshiko\Context\HoshikoDbContext.cs:строка 31
+   в Hoshiko.Context.HoshikoDbContext..ctor() в C:\Users\2022\source\repos\Hoshiko\Hoshiko\Context\HoshikoDbContext.cs:строка 23
+   в Hoshiko.Repository.User.Implementation.UserRepository.Authenticate(String username, String password) в C:\Users\2022\source\repos\Hoshiko\Hoshiko\Repository\User\Implementation\UserRepository.cs:строка 144
+   в Hoshiko.Controller.UserController.Authenticate(String username, String password) в C:\Users\2022\source\repos\Hoshiko\Hoshiko\Controller\UserController.cs:строка 56
+   в Hoshiko.Models.View.AuthViewModel.LoginExecute(Object parameter) в C:\Users\2022\source\repos\Hoshiko\Hoshiko\Models\View\AuthViewModel.cs:строка 108
+[2026-05-19 05:26:44] === Старт LoginExecute ===
+[2026-05-19 05:26:44] Введённый логин: 'gertg'
+[2026-05-19 05:26:44] Пароль передан (символов): 4
+[2026-05-19 05:26:44] Отправка запроса в _userController.Authenticate...
+[2026-05-19 05:26:44] КРИТИЧЕСКАЯ ОШИБКА при аутентификации: The JSON value could not be converted to System.Collections.Generic.List`1[Hoshiko.Utils.JsonDictionaryReader+Item]. Path: $ | LineNumber: 0 | BytePositionInLine: 3.
+   в System.Text.Json.ThrowHelper.ThrowJsonException_DeserializeUnableToConvertValue(Type propertyType)
+   в System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, TCollection& value)
+   в System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   в System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   в System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.Deserialize(Utf8JsonReader& reader, ReadStack& state)
+   в System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 utf8Json, JsonTypeInfo`1 jsonTypeInfo, Nullable`1 actualByteCount)
+   в System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   в System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   в Hoshiko.Utils.JsonDictionaryReader.ReadAsDictionary(String filePath) в C:\Users\2022\source\repos\Hoshiko\Hoshiko\Utils\JsonDictionaryReader.cs:строка 20
+   в Hoshiko.Context.HoshikoDbContext.GetConnectionString() в C:\Users\2022\source\repos\Hoshiko\Hoshiko\Context\HoshikoDbContext.cs:строка 31
+   в Hoshiko.Context.HoshikoDbContext..ctor() в C:\Users\2022\source\repos\Hoshiko\Hoshiko\Context\HoshikoDbContext.cs:строка 23
+   в Hoshiko.Repository.User.Implementation.UserRepository.Authenticate(String username, String password) в C:\Users\2022\source\repos\Hoshiko\Hoshiko\Repository\User\Implementation\UserRepository.cs:строка 144
+   в Hoshiko.Controller.UserController.Authenticate(String username, String password) в C:\Users\2022\source\repos\Hoshiko\Hoshiko\Controller\UserController.cs:строка 56
+   в Hoshiko.Models.View.AuthViewModel.LoginExecute(Object parameter) в C:\Users\2022\source\repos\Hoshiko\Hoshiko\Models\View\AuthViewModel.cs:строка 108
+[2026-05-19 05:26:45] === Старт LoginExecute ===
+[2026-05-19 05:26:45] Введённый логин: 'gertg'
+[2026-05-19 05:26:45] Пароль передан (символов): 4
+[2026-05-19 05:26:45] Отправка запроса в _userController.Authenticate...
+[2026-05-19 05:26:45] КРИТИЧЕСКАЯ ОШИБКА при аутентификации: The JSON value could not be converted to System.Collections.Generic.List`1[Hoshiko.Utils.JsonDictionaryReader+Item]. Path: $ | LineNumber: 0 | BytePositionInLine: 3.
+   в System.Text.Json.ThrowHelper.ThrowJsonException_DeserializeUnableToConvertValue(Type propertyType)
+   в System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, TCollection& value)
+   в System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   в System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   в System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.Deserialize(Utf8JsonReader& reader, ReadStack& state)
+   в System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 utf8Json, JsonTypeInfo`1 jsonTypeInfo, Nullable`1 actualByteCount)
+   в System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   в System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   в Hoshiko.Utils.JsonDictionaryReader.ReadAsDictionary(String filePath) в C:\Users\2022\source\repos\Hoshiko\Hoshiko\Utils\JsonDictionaryReader.cs:строка 20
+   в Hoshiko.Context.HoshikoDbContext.GetConnectionString() в C:\Users\2022\source\repos\Hoshiko\Hoshiko\Context\HoshikoDbContext.cs:строка 31
+   в Hoshiko.Context.HoshikoDbContext..ctor() в C:\Users\2022\source\repos\Hoshiko\Hoshiko\Context\HoshikoDbContext.cs:строка 23
+   в Hoshiko.Repository.User.Implementation.UserRepository.Authenticate(String username, String password) в C:\Users\2022\source\repos\Hoshiko\Hoshiko\Repository\User\Implementation\UserRepository.cs:строка 144
+   в Hoshiko.Controller.UserController.Authenticate(String username, String password) в C:\Users\2022\source\repos\Hoshiko\Hoshiko\Controller\UserController.cs:строка 56
+   в Hoshiko.Models.View.AuthViewModel.LoginExecute(Object parameter) в C:\Users\2022\source\repos\Hoshiko\Hoshiko\Models\View\AuthViewModel.cs:строка 108
+[2026-05-19 05:26:45] === Старт LoginExecute ===
+[2026-05-19 05:26:45] Введённый логин: 'gertg'
+[2026-05-19 05:26:45] Пароль передан (символов): 4
+[2026-05-19 05:26:45] Отправка запроса в _userController.Authenticate...
+[2026-05-19 05:26:45] КРИТИЧЕСКАЯ ОШИБКА при аутентификации: The JSON value could not be converted to System.Collections.Generic.List`1[Hoshiko.Utils.JsonDictionaryReader+Item]. Path: $ | LineNumber: 0 | BytePositionInLine: 3.
+   в System.Text.Json.ThrowHelper.ThrowJsonException_DeserializeUnableToConvertValue(Type propertyType)
+   в System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, TCollection& value)
+   в System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   в System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   в System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.Deserialize(Utf8JsonReader& reader, ReadStack& state)
+   в System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 utf8Json, JsonTypeInfo`1 jsonTypeInfo, Nullable`1 actualByteCount)
+   в System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   в System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   в Hoshiko.Utils.JsonDictionaryReader.ReadAsDictionary(String filePath) в C:\Users\2022\source\repos\Hoshiko\Hoshiko\Utils\JsonDictionaryReader.cs:строка 20
+   в Hoshiko.Context.HoshikoDbContext.GetConnectionString() в C:\Users\2022\source\repos\Hoshiko\Hoshiko\Context\HoshikoDbContext.cs:строка 31
+   в Hoshiko.Context.HoshikoDbContext..ctor() в C:\Users\2022\source\repos\Hoshiko\Hoshiko\Context\HoshikoDbContext.cs:строка 23
+   в Hoshiko.Repository.User.Implementation.UserRepository.Authenticate(String username, String password) в C:\Users\2022\source\repos\Hoshiko\Hoshiko\Repository\User\Implementation\UserRepository.cs:строка 144
+   в Hoshiko.Controller.UserController.Authenticate(String username, String password) в C:\Users\2022\source\repos\Hoshiko\Hoshiko\Controller\UserController.cs:строка 56
+   в Hoshiko.Models.View.AuthViewModel.LoginExecute(Object parameter) в C:\Users\2022\source\repos\Hoshiko\Hoshiko\Models\View\AuthViewModel.cs:строка 108
+[2026-05-19 05:27:03] === Старт LoginExecute ===
+[2026-05-19 05:27:03] Введённый логин: 'werfw'
+[2026-05-19 05:27:03] Пароль передан (символов): 6
+[2026-05-19 05:27:03] Отправка запроса в _userController.Authenticate...
+[2026-05-19 05:27:04] КРИТИЧЕСКАЯ ОШИБКА при аутентификации: The JSON value could not be converted to System.Collections.Generic.List`1[Hoshiko.Utils.JsonDictionaryReader+Item]. Path: $ | LineNumber: 0 | BytePositionInLine: 3.
+   в System.Text.Json.ThrowHelper.ThrowJsonException_DeserializeUnableToConvertValue(Type propertyType)
+   в System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, TCollection& value)
+   в System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   в System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   в System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.Deserialize(Utf8JsonReader& reader, ReadStack& state)
+   в System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 utf8Json, JsonTypeInfo`1 jsonTypeInfo, Nullable`1 actualByteCount)
+   в System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   в System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   в Hoshiko.Utils.JsonDictionaryReader.ReadAsDictionary(String filePath) в C:\Users\2022\source\repos\Hoshiko\Hoshiko\Utils\JsonDictionaryReader.cs:строка 20
+   в Hoshiko.Context.HoshikoDbContext.GetConnectionString() в C:\Users\2022\source\repos\Hoshiko\Hoshiko\Context\HoshikoDbContext.cs:строка 31
+   в Hoshiko.Context.HoshikoDbContext..ctor() в C:\Users\2022\source\repos\Hoshiko\Hoshiko\Context\HoshikoDbContext.cs:строка 23
+   в Hoshiko.Repository.User.Implementation.UserRepository.Authenticate(String username, String password) в C:\Users\2022\source\repos\Hoshiko\Hoshiko\Repository\User\Implementation\UserRepository.cs:строка 144
+   в Hoshiko.Controller.UserController.Authenticate(String username, String password) в C:\Users\2022\source\repos\Hoshiko\Hoshiko\Controller\UserController.cs:строка 56
+   в Hoshiko.Models.View.AuthViewModel.LoginExecute(Object parameter) в C:\Users\2022\source\repos\Hoshiko\Hoshiko\Models\View\AuthViewModel.cs:строка 108
+[2026-05-19 05:27:04] === Старт LoginExecute ===
+[2026-05-19 05:27:04] Введённый логин: 'werfw'
+[2026-05-19 05:27:04] Пароль передан (символов): 6
+[2026-05-19 05:27:04] Отправка запроса в _userController.Authenticate...
+[2026-05-19 05:27:04] КРИТИЧЕСКАЯ ОШИБКА при аутентификации: The JSON value could not be converted to System.Collections.Generic.List`1[Hoshiko.Utils.JsonDictionaryReader+Item]. Path: $ | LineNumber: 0 | BytePositionInLine: 3.
+   в System.Text.Json.ThrowHelper.ThrowJsonException_DeserializeUnableToConvertValue(Type propertyType)
+   в System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, TCollection& value)
+   в System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   в System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   в System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.Deserialize(Utf8JsonReader& reader, ReadStack& state)
+   в System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 utf8Json, JsonTypeInfo`1 jsonTypeInfo, Nullable`1 actualByteCount)
+   в System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   в System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   в Hoshiko.Utils.JsonDictionaryReader.ReadAsDictionary(String filePath) в C:\Users\2022\source\repos\Hoshiko\Hoshiko\Utils\JsonDictionaryReader.cs:строка 20
+   в Hoshiko.Context.HoshikoDbContext.GetConnectionString() в C:\Users\2022\source\repos\Hoshiko\Hoshiko\Context\HoshikoDbContext.cs:строка 31
+   в Hoshiko.Context.HoshikoDbContext..ctor() в C:\Users\2022\source\repos\Hoshiko\Hoshiko\Context\HoshikoDbContext.cs:строка 23
+   в Hoshiko.Repository.User.Implementation.UserRepository.Authenticate(String username, String password) в C:\Users\2022\source\repos\Hoshiko\Hoshiko\Repository\User\Implementation\UserRepository.cs:строка 144
+   в Hoshiko.Controller.UserController.Authenticate(String username, String password) в C:\Users\2022\source\repos\Hoshiko\Hoshiko\Controller\UserController.cs:строка 56
+   в Hoshiko.Models.View.AuthViewModel.LoginExecute(Object parameter) в C:\Users\2022\source\repos\Hoshiko\Hoshiko\Models\View\AuthViewModel.cs:строка 108
+[2026-05-19 05:27:10] === Старт LoginExecute ===
+[2026-05-19 05:27:10] Введённый логин: 'wefc'
+[2026-05-19 05:27:10] Пароль передан (символов): 3
+[2026-05-19 05:27:10] Отправка запроса в _userController.Authenticate...
+[2026-05-19 05:27:10] System.Collections.Generic.Dictionary`2[System.String,System.String]
+[2026-05-19 05:27:10] HoshikoDB
+[2026-05-19 05:27:11] Провал авторизации: _userController вернул null (пользователь не найден или пароль неверен).
+[2026-05-19 05:27:11] Конец LoginExecute. Текущий StatusText во ViewModel: 'Неверный логин или пароль.'
+[2026-05-19 05:27:11] === Конец LoginExecute ===
+[2026-05-19 05:28:14] === Старт LoginExecute ===
+[2026-05-19 05:28:14] Введённый логин: 'fvwer'
+[2026-05-19 05:28:14] Пароль передан (символов): 4
+[2026-05-19 05:28:14] Отправка запроса в _userController.Authenticate...
+[2026-05-19 05:28:14] System.Collections.Generic.Dictionary`2[System.String,System.String]
+[2026-05-19 05:28:14] HoshikoDB
+[2026-05-19 05:28:15] Провал авторизации: _userController вернул null (пользователь не найден или пароль неверен).
+[2026-05-19 05:28:15] Конец LoginExecute. Текущий StatusText во ViewModel: 'Неверный логин или пароль.'
+[2026-05-19 05:28:15] === Конец LoginExecute ===
+[2026-05-19 05:28:37] === Старт LoginExecute ===
+[2026-05-19 05:28:37] Введённый логин: 'wef'
+[2026-05-19 05:28:37] Пароль передан (символов): 4
+[2026-05-19 05:28:37] Отправка запроса в _userController.Authenticate...
+[2026-05-19 05:28:37] System.Collections.Generic.Dictionary`2[System.String,System.String]
+[2026-05-19 05:28:37] HoshikoDB
+[2026-05-19 05:28:38] Провал авторизации: _userController вернул null (пользователь не найден или пароль неверен).
+[2026-05-19 05:28:38] Конец LoginExecute. Текущий StatusText во ViewModel: 'Неверный логин или пароль.'
+[2026-05-19 05:28:38] === Конец LoginExecute ===
+[2026-05-19 05:28:45] === Старт LoginExecute ===
+[2026-05-19 05:28:45] Введённый логин: 'ewcw'
+[2026-05-19 05:28:45] Пароль передан (символов): 6
+[2026-05-19 05:28:45] Отправка запроса в _userController.Authenticate...
+[2026-05-19 05:28:45] System.Collections.Generic.Dictionary`2[System.String,System.String]
+[2026-05-19 05:28:45] qweferf
+[2026-05-19 05:28:56] Провал авторизации: _userController вернул null (пользователь не найден или пароль неверен).
+[2026-05-19 05:28:56] Конец LoginExecute. Текущий StatusText во ViewModel: 'Неверный логин или пароль.'
+[2026-05-19 05:28:56] === Конец LoginExecute ===

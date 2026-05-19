@@ -6,7 +6,11 @@ using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
+using System.Data;
 using System.Linq;
+using System.Windows;
+using System.Windows.Controls;
+using System.Windows.Data;
 using System.Windows.Input;
 
 namespace Hoshiko.Models.View
@@ -16,6 +20,7 @@ namespace Hoshiko.Models.View
         private readonly MediaController _controller;
         private readonly GenreController _genreController;
         private readonly RecomendController _recommendController;
+        private readonly TvProgramsController _programsController;
 
         private readonly Logger logger;
 
@@ -208,12 +213,83 @@ namespace Hoshiko.Models.View
             }
         }
 
+        public List<TvProgramEntity> TvPrograms { get; set; }
+
+        private DataTable _tvScheduleTable;
+
+        public DataTable TvScheduleTable
+        {
+            get => _tvScheduleTable;
+            set
+            {
+                _tvScheduleTable = value;
+                OnPropertyChanged();
+            }
+        }
+
+        private void LoadPivotSchedule()
+        {
+            List<TvProgramEntity> rawPrograms = _programsController.GetAllPrograms();
+
+            DataTable dt = new DataTable();
+
+            if (rawPrograms == null || rawPrograms.Count == 0)
+            {
+                TvScheduleTable = dt;
+                return;
+            }
+
+            dt.Columns.Add("Время", typeof(string));
+
+            var uniqueChannels = rawPrograms
+                .Select(p => p.ChannelName)
+                .Distinct()
+                .OrderBy(c => c)
+                .ToList();
+
+            foreach (var channel in uniqueChannels)
+            {
+                dt.Columns.Add(channel, typeof(string));
+            }
+
+            var groupedByTime = rawPrograms
+                .GroupBy(p => p.StartTime)
+                .OrderBy(g => g.Key);
+
+            foreach (var timeGroup in groupedByTime)
+            {
+                DataRow row = dt.NewRow();
+
+                row["Время"] = timeGroup.Key.ToString("HH:mm");
+
+                foreach (var program in timeGroup)
+                {
+                    row[program.ChannelName] = program.Title;
+                }
+
+                foreach (var channel in uniqueChannels)
+                {
+                    if (row[channel] == DBNull.Value)
+                    {
+                        row[channel] = "-";
+                    }
+                }
+
+                dt.Rows.Add(row);
+            }
+
+            TvScheduleTable = dt;
+        }
+
         public MediaViewModel()
         {
             logger = new Logger();
             _controller = new MediaController();
             _genreController = new GenreController();
             _recommendController = new RecomendController();
+            _programsController = new TvProgramsController();
+
+            TvPrograms = _programsController.GetAllPrograms();
 
             AddToFavoriteCommand = new RelayCommand<object>(
                 execute: (param) => AddToFavoriteExecute(),
@@ -252,7 +328,7 @@ namespace Hoshiko.Models.View
             FavoriteGenres = new ObservableCollection<GenreEntity>();
 
             LoadAllGenres();
-
+            LoadPivotSchedule();
             LoadAllRecommendations();
         }
 
