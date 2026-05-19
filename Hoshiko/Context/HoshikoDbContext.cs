@@ -1,8 +1,12 @@
 ﻿namespace Hoshiko.Context
 {
     using Hoshiko.Models.Entity;
+    using Hoshiko.Utils;
+    using System;
+    using System.Collections.Generic;
     using System.Data.Entity;
     using System.Data.Entity.ModelConfiguration.Conventions;
+    using System.Text.Json;
 
     public class HoshikoDbContext : DbContext
     {
@@ -14,11 +18,29 @@
         public DbSet<EpisodeEntity> Episodes { get; set; }
         public DbSet<MusicEntity> Music { get; set; }
         public DbSet<UserFavoriteGenreEntity> UserFavoriteGenres { get; set; }
+        public DbSet<TvProgramEntity> TvPrograms { get; set; }
 
-        public HoshikoDbContext() : base("HoshikoDB")
+        public HoshikoDbContext() : base(GetConnectionString())
         {
             this.Configuration.LazyLoadingEnabled = false;
             this.Configuration.ProxyCreationEnabled = false;
+        }
+
+        private static string GetConnectionString()
+        {
+            var dict = JsonDictionaryReader.ReadAsDictionary("settings.json");
+
+            Logger logger = new Logger();
+
+            logger.Info(dict.ToString());
+
+            string res = dict.TryGetValue("connectionString", out var cs) && !string.IsNullOrWhiteSpace(cs)
+                ? cs
+                : "HoshikoDB";
+
+            logger.Info(res);
+
+            return res;
         }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)

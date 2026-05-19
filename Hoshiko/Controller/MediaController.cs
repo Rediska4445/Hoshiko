@@ -32,7 +32,6 @@ namespace Hoshiko.Controller
             throw new InvalidOperationException($"Репозиторий для типа {typeof(T).Name} не найден.");
         }
 
-        // ========= Фильмы =========
         public MovieEntity GetMovie(int id) =>
             GetRepository<MovieEntity>().GetById(id);
 
@@ -51,8 +50,6 @@ namespace Hoshiko.Controller
         public bool DeleteMovie(int id) =>
             GetRepository<MovieEntity>().Delete(id);
 
-
-        // ========= Музыка =========
         public MusicEntity GetMusic(int id) =>
             GetRepository<MusicEntity>().GetById(id);
 
@@ -71,8 +68,6 @@ namespace Hoshiko.Controller
         public bool DeleteMusic(int id) =>
             GetRepository<MusicEntity>().Delete(id);
 
-
-        // ========= Сериалы =========
         public SeriesEntity GetSeries(int id) =>
             GetRepository<SeriesEntity>().GetById(id);
 

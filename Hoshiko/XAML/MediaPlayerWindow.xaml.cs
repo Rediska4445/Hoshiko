@@ -115,18 +115,6 @@ namespace Hoshiko.XAML
             PlaylistItems = new ObservableCollection<PlaylistItem>(items);
         }
 
-        private void PlayNextIfAvailable()
-        {
-            if (PlaylistItems == null || PlaylistItems.Count == 0 || SelectedItem == null)
-                return;
-
-            int index = PlaylistItems.IndexOf(SelectedItem);
-            if (index >= 0 && index < PlaylistItems.Count - 1)
-            {
-                SelectedItem = PlaylistItems[index + 1];
-            }
-        }
-
         #endregion
 
         #region Обработчики кнопки и слайдеров
