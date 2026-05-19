@@ -64,7 +64,7 @@ namespace Hoshiko.Models.View
             logger = new Logger();
             _userController = new UserController();
 
-            LoginCommand = new RelayCommand<object>(
+           LoginCommand = new RelayCommand<object>(
                 execute: (param) => LoginExecute(param),
                 canExecute: (param) => LoginCanExecute(param)
             );

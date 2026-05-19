@@ -5,19 +5,20 @@ using Hoshiko.Repository.Genre;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.ComponentModel;
 using System.Linq;
 using System.Windows.Input;
 
 namespace Hoshiko.Models.View
 {
-    public class MediaViewModel
+    public class MediaViewModel : INotifyPropertyChanged
     {
         private readonly MediaController _controller;
         private readonly GenreController _genreController;
+        private readonly RecomendController _recommendController;
 
-        private readonly Logger logger = new Logger();
+        private readonly Logger logger;
 
-        // Фильмы
         public ObservableCollection<MovieEntity> Movies { get; }
         public ICommand PlayMovieCommand { get; }
         public ICommand LoadAllMoviesCommand { get; }
@@ -25,29 +26,204 @@ namespace Hoshiko.Models.View
         public ObservableCollection<EpisodeEntity> Episodes { get; }
         public ICommand LoadEpisodesForSeriesCommand { get; }
 
-        // Музыка
         public ObservableCollection<MusicEntity> Musics { get; }
         public ICommand PlayMusicCommand { get; }
         public ICommand LoadAllMusicCommand { get; }
 
-        // Сериалы
         public ObservableCollection<SeriesEntity> Series { get; }
         public ICommand PlaySeriesCommand { get; }
         public ICommand LoadAllSeriesCommand { get; }
 
-        // Жанры
         public ObservableCollection<GenreEntity> Genres { get; }
         public ICommand LoadAllGenresCommand { get; }
+        public ICommand AddToFavoriteCommand { get; }
+        public ICommand RemoveFromFavoriteCommand { get; }
 
         public ObservableCollection<GenreEntity> MovieGenres { get; set; }
         public ObservableCollection<GenreEntity> SeriesGenres { get; set; }
         public ObservableCollection<GenreEntity> MusicGenres { get; set; }
         public ObservableCollection<GenreEntity> FavoriteGenres { get; set; }
 
+        private GenreEntity _selectedMovieGenre;
+        private GenreEntity _selectedSeriesGenre;
+        private GenreEntity _selectedMusicGenre;
+        private GenreEntity _selectedFavoriteGenre;
+
+        public event PropertyChangedEventHandler PropertyChanged;
+
+        protected virtual void OnPropertyChanged([System.Runtime.CompilerServices.CallerMemberName] string propertyName = null)
+        {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+        }
+
+        public GenreEntity SelectedMovieGenre
+        {
+            get => _selectedMovieGenre;
+            set
+            {
+                _selectedMovieGenre = value;
+                OnPropertyChanged();
+                System.Windows.Input.CommandManager.InvalidateRequerySuggested();
+
+                if (_selectedMovieGenre != null)
+                {
+                    logger.Info($"Клик по списку [Фильмы]: Выбран жанр '{_selectedMovieGenre.Name}' (ID: {_selectedMovieGenre.Id})");
+
+                    SelectedSeriesGenre = null;
+                    SelectedMusicGenre = null;
+                    SelectedFavoriteGenre = null;
+                }
+            }
+        }
+
+        public GenreEntity SelectedSeriesGenre
+        {
+            get => _selectedSeriesGenre;
+            set
+            {
+                _selectedSeriesGenre = value;
+                OnPropertyChanged();
+                System.Windows.Input.CommandManager.InvalidateRequerySuggested();
+
+                if (_selectedSeriesGenre != null)
+                {
+                    logger.Info($"Клик по списку [Сериалы]: Выбран жанр '{_selectedSeriesGenre.Name}' (ID: {_selectedSeriesGenre.Id})");
+
+                    SelectedMovieGenre = null;
+                    SelectedMusicGenre = null;
+                    SelectedFavoriteGenre = null;
+                }
+            }
+        }
+
+        public GenreEntity SelectedMusicGenre
+        {
+            get => _selectedMusicGenre;
+            set
+            {
+                _selectedMusicGenre = value;
+                OnPropertyChanged();
+                System.Windows.Input.CommandManager.InvalidateRequerySuggested();
+
+                if (_selectedMusicGenre != null)
+                {
+                    logger.Info($"Клик по списку [Музыка]: Выбран жанр '{_selectedMusicGenre.Name}' (ID: {_selectedMusicGenre.Id})");
+
+                    SelectedMovieGenre = null;
+                    SelectedSeriesGenre = null;
+                    SelectedFavoriteGenre = null;
+                }
+            }
+        }
+
+        public GenreEntity SelectedFavoriteGenre
+        {
+            get => _selectedFavoriteGenre;
+            set
+            {
+                _selectedFavoriteGenre = value;
+                OnPropertyChanged();
+                System.Windows.Input.CommandManager.InvalidateRequerySuggested();
+
+                if (_selectedFavoriteGenre != null)
+                {
+                    logger.Info($"Клик по списку [Избранное]: Выбран жанр '{_selectedFavoriteGenre.Name}' (ID: {_selectedFavoriteGenre.Id})");
+
+                    SelectedMovieGenre = null;
+                    SelectedSeriesGenre = null;
+                    SelectedMusicGenre = null;
+                }
+            }
+        }
+
+        private ObservableCollection<MusicEntity> _recommendedMusics = new ObservableCollection<MusicEntity>();
+
+        private ObservableCollection<MovieEntity> _recommendedMovies = new ObservableCollection<MovieEntity>();
+        private MovieEntity _selectedRecommendedMovie;
+
+        private ObservableCollection<SeriesEntity> _recommendedSeries = new ObservableCollection<SeriesEntity>();
+        private SeriesEntity _selectedRecommendedSeries;
+
+        public ObservableCollection<MusicEntity> RecommendedMusics
+        {
+            get => _recommendedMusics;
+            set
+            {
+                _recommendedMusics = value;
+                OnPropertyChanged();
+            }
+        }
+
+        public ObservableCollection<MovieEntity> RecommendedMovies
+        {
+            get => _recommendedMovies;
+            set
+            {
+                _recommendedMovies = value;
+                OnPropertyChanged();
+            }
+        }
+
+        public MovieEntity SelectedRecommendedMovie
+        {
+            get => _selectedRecommendedMovie;
+            set
+            {
+                if (_selectedRecommendedMovie == value) return;
+                _selectedRecommendedMovie = value;
+                OnPropertyChanged();
+                System.Windows.Input.CommandManager.InvalidateRequerySuggested();
+
+                if (_selectedRecommendedMovie != null)
+                {
+                    logger.Info($"Выбран фильм из рекомендаций: '{_selectedRecommendedMovie.Title}' (ID: {_selectedRecommendedMovie.Id})");
+                }
+            }
+        }
+
+        public ObservableCollection<SeriesEntity> RecommendedSeries
+        {
+            get => _recommendedSeries;
+            set
+            {
+                _recommendedSeries = value;
+                OnPropertyChanged();
+            }
+        }
+
+        public SeriesEntity SelectedRecommendedSeries
+        {
+            get => _selectedRecommendedSeries;
+            set
+            {
+                if (_selectedRecommendedSeries == value) return;
+                _selectedRecommendedSeries = value;
+                OnPropertyChanged();
+                System.Windows.Input.CommandManager.InvalidateRequerySuggested();
+
+                if (_selectedRecommendedSeries != null)
+                {
+                    logger.Info($"Выбран сериал из рекомендаций: '{_selectedRecommendedSeries.Title}' (ID: {_selectedRecommendedSeries.Id})");
+                }
+            }
+        }
+
         public MediaViewModel()
         {
+            logger = new Logger();
             _controller = new MediaController();
             _genreController = new GenreController();
+            _recommendController = new RecomendController();
+
+            AddToFavoriteCommand = new RelayCommand<object>(
+                execute: (param) => AddToFavoriteExecute(),
+                canExecute: (param) => AddToFavoriteCanExecute()
+            );
+
+            RemoveFromFavoriteCommand = new RelayCommand<object>(
+                execute: (param) => RemoveFromFavoriteExecute(),
+                canExecute: (param) => RemoveFromFavoriteCanExecute()
+            );
 
             Movies = new ObservableCollection<MovieEntity>();
             LoadAllMovies();
@@ -76,7 +252,121 @@ namespace Hoshiko.Models.View
             FavoriteGenres = new ObservableCollection<GenreEntity>();
 
             LoadAllGenres();
+
+            LoadAllRecommendations();
         }
+
+        private void LoadAllRecommendations()
+        {
+            if (UserController.CurrentUser == null)
+            {
+                logger.Info("Загрузка всех рекомендаций отменена: Текущий пользователь равен null.");
+                return;
+            }
+
+            try
+            {
+                logger.Info("=== Старт загрузки медиа-рекомендаций ===");
+
+                var favoriteGenres = _genreController.GetAllFavoriteGenres(UserController.CurrentUser);
+                logger.Info($"Найдено любимых жанров в профиле: {favoriteGenres.Count}");
+
+                var musicRecommendations = _recommendController.GetMusicRecommendations(favoriteGenres, 10);
+                RecommendedMusics.Clear();
+                foreach (var track in musicRecommendations)
+                {
+                    RecommendedMusics.Add(track);
+                }
+                logger.Info($"Загружено музыкальных рекомендаций: {musicRecommendations.Count}");
+
+                var movieRecommendations = _recommendController.GetMovieRecommendations(favoriteGenres, 10);
+                RecommendedMovies.Clear();
+                foreach (var movie in movieRecommendations)
+                {
+                    RecommendedMovies.Add(movie);
+                }
+                logger.Info($"Загружено рекомендаций фильмов: {movieRecommendations.Count}");
+
+                var seriesRecommendations = _recommendController.GetSeriesRecommendations(favoriteGenres, 10);
+                RecommendedSeries.Clear();
+                foreach (var series in seriesRecommendations)
+                {
+                    RecommendedSeries.Add(series);
+                }
+                logger.Info($"Загружено рекомендаций сериалов: {seriesRecommendations.Count}");
+
+                logger.Info("=== Все рекомендации успешно обновлены ===");
+            }
+            catch (Exception ex)
+            {
+                logger.Info($"КРИТИЧЕСКАЯ ОШИБКА при загрузке медиа-рекомендаций: {ex.Message}\n{ex.StackTrace}");
+            }
+        }
+
+
+        private void AddToFavoriteExecute()
+        {
+            GenreEntity genreToAdd = null;
+
+            if (SelectedMovieGenre != null) 
+                genreToAdd = SelectedMovieGenre;
+            else if (SelectedSeriesGenre != null)
+                genreToAdd = SelectedSeriesGenre;
+            else if (SelectedMusicGenre != null)
+                genreToAdd = SelectedMusicGenre;
+
+            if (genreToAdd != null)
+            {
+                if (!FavoriteGenres.Contains(genreToAdd))
+                {
+                    _genreController.AddFavoriteGenres(UserController.CurrentUser, new List<GenreEntity> 
+                    { 
+                        genreToAdd 
+                    });
+
+                    FavoriteGenres.Add(genreToAdd);
+                    logger.Info($"Кнопка [Добавить]: Жанр '{genreToAdd.Name}' (ID: {genreToAdd.Id}) перенесен в избранное.");
+
+                    SelectedMovieGenre = null;
+                    SelectedSeriesGenre = null;
+                    SelectedMusicGenre = null;
+
+                    LoadAllRecommendations();
+                }
+                else
+                {
+                    logger.Info($"Кнопка [Добавить]: Отмена. Жанр '{genreToAdd.Name}' уже есть в избранном.");
+                }
+            }
+        }
+
+        private bool AddToFavoriteCanExecute()
+        {
+            return SelectedMovieGenre != null || SelectedSeriesGenre != null || SelectedMusicGenre != null;
+        }
+
+        private void RemoveFromFavoriteExecute()
+        {
+            if (SelectedFavoriteGenre != null)
+            {
+                logger.Info($"Кнопка [Удалить]: Жанр '{SelectedFavoriteGenre.Name}' (ID: {SelectedFavoriteGenre.Id}) удален из локального избранного.");
+
+                _genreController.RemoveFavoriteGenres(UserController.CurrentUser, new List<GenreEntity>
+                {
+                    SelectedFavoriteGenre
+                });
+
+                FavoriteGenres.Remove(SelectedFavoriteGenre);
+
+                LoadAllRecommendations();
+            }
+        }
+
+        private bool RemoveFromFavoriteCanExecute()
+        {
+            return SelectedFavoriteGenre != null;
+        }
+
 
         private void LoadAllMovies()
         {
@@ -158,7 +448,7 @@ namespace Hoshiko.Models.View
 
             var seriesGenres = _genreController.GetGenresByMediaType("Series");
             SeriesGenres.Clear();
-
+           
             foreach (var g in seriesGenres)
             {
                 SeriesGenres.Add(g);

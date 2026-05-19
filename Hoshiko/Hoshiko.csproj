@@ -68,6 +68,7 @@
     <Compile Include="Context\HoshikoDbContext.cs" />
     <Compile Include="Controller\GenreController.cs" />
     <Compile Include="Controller\MediaController.cs" />
+    <Compile Include="Controller\RecomendController.cs" />
     <Compile Include="Controller\UserController.cs" />
     <Compile Include="Logger.cs" />
     <Compile Include="Models\Entity\EpisodeEntity.cs" />
@@ -85,6 +86,8 @@
     <Compile Include="Repository\Media\Implementaion\MovieRepository.cs" />
     <Compile Include="Repository\Media\Implementaion\MusicRepository.cs" />
     <Compile Include="Repository\Media\Implementaion\SeriesRepository.cs" />
+    <Compile Include="Repository\Recommend\Implement\RecomendRepository.cs" />
+    <Compile Include="Repository\Recommend\IRecomendRepository.cs" />
     <Compile Include="Repository\User\Implementation\UserRepository.cs" />
     <Compile Include="Repository\User\IUserRepository.cs" />
     <Compile Include="XAML\MediaPlayerWindow.xaml.cs">

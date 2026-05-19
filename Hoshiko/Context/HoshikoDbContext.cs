@@ -203,12 +203,13 @@
                         .WillCascadeOnDelete(false);
 
             modelBuilder.Entity<UserFavoriteGenreEntity>().ToTable("UserFavoriteGenres");
+
             modelBuilder.Entity<UserFavoriteGenreEntity>()
                         .HasKey(ufg => new { ufg.UserId, ufg.GenreId });
 
             modelBuilder.Entity<UserFavoriteGenreEntity>()
                         .HasRequired(ufg => ufg.User)
-                        .WithMany()
+                        .WithMany(u => u.FavoriteGenres)
                         .HasForeignKey(ufg => ufg.UserId)
                         .WillCascadeOnDelete(false);
 
@@ -217,6 +218,8 @@
                         .WithMany()
                         .HasForeignKey(ufg => ufg.GenreId)
                         .WillCascadeOnDelete(false);
+
+
         }
     }
 }
